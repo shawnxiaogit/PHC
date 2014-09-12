@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+   	<!-- for YTBaseActivity d2e_progress -->
+    <item type="id" name="d2e_process_layout">false</item>
+    <item type="id" name="loading_anim_imgview">false</item>
+    <item type="id" name="loading_tip_textview">false</item>
+    
+    
+    
+    <!-- for de2_logo layout -->
+    <item type="id" name="logo">false</item>
+    
+    <!-- for de2_logo layout -->
+    <item type="id" name="login_logo">false</item>
+    <item type="id" name="login_head">false</item>
+    <item type="id" name="login_edit_account">false</item>
+    <item type="id" name="login_edit_pwd">false</item>
+    <item type="id" name="login_cb_name">false</item>
+    <item type="id" name="login_cb_pwd">false</item>
+    <item type="id" name="login_forget_pwd">false</item>
+    <item type="id" name="login_submit_btn">false</item>
+    <item type="id" name="loginTextView01">false</item>
+    <item type="id" name="wait_message">false</item>
+    <item type="id" name="wait_image">false</item>
+    
+    <!-- for main menu -->
+    <item type="id" name="menu_mosquito">false</item>
+    <item type="id" name="arrow_image">false</item>
+    <item type="id" name="menu_mouse">false</item>
+    <item type="id" name="menu_cockroach">false</item>
+    <item type="id" name="menu_fly">false</item>
+    <item name="layout_mosquito" type="id">false</item>
+    <item type="id" name="menu_mosquito_layout">false</item>
+    <item type="id" name="menu_mounsenumber_layout">false</item>
+    <item name="menu_mouse_layout" type="id">false</item>
+    <item type="id" name="newinput">false</item>
+    <item type="id" name="menu_cockroach_layout">false</item>
+    <item type="id" name="menu_fly_layout">false</item>
+    <item type="id" name="LabelTextView">false</item>
+    <item type="id" name="tv_areaName">false</item>
+    <item type="id" name="et_areaName">false</item>
+    <item type="id" name="ibtn_dropDown">false</item>
+    <item type="id" name="tv_detailAreaName">false</item>
+    
+    
+    <!-- for input  -->
+    <item type="id" name="input_region">false</item>
+    <item type="id" name="input_date">false</item>
+    <item type="id" name="input_time">false</item>
+    <item type="id" name="input_weathy">false</item>
+    <item type="id" name="input_temp">false</item>
+    <item type="id" name="input_comp">false</item>
+    <item type="id" name="input_person">false</item>
+
+    <!-- for btn  -->
+    <item type="id" name="btn_back">false</item>
+    <item type="id" name="btn_submit">false</item>
+    <item type="id" name="btn_reset">false</item>
+    <item type="id" name="btn_save">false</item>
+    
+    <!-- 街道名称 -->
+    <item type="id" name="edit_street">false</item>
+    
+    <!-- for mouse table submit  -->    
+    <item type="id" name="edit_meter">false</item>
+    <item type="id" name="edit_trace">false</item>
+    <item type="id" name="edit_density">false</item>
+    <item type="id" name="edit_sum_init">false</item>
+    <item type="id" name="edit_sum">false</item>
+    <item type="id" name="edit_catch">false</item>
+    <item type="id" name="edit_density_sum">false</item>
+    
+    <!-- for mosiquito table submit -->
+    <item type="id" name="edit_pond_num">false</item>
+    <item type="id" name="edit_pos_pond">false</item>
+    <item type="id" name="edit_desi_pond">false</item>
+    <item type="id" name="edit_coll_spoo">false</item>
+    <item type="id" name="edit_pos_spoo">false</item>
+    <item type="id" name="edit_densi_spoo">false</item>
+    
+    <!-- for krockroach table submit -->
+    <item type="id" name="edit_sticky_krockroach_paper_number">false</item>
+    <item type="id" name="edit_pos_sticky_krockroach_paper_number">false</item>
+    <item type="id" name="edit_sticky_krockroach_number">false</item>
+    <item type="id" name="edit_krockroach_density">false</item>
+    
+    <!-- for fly table submit -->
+    <item type="id" name="edit_field_number">false</item>
+    <item type="id" name="edit_mature_fly_number">false</item>
+    <item type="id" name="edit_maturefly_field_density">false</item>
+    <item type="id" name="edit_stickyfly_bar_number">false</item>
+    <item type="id" name="edit_catch_fly_number">false</item>
+    <item type="id" name="edit_stick_catch_fly_number_density">false</item>
+    
+    <!-- for phc_info_mouse_page -->
+    <item type="id" name="et_monitor_method">false</item>
+    <item type="id" name="tv_monitorName">false</item>
+    <item type="id" name="ibtn_dropDown_method">false</item>
+    <item type="id" name="et_place_type">false</item>
+    <item type="id" name="tv_place_type">false</item>
+    <item type="id" name="ibtn_dropDown_place">false</item>
+    <item type="id" name="edit_palce_name">false</item>
+    <item type="id" name="panel_method">false</item>
+    <item type="id" name="panel_out">false</item>
+    <item type="id" name="panel_in">false</item>
+   
+    <item type="id" name="panel_cao">false</item>
+    <item type="id" name="edit_visit_num">false</item>
+    <item type="id" name="iv_lack_ele">false</item>
+    <item type="id" name="edit_keep_time">false</item>
+    <item type="id" name="edit_keep_time_rang">false</item>
+    <item type="id" name="panel_palce_name">false</item>
+    <item type="id" name="edit_rat_hole">false</item>
+    <item type="id" name="edit_rat_drains">false</item>
+    <item type="id" name="edit_rat_dung">false</item>
+    <item type="id" name="edit_rat_bite_mark">false</item>
+    <item type="id" name="edit_rat_corpse">false</item>
+    <item type="id" name="edit_out_remark">false</item>
+    <item type="id" name="edit_in_remark">false</item>
+    <item type="id" name="edit_mouse_palce_name">false</item>
+    <item type="id" name="tv_mouse_sao">false</item>
+    <item type="id" name="tv_add_mouse">false</item>
+    <item type="id" name="tv_info_add">false</item>
+    
+    <!-- for phc_input_krockroach_page -->
+    <item type="id" name="et_cockroach_place_type">false</item>
+    <item type="id" name="tv_cockroach_place_type">false</item>
+    <item type="id" name="ibtn_dropDown_cockroach_place">false</item>
+    <item type="id" name="edit_cockroach_remark">false</item>
+    <item type="id" name="edit_sticky_cockroach_place_name">false</item>
+    
+    <!-- for phc_input_fly_page -->
+    <item type="id" name="et_fly_method">false</item>
+    <item type="id" name="tv_flyName">false</item>
+    <item type="id" name="ibtn_dropDown_fly_method">false</item>
+    
+    <!-- for phc_input_fly_page -->
+    <item type="id" name="panel_fly_in">false</item>
+    <item type="id" name="panel_fly_out">false</item>
+    <item type="id" name="et_fly_place_type">false</item>
+    <item type="id" name="tv_fly_place_type">false</item>
+    <item type="id" name="ibtn_dropDown_fly_place">false</item>
+    <item type="id" name="edit_fly_palce_name">false</item>
+    <item type="id" name="panel_fly_palce_name">false</item>
+    
+    <!-- for phc_input_mosquto_page -->
+    <item type="id" name="et_mosquito_monitor_place">false</item>
+    <item type="id" name="tv_mosquito_monitor_place">false</item>
+    <item type="id" name="ibtn_dropDown_mosquito_monitor_place">false</item>
+    <item type="id" name="panel_mosquito_out">false</item>
+    <item type="id" name="panel_mosquito_in">false</item>
+    <item type="id" name="et_mosquito_place_type">false</item>
+    <item type="id" name="tv_mosquito_place_type">false</item>
+    <item type="id" name="ibtn_dropDown_mosquito_place">false</item>
+    <item type="id" name="edit_mosqito_palce_name">false</item>
+    <item type="id" name="panel_mosqito_palce_name">false</item>
+    
+    <!-- for phc_chao_sheng_bo  -->
+    <item type="id" name="reportview_chao">false</item>
+    <item type="id" name="tv_cao_sum">false</item>
+    <item type="id" name="iv_cao_battery">false</item>
+    <item type="id" name="btn_cao_init">false</item>
+    <item type="id" name="btn_cao_scann">false</item>
+    <item type="id" name="btn_cao_save">false</item>
+    <item type="id" name="iv_cao_cover_state">false</item>
+    <item type="id" name="iv_cao_cover_sum">false</item>
+
+    
+    
+</resources>

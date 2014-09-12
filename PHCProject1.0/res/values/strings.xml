@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">有害生物监测系统</string>
+    <string name="input_should">请填写(必填)</string>
+    <string name="input_option">请填写</string>
+
+    <!-- for de2_logo layout -->
+    <string name="login_enter_name">请输入用户名</string>
+    <string name="login_enter_pwd">请输入密码</string>
+    <string name="login_name">用户名</string>
+    <string name="login_pwd">密码</string>
+    <string name="login_save_pwd">记住密码</string>
+    <string name="login_save_name">记住用户名</string>
+    <string name="login_forget_pwd">忘记密码？</string>
+    <string name="net_failed">网络连接失败</string>
+    <string name="bt_failed">读取标签失败，请重新尝试</string>
+    <string name="data_failed">获取数据失败，请重新尝试</string>
+    <string name="get_longitude_latitude_faield">获取经纬度失败，请稍候</string>
+
+    <!-- for  phc_info_page -->
+    <string name="tv_area_name">监测区域</string>
+    <string name="input_area_name">请填写/选择</string>
+    <string name="input_area_name_should">请填写/选择</string>
+    <string name="info_monitor_time">监测时间</string>
+    <string name="info_monitor_date">监测日期</string>
+    <string name="info_hint_please_write">请填写</string>
+    <string name="info_hint_please_write_should">请填写(必填)</string>
+    <string name="info_tody_weather">今日天气</string>
+    <string name="info_tody_temperature">今日气温</string>
+    <string name="info_monitor_department">监测单位</string>
+    <string name="info_monitor_people">监测人员</string>
+    <string name="info_add_monitor_data">添加监测数据</string>
+    
+
+    <!-- for PHCMousePage -->
+    <string name="mouse_page_method_less">请选择一种监测方法</string>
+    <string name="mouse_page_street_less">请输入街道名称</string>
+    <string name="mouse_page_palce_type_less">请选择一个场所类型</string>
+    <string name="mouse_page_palce_less">请输入场所名称</string>
+    <string name="mouse_page_meters_less">请输入检查米数</string>
+    <string name="mouse_page_rat_hole_less">请输入鼠洞数量</string>
+    <string name="mouse_page_rat_drains_less">请输入鼠道数量</string>
+    <string name="mouse_page_rat_fecal_less">请输入鼠粪数量</string>
+    <string name="mouse_page_rat_corpse_less">请输入鼠尸数量</string>
+    <string name="mouse_page_rat_bitmark_less">请输入鼠咬痕数量</string>
+    <string name="mouse_page_sun_init_less">请输入粘鼠板数</string>
+    <string name="mouse_page_sun_less">请输入阳性板数</string>
+    <string name="mouse_page_catch_num_less">请输入捕鼠只数</string>
+
+    <!-- for PHCKrockroachPage -->
+    <string name="cockroach_street_less">请输入街道名称</string>
+    <string name="cockroach_place_type_less">请选择一种场所类型</string>
+    <string name="cockroach_place_less">请输入场所名称</string>
+    <string name="cockroach_paper_num_less">请输入粘蟑纸数</string>
+    <string name="cockroach_pos_paper_num_less">请输入阳性纸数</string>
+    <string name="cockroach_catch_num_less">请输入粘蟑只数</string>
+
+    <!-- for PHCMosquitoPage -->
+    <string name="mosquito_method_less">请选择地点类型</string>
+    <string name="mosquito_street_less">请输入街道名称</string>
+    <string name="mosquito_place_type_less">请选择一种场所类型</string>
+    <string name="mosquito_place_less">请输入场所名称</string>
+    <string name="mosquito_pond_less">请输入积水器数</string>
+    <string name="mosquito_pos_pond_less">请输入阳性数</string>
+    <string name="mosquito_coll_spoo_less">请输入采集勺数</string>
+    <string name="mosquito_pos_spoo_less">请输入阳性勺数</string>
+	
+    <!-- for PHCFlyPage -->
+    <string name="fly_method_less">请选择监测方法</string>
+    <string name="fly_street_less">请输入街道名称</string>
+    <string name="fly_place_type_less">请选择一种场所类型</string>
+    <string name="fly_place_less">请输入场所名称</string>
+    <string name="fly_field_num_less">请输入视野数</string>
+    <string name="fly_field_num">视野数</string>
+    <string name="fly_mature_num_less">请输入成蝇只数</string>
+    <string name="fly_sticky_bar_num_less">请输入粘蝇条数</string>
+    <string name="fly_catch_num_less">请输入捕蝇数</string>
+    
+    
+    
+    <!-- for phc_input_mouse_page -->
+    <string name="tv_monitor_method">监测方法</string>
+    <string name="mouse_street_name">街道名称</string>
+    <string name="mouse_please_write">请填写</string>
+    <string name="mouse_place_name">场所名称</string>
+    <string name="mouse_check_meters">检查米数</string>
+    <string name="mouse_henji_shu">鼠&#160;&#160;迹&#160;&#160;数</string>
+    <string name="mouse_hole_number">鼠&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;洞</string>
+    <string name="mouse_density_total">密&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;度</string>
+    <string name="mouse_drains_number">鼠&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;道</string>
+    <string name="mouse_dung_number">鼠&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;粪</string>
+    <string name="mouse_corpse_number">鼠&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;尸</string>
+    <string name="mouse_bit_marks">鼠&#160;&#160;咬&#160;&#160;痕</string>
+    <string name="mouse_desity">鼠&#160;&#160;密&#160;&#160;度 </string>
+    <string name="mouse_density_explain">鼠迹数/百米</string>
+    <string name="mouse_remark">备&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;注</string>
+    <string name="mouse_sun_init">粘鼠板数</string>
+    <string name="mouse_bar_put_number">布放数</string>
+    <string name="mouse_sum_number">阳性板数</string>
+    <string name="mouse_sum_explain">阳性数</string>
+    <string name="mouse_catch_number">捕鼠只数</string>
+    <string name="mouse_density_sun">鼠&#160;&#160;密&#160;&#160;度</string>
+    <string name="mouse_cao_num">来访次数</string>
+    <string name="mouse_cao_photo">缺点图标</string>
+    <string name="mouse_cao_time">遮挡时间</string>
+    <string name="mouse_cao_keep_time">时&#160;&#160;间&#160;&#160;段</string>
+    <string name="mouse_density_sun_explain">粘捕鼠数/张</string>
+    <string name="mouse_btn_back">取消</string>
+    <string name="mouse_btn_reset">重置</string>
+    <string name="mouse_btn_save">保存</string>
+	<string name="txt_people">人工</string>
+	<string name="txt_d2e">D2E</string>
+    <!-- for phc_input_mouse_pag -->
+    <string name="input_monitor_method">请选择监测方法</string>
+    <string name="input_place_type">请选择场所类型</string>
+    <string name="tv_place_type">场所类型</string>
+
+    <!-- for phc_input_krockroach_page -->
+    <string name="input_cockroach_place_type">请选择场所类型</string>
+    <string name="tv_cockroach_place_type">场所类型</string>
+    <string name="cockroach_street_name">街道名称</string>
+    <string name="cockroach_please_write">请填写</string>
+    <string name="cockroach_place_name">场所名称</string>
+    <string name="cockroach_sticky_paper_number">粘蟑纸数</string>
+    <string name="cockroach_pos_sticky_paper_number">阳性纸数</string>
+    <string name="cockroach_sticky_number">粘蟑只数</string>
+    <string name="cockroach_density">密&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;度</string>
+    <string name="cockroach_density_explain">粘捕只数/张</string>
+    <string name="cockroach_density_table">密度(粘捕只数/张)</string>
+    <string name="cockroach_remark">备&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;注</string>
+    <string name="cockroach_btn_back">取消</string>
+    <string name="cockroach_btn_reset">重置</string>
+    <string name="cockroach_btn_save">保存</string>
+
+    <!-- for phc_input_fly_page -->
+    <string name="input_fly_method">请选择监测方法</string>
+    <string name="tv_fly_method">监测方法</string>
+    <string name="input_fly_place_type">请选择场所类型</string>
+    <string name="tv_fly_place_type">场所类型</string>
+    <string name="fly_street_name">街道名称</string>
+    <string name="fly_please_write">请填写</string>
+    <string name="fly_place_name">场所名称</string>
+    <string name="fly_field_number">视&#160;&#160;野&#160;&#160;数</string>
+    <string name="fly_mature_number">成蝇只数</string>
+    <string name="fly_matrue_field_desity">密&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;度</string>
+    <string name="density_fly_field">密度(成蝇数/视野)</string>
+    <string name="fly_matrue_field_desity_explain">成蝇数/视野</string>
+    <string name="fly_remark">备&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;注</string>
+    <string name="fly_sticky_bar_number">粘蝇条数</string>
+    <string name="fly_catch_number">捕&#160;&#160;蝇&#160;&#160;数</string>
+    <string name="fly_sticky_catch_desity">密&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;度</string>
+    <string name="fly_sticky_catch_desity_explain">粘捕蝇数/条</string>
+    <string name="fly_stick_density_bar">密度(粘捕蝇数/条)</string>
+    <string name="fly_btn_back">取消</string>
+    <string name="fly_btn_reset">重置</string>
+    <string name="fly_btn_save">保存</string>
+
+    <!-- for phc_input_mosquito_page -->
+    <string name="tv_mosquito_monitor_place">地点类型</string>
+    <string name="input_mosquito_monitor_place">请选择地点类型</string>
+    <string name="tv_mosquito_place_type">场所类型</string>
+    <string name="input_mosquito_place_type">请选择场所类型</string>
+    <string name="select_mosquito_monitor_method">请选一种监测方法</string>
+    <string name="mosquito_street_name">街道名称</string>
+    <string name="mosquito_please_write">请填写(必填)</string>
+    <string name="mosquito_place_name">场所名称</string>
+    <string name="mosquito_pond_number">积&#160;&#160;水&#160;&#160;数</string>
+    <string name="mosquito_pos_pond_number">阳&#160;&#160;性&#160;&#160;数</string>
+    <string name="mosquito_density_pond">密&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;度</string>
+    <string name="mosquito_density_pond_explain">阳性积水数/有积水数</string>
+    <string name="mosquito_remark">备&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;注</string>
+    <string name="mosquito_coll_spoo_number">采集勺数</string>
+    <string name="mosquito_pos_spoo_number">阳性勺数</string>
+    <string name="mosquito_density_spoo">密&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;度</string>
+    <string name="mosquito_density_spoo_explain">阳性勺数/总勺数</string>
+    <string name="mosquito_btn_back">取消</string>
+    <string name="mosquito_btn_reset">重置</string>
+    <string name="mosquito_btn_save">保存</string>
+    
+    
+    <!-- for phc_chao_sheng_bo_page -->
+    <string name="chao_init">初始化</string>
+    <string name="chao_scann">扫描</string>
+    <string name="chao_save">保存</string>
+    
+    <!-- for phc_chao_sheng_bo -->
+    <string name="chao_sheng_bo_sum">来访次数</string>
+    <string name="chao_sheng_bo_electric">电量状态</string>
+    <string name="chao_sheng_bo_cover_sum">遮挡次数</string>
+    <string name="chao_sheng_bo_cover_state">遮挡状态</string>
+    
+    
+    <!-- for PHCChaoShengBo -->
+    <string name="cao_shengbo_street_less">请输入街道名称</string>
+    <string name="cao_shengbo_place_type_less">请选择场所类型</string>
+    <string name="cao_shengbo_place_name_less">请输入场所名称</string>
+
+    <!-- add by shawn 2012-12-17-->
+    <string name="your_net_error">你的网络出错啦！</string>
+    
+    <!-- add by shawn 2012-12-19 -->
+    <string name="warming_tips">温馨提示</string>
+    <string name="really_exit">您真的要退出吗?</string>
+    <string name="data_no_submit">数据未提交，确定取消？</string>
+    <string name="dialog_exit_btn_txt">退出</string>
+    <string name="dialog_cancle_btn_txt">取消</string>
+    <string name="dialog_ensure_btn_txt">确定</string>
+    <string name="dialog_back_btn_txt">返回</string>
+    
+    <string name="set_up_reader">设置Reader设备</string>
+    <string name="chose_reader">请选择Reader设备</string>
+    <string name="title_searching">正在搜索</string>
+    <string name="txt_searching">搜索</string>
+    <string name="txt_scan">跳过</string>
+    <string name="txt_submit">提交</string>
+    <string name="txt_increase">新增</string>
+    
+    
+    <string name="handling_wait">正在处理，请稍等 &#8230;</string>
+    
+    <string name="equip_id_num">设备编号</string>
+    <string name="less_power">缺电</string>
+    <string name="power_enough">有电</string>
+    
+    <string name="bing_covered">被遮挡</string>
+    <string name="no_covering">未遮挡</string>
+    
+    <string name="blue_start_faield">蓝牙设备启动失败!</string>
+    
+    <string name="txt_zhedang">遮挡</string>
+    <string name="txt_yichu">移除</string>
+    <string name="txt_mouse_come">有老鼠来访</string>
+    
+    <string name="fly_method_out">室外(目测法)</string>
+    <string name="fly_method_in">室内(粘蝇条法)</string>
+    
+    <string name="blue_tooth_conn_prompt">手持机还未连接成功，请确认手持机蓝灯处于常亮状态！</string>
+    <string name="tag_reading">标签读取中 &#8230;</string>
+    
+    <string name="sun_no_lagrge_prompt">阳性纸数不能大于粘蟑纸数</string>
+    
+    <string name="input_account_pwd">请输入用户名和密码</string>
+    
+    <string name="select_one_monitor_place">请选择一种监测地点类型</string>
+        
+    <string name="txt_outside_envi">外环境</string>
+    <string name="sum_no_lagre_jishui">阳性数不能大于积水数</string>
+    <string name="sum_no_large_caijishu">阳性勺数不能大于采集勺数</string>
+    
+    <string name="unit_out_envir">单位居民区外环境</string>
+    <string name="chitang_shuiti">池塘或河流等大中型水体</string>
+    
+    
+    <string name="no_support_blue">该机型不支持蓝牙</string>
+    
+    <string name="tag_read_faield">标签读取失败，请重扫描！</string>
+    
+    <string name="reader_no_start">Reader连接失败，请确认Reader是否开启！</string>
+    
+    <string name="sun_no_large_banshu">阳性板数不能大于粘鼠板数</string>
+    
+    
+</resources>

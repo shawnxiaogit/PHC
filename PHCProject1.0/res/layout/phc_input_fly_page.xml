@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_bg">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:paddingBottom="10.0dip"
+        android:paddingLeft="20.0dip"
+        android:paddingRight="20.0dip"
+        android:paddingTop="10.0dip" >
+
+        <!-- 蝇监测方法可编辑输入下拉框 -->
+
+        <RelativeLayout
+            android:id="@+id/layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/public_line" >
+
+            <!-- 蝇监测方法输入框 -->
+
+            <AutoCompleteTextView
+                android:id="@id/et_fly_method"
+                style="@style/et_text_style"
+                android:layout_width="match_parent"
+                android:layout_height="40.0dip"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_toRightOf="@id/tv_flyName"
+                android:background="@null"
+                android:hint="@string/input_fly_method"
+                android:maxLength="20"
+				android:layout_marginLeft="10.0dip"
+                android:enabled="false"
+                android:paddingRight="20dip"
+                android:textColor="#ff0b70a4" />
+            <!-- 蝇监测方法 文本展示 -->
+
+            <TextView
+                android:id="@id/tv_flyName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/et_fly_method"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="7.0dip"
+                android:text="@string/tv_fly_method"
+                style="@style/info_tv_style" />
+            <!-- 下拉按钮 -->
+
+            <ImageButton
+                android:id="@id/ibtn_dropDown_fly_method"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/layout"
+                android:layout_alignRight="@id/et_fly_method"
+                android:layout_alignTop="@+id/layout"
+                android:layout_marginLeft="1.0dip"
+                android:background="@drawable/more_select" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+"
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <!-- 街道名称 -->
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:background="@drawable/public_line_top" >
+
+                    <TextView
+                        android:id="@id/LabelTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5.0dip"
+                        android:text="@string/fly_street_name"
+                        style="@style/info_tv_style" />
+
+                    <EditText
+                        android:id="@id/edit_street"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10.0dip"
+                        android:layout_marginRight="10.0dip"
+                        android:layout_toRightOf="@id/LabelTextView"
+                        android:background="#ffffffff"
+                        android:ellipsize="end"
+                        android:hint="@string/input_should"
+                        android:imeOptions="actionNext"
+                        android:singleLine="true"
+                        style="@style/et_text_style" />
+                </RelativeLayout>
+                <!-- 场所类型下拉框 -->
+
+                <RelativeLayout
+                    android:id="@+id/layout1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/public_line_mid" >
+
+                    <!-- 场所类型输入框 -->
+
+                    <AutoCompleteTextView
+                        android:id="@id/et_fly_place_type"
+                        style="@style/et_text_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="40.0dip"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:layout_toRightOf="@id/tv_fly_place_type"
+                        android:background="@null"
+                        android:hint="@string/input_mosquito_place_type"
+                        android:maxLength="20"
+                        android:layout_marginLeft="10.0dip"
+                        android:paddingRight="20dip"
+                        android:enabled="false"
+                        />
+                    <!-- 场所类型 文本展示 -->
+
+                    <TextView
+                        android:id="@id/tv_fly_place_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@id/et_fly_place_type"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="7.0dip"
+                        android:text="@string/tv_fly_place_type"
+                        style="@style/info_tv_style" />
+                    <!-- 下拉按钮 -->
+
+                    <ImageButton
+                        android:id="@id/ibtn_dropDown_fly_place"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/layout1"
+                        android:layout_alignRight="@id/et_fly_place_type"
+                        android:layout_alignTop="@+id/layout1"
+                        android:layout_marginLeft="1.0dip"
+                        android:background="@drawable/more_select" />
+                </RelativeLayout>
+                <!-- 场所名称 -->
+
+                <RelativeLayout
+                    android:id="@id/panel_fly_palce_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/public_line_bottom" >
+
+                    <TextView
+                        android:id="@id/LabelTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5.0dip"
+                        android:text="@string/fly_place_name"
+                        style="@style/info_tv_style" />
+
+                    <EditText
+                        android:id="@id/edit_fly_palce_name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10.0dip"
+                        android:layout_marginRight="10.0dip"
+                        android:layout_toRightOf="@id/LabelTextView"
+                        android:background="#ffffffff"
+                        android:ellipsize="end"
+                        android:hint="@string/input_should"
+                        android:imeOptions="actionNext"
+                        android:singleLine="true"
+                        style="@style/et_text_style" />
+                </RelativeLayout>
+                <!-- 蝇监测室外(目测法) -->
+
+                <LinearLayout
+                    android:id="@id/panel_fly_out"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    >
+
+                    <!-- 视野数 -->
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/public_line_mid" >
+
+                        <TextView
+                            android:id="@id/LabelTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5.0dip"
+                            android:text="@string/fly_field_number"
+                            style="@style/info_tv_style" />
+
+                        <EditText
+                            android:id="@id/edit_field_number"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10.0dip"
+                            android:layout_marginRight="10.0dip"
+                            android:layout_toRightOf="@id/LabelTextView"
+                            android:background="#ffffffff"
+                            android:ellipsize="end"
+                            android:hint="@string/input_should"
+                            android:imeOptions="actionNext"
+                            android:numeric="integer"
+                            android:singleLine="true"
+                            style="@style/et_text_style" />
+                    </RelativeLayout>
+                    <!-- 成蝇只数 -->
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/public_line_mid" >
+
+                        <TextView
+                            android:id="@id/LabelTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5.0dip"
+                            android:text="@string/fly_mature_number"
+                            style="@style/info_tv_style" />
+
+                        <EditText
+                            android:id="@id/edit_mature_fly_number"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10.0dip"
+                            android:layout_marginRight="10.0dip"
+                            android:layout_toRightOf="@id/LabelTextView"
+                            android:background="#ffffffff"
+                            android:ellipsize="end"
+                            android:hint="@string/input_should"
+                            android:imeOptions="actionNext"
+                            android:numeric="integer"
+                            android:singleLine="true"
+                            style="@style/et_text_style" />
+                    </RelativeLayout>
+                    <!-- 密度(成蝇数/视野) -->
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/public_line_mid" >
+
+                        <TextView
+                            android:id="@id/LabelTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5.0dip"
+                            android:text="@string/fly_matrue_field_desity"
+                            style="@style/info_tv_style" />
+
+                        <EditText
+                            android:id="@id/edit_maturefly_field_density"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10.0dip"
+                            android:layout_marginRight="10.0dip"
+                            android:layout_toRightOf="@id/LabelTextView"
+                            android:background="#ffffffff"
+                            android:ellipsize="end"
+                            android:hint="@string/fly_matrue_field_desity_explain"
+                            android:imeOptions="actionNext"
+                            android:singleLine="true"
+                            style="@style/et_text_style" />
+                    </RelativeLayout>
+                    <!-- 备注 -->
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/public_line_bottom" >
+
+                        <TextView
+                            android:id="@id/LabelTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5.0dip"
+                            android:text="@string/fly_remark"
+                            style="@style/info_tv_style" />
+
+                        <EditText
+                            android:id="@id/edit_out_remark"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10.0dip"
+                            android:layout_marginRight="10.0dip"
+                            android:layout_toRightOf="@id/LabelTextView"
+                            android:background="@null"
+                            android:ellipsize="end"
+                            android:hint="@string/fly_please_write"
+                            android:imeOptions="actionNext"
+                            android:maxLines="15"
+                            android:scrollbars="vertical"
+                            android:singleLine="false"
+                            style="@style/et_text_style" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <!-- 蝇监测室内(粘蝇条) -->
+
+                <LinearLayout
+                    android:id="@id/panel_fly_in"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    >
+
+                    <!-- 粘蝇条数 -->
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/public_line_mid" >
+
+                        <TextView
+                            android:id="@id/LabelTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5.0dip"
+                            android:text="@string/fly_sticky_bar_number"
+                            style="@style/info_tv_style" />
+
+                        <EditText
+                            android:id="@id/edit_stickyfly_bar_number"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10.0dip"
+                            android:layout_marginRight="10.0dip"
+                            android:layout_toRightOf="@id/LabelTextView"
+                            android:background="#ffffffff"
+                            android:ellipsize="end"
+                            android:hint="@string/input_should"
+                            android:imeOptions="actionNext"
+                            android:numeric="integer"
+                            android:singleLine="true"
+                            style="@style/et_text_style" />
+                    </RelativeLayout>
+                    <!-- 捕蝇数 -->
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/public_line_mid" >
+
+                        <TextView
+                            android:id="@id/LabelTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5.0dip"
+                            android:text="@string/fly_catch_number"
+                            style="@style/info_tv_style" />
+
+                        <EditText
+                            android:id="@id/edit_catch_fly_number"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10.0dip"
+                            android:layout_marginRight="10.0dip"
+                            android:layout_toRightOf="@id/LabelTextView"
+                            android:background="#ffffffff"
+                            android:ellipsize="end"
+                            android:hint="@string/input_should"
+                            android:imeOptions="actionNext"
+                            android:numeric="integer"
+                            android:singleLine="true"
+                            style="@style/et_text_style" />
+                    </RelativeLayout>
+                    <!-- 密度(粘捕蝇数/条) -->
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/public_line_mid" >
+
+                        <TextView
+                            android:id="@id/LabelTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5.0dip"
+                            android:text="@string/fly_sticky_catch_desity"
+                            style="@style/info_tv_style" />
+
+                        <EditText
+                            android:id="@id/edit_stick_catch_fly_number_density"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10.0dip"
+                            android:layout_marginRight="10.0dip"
+                            android:layout_toRightOf="@id/LabelTextView"
+                            android:background="#ffffffff"
+                            android:ellipsize="end"
+                            android:hint="@string/fly_sticky_catch_desity_explain"
+                            android:imeOptions="actionNext"
+                            android:singleLine="true"
+                            style="@style/et_text_style" />
+                    </RelativeLayout>
+                    <!-- 备注 -->
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/public_line_bottom" >
+
+                        <TextView
+                            android:id="@id/LabelTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5.0dip"
+                            android:text="@string/fly_remark"
+                            style="@style/info_tv_style" />
+
+                        <EditText
+                            android:id="@id/edit_in_remark"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10.0dip"
+                            android:layout_marginRight="10.0dip"
+                            android:layout_toRightOf="@id/LabelTextView"
+                            android:background="@null"
+                            android:ellipsize="end"
+                            android:hint="@string/fly_please_write"
+                            android:imeOptions="actionNext"
+                            android:maxLines="15"
+                            android:scrollbars="vertical"
+                            android:singleLine="false"
+                            style="@style/et_text_style" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <!--
+        <RelativeLayout android:background="@drawable/public_line_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:id="@id/LabelTextView" android:textSize="18.0dip" android:textStyle="bold" android:textColor="#ff343434" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="鼠  密  度" android:layout_centerVertical="true" />
+            <EditText android:gravity="center" android:hint="粘捕鼠数/张" android:textSize="18.0dip" android:textStyle="bold" android:textColor="#ff0b70a4" android:ellipsize="end" android:id="@id/edit_density_sum" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:singleLine="true" android:layout_toRightOf="@id/LabelTextView" android:layout_centerVertical="true" android:imeOptions="actionNext" />
+        </RelativeLayout>
+                -->
+
+                <LinearLayout
+                    android:id="@id/menu_mosquito_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4.0dip"
+                    android:layout_marginLeft="4.0dip"
+                    android:layout_marginRight="4.0dip"
+                    android:layout_marginTop="10.0dp"
+                    android:gravity="center" >
+
+                    <Button
+                        android:id="@id/btn_back"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="4.0dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_add"
+                        android:text="@string/fly_btn_back"
+                        style="@style/info_tv_style" />
+
+                    <Button
+                        android:id="@id/btn_reset"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="4.0dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_add"
+                        android:text="@string/fly_btn_reset"
+                        style="@style/info_tv_style" />
+
+                    <Button
+                        android:id="@id/btn_save"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_add"
+                        android:text="@string/fly_btn_save"
+                        style="@style/info_tv_style" />
+                </LinearLayout>
+                <!--
+    <LinearLayout 
+        android:layout_marginTop="10.0dip" 
+        android:layout_marginLeft="4.0dip" 
+        android:layout_marginRight="4.0dip" 
+        android:gravity="center"
+        android:id="@id/menu_mosquito_layout" 
+        android:layout_width="match_parent" 
+        android:layout_height="32dip">
+        
+        <Button
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="返回"
+            android:background="@drawable/btn_back"
+            android:id="@id/btn_back"
+            />
+        
+        <Button
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_add"
+            android:id="@id/btn_reset"
+            android:text="重置"
+            />
+                
+        <Button
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_submit"
+            android:text="保存"
+            android:id="@id/btn_save"
+            />
+        
+    </LinearLayout>
+                -->
+
+
+                <!--
+    <LinearLayout 
+        android:orientation="vertical" 
+        android:paddingLeft="20.0dip" 
+        android:paddingTop="10.0dip" 
+        android:paddingRight="20.0dip" 
+        android:paddingBottom="10.0dip" 
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent">
+        
+        <com.mobilercn.widget.YTReportView
+		    android:id="@+id/reportview"
+		    android:focusable="true"
+		    android:layout_width="fill_parent" 
+		    android:layout_height="400dp"/>
+        
+    </LinearLayout>
+                -->
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</ScrollView>

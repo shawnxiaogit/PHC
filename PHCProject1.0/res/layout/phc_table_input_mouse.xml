@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+   	android:background="@drawable/main_bg"
+    >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:orientation="horizontal" 
+        android:layout_weight="6"
+        >
+        
+        <LinearLayout
+            android:id="@+id/panel_tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">"
+
+            <Button
+                android:text="@string/txt_people"
+                android:textSize="18.0sp"
+                android:layout_weight="1"
+                android:textColor="#ffffff"
+                android:id="@+id/ib_other"
+                android:gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tab" />
+            
+            <Button
+                android:gravity="center"
+                android:text="@string/txt_d2e"
+                android:textSize="18.0sp"
+                android:layout_weight="1"
+                android:textColor="#ffffff"
+                android:id="@+id/ib_d2e"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tab_normal"  />
+
+        </LinearLayout>
+        
+        
+        <LinearLayout
+            android:layout_below="@+id/panel_tabs"
+            android:id="@+id/panel_main"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:background="@null"
+            android:orientation="vertical" >
+
+            <!-- 普通报表页面 -->
+
+            <LinearLayout
+                android:id="@+id/panel_common_report"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="3"
+                android:orientation="vertical" >
+
+                <com.mobilercn.widget.YTReportView
+                    android:id="@+id/reportview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="10dip"
+                    android:layout_marginLeft="4.0dip"
+                    android:layout_marginRight="4.0dip"
+                    android:layout_marginTop="2dip"
+                    android:layout_weight="1"
+                    android:focusable="true" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal" >
+
+                    <ImageButton
+                        android:id="@+id/btn_pre"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4.0dip"
+                        android:background="@null"
+                        android:src="@drawable/arrow_left" 
+                        android:visibility="invisible"/>
+
+                    <ImageButton
+                        android:id="@+id/btn_next"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:src="@drawable/arrow_right" 
+                        android:visibility="invisible"/>
+                </LinearLayout>
+                <!--
+            <LinearLayout
+                android:id="@id/menu_mosquito_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4.0dip"
+                android:layout_marginLeft="4.0dip"
+                android:layout_marginRight="4.0dip"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@id/btn_back"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="4.0dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_add"
+                    android:text="返回"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@id/newinput"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="4.0dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_add"
+                    android:text="新增"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@id/btn_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_add"
+                    android:text="提交"
+                    android:textSize="20sp" />
+            </LinearLayout>
+                -->
+            </LinearLayout>
+            <!-- D2E页面，可能用不到，用一个页面就行了，该表报表的表头和内容 -->
+
+            <LinearLayout
+                android:id="@+id/panel_d2e"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <com.mobilercn.widget.YTReportView
+                    android:id="@+id/reportview_d2e"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="10dip"
+                    android:layout_marginLeft="4.0dip"
+                    android:layout_marginRight="4.0dip"
+                    android:layout_marginTop="2dip"
+                    android:layout_weight="1"
+                    android:focusable="true" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal" >
+
+                    <ImageButton
+                        android:id="@+id/btn_pre_d2e"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4.0dip"
+                        android:background="@null"
+                        android:src="@drawable/arrow_left" 
+                        android:visibility="invisible"
+                        />
+
+                    <ImageButton
+                        android:id="@+id/btn_next_d2e"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:src="@drawable/arrow_right" 
+                        android:visibility="invisible"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Tab,是图片按钮 -->
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@id/menu_mosquito_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4.0dip"
+        android:layout_marginLeft="4.0dip"
+        android:layout_marginRight="4.0dip"
+        android:gravity="center" 
+        >
+
+        <Button
+            android:id="@id/btn_back"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="4.0dip"
+            android:layout_weight="1"
+            android:background="@drawable/btn_add"
+            android:text="@string/mouse_btn_back"
+            style="@style/info_tv_style"
+            />
+
+        <Button
+            android:id="@id/newinput"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="4.0dip"
+            android:layout_weight="1"
+            android:background="@drawable/btn_add"
+            android:text="@string/txt_increase"
+            style="@style/info_tv_style" />
+
+        <Button
+            android:id="@id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_add"
+            android:text="@string/txt_submit"
+            android:enabled="false"
+            style="@style/info_tv_style" />
+    </LinearLayout>
+
+</LinearLayout>

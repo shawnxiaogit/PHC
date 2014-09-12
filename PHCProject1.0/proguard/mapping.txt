@@ -1,0 +1,2674 @@
+com.baidu.mapapi.BMapManager -> com.baidu.mapapi.BMapManager:
+    com.baidu.mapapi.Mj a -> a
+    android.content.Context b -> b
+    boolean c -> c
+    boolean init(java.lang.String,com.baidu.mapapi.MKGeneralListener) -> init
+    com.baidu.mapapi.Mj getMj() -> getMj
+    com.baidu.mapapi.MKLocationManager getLocationManager() -> getLocationManager
+    boolean start() -> start
+    boolean stop() -> stop
+    void destroy() -> destroy
+com.baidu.mapapi.Bounds -> com.baidu.mapapi.Bounds:
+    com.baidu.mapapi.GeoPoint leftBottom -> leftBottom
+    com.baidu.mapapi.GeoPoint rightTop -> rightTop
+com.baidu.mapapi.CoordinateConvert -> com.baidu.mapapi.CoordinateConvert:
+    android.os.Bundle fromWgs84ToBaidu(com.baidu.mapapi.GeoPoint) -> fromWgs84ToBaidu
+    android.os.Bundle fromGcjToBaidu(com.baidu.mapapi.GeoPoint) -> fromGcjToBaidu
+    com.baidu.mapapi.GeoPoint bundleDecode(android.os.Bundle) -> bundleDecode
+    android.os.Bundle a(com.baidu.mapapi.GeoPoint,int) -> a
+com.baidu.mapapi.GeoPoint -> com.baidu.mapapi.GeoPoint:
+    int a -> a
+    int b -> b
+    int getLatitudeE6() -> getLatitudeE6
+    int getLongitudeE6() -> getLongitudeE6
+    void setLatitudeE6(int) -> setLatitudeE6
+    void setLongitudeE6(int) -> setLongitudeE6
+    int hashCode() -> hashCode
+    java.lang.String toString() -> toString
+    boolean equals(java.lang.Object) -> equals
+com.baidu.mapapi.ItemizedOverlay -> com.baidu.mapapi.ItemizedOverlay:
+    boolean a -> a
+    android.graphics.drawable.Drawable b -> b
+    android.graphics.drawable.Drawable c -> c
+    int d -> d
+    com.baidu.mapapi.ItemizedOverlay$a e -> e
+    com.baidu.mapapi.ItemizedOverlay$OnFocusChangeListener f -> f
+    int g -> g
+    int h -> h
+    android.graphics.drawable.Drawable boundCenterBottom(android.graphics.drawable.Drawable) -> boundCenterBottom
+    android.graphics.drawable.Drawable boundCenter(android.graphics.drawable.Drawable) -> boundCenter
+    android.graphics.drawable.Drawable a(android.graphics.drawable.Drawable,com.baidu.mapapi.ItemizedOverlay$b) -> a
+    com.baidu.mapapi.OverlayItem createItem(int) -> createItem
+    int size() -> size
+    com.baidu.mapapi.GeoPoint getCenter() -> getCenter
+    int getIndexToDraw(int) -> getIndexToDraw
+    void draw(android.graphics.Canvas,com.baidu.mapapi.MapView,boolean) -> draw
+    void a(android.graphics.Canvas,com.baidu.mapapi.MapView,boolean,com.baidu.mapapi.OverlayItem,int) -> a
+    android.graphics.drawable.Drawable a(com.baidu.mapapi.ItemizedOverlay) -> a
+    int getLatSpanE6() -> getLatSpanE6
+    int getLonSpanE6() -> getLonSpanE6
+    void populate() -> populate
+    void setLastFocusedIndex(int) -> setLastFocusedIndex
+    void setFocus(com.baidu.mapapi.OverlayItem) -> setFocus
+    com.baidu.mapapi.OverlayItem getFocus() -> getFocus
+    int getLastFocusedIndex() -> getLastFocusedIndex
+    com.baidu.mapapi.OverlayItem getItem(int) -> getItem
+    com.baidu.mapapi.OverlayItem nextFocus(boolean) -> nextFocus
+    boolean onTap(com.baidu.mapapi.GeoPoint,com.baidu.mapapi.MapView) -> onTap
+    boolean onTrackballEvent(android.view.MotionEvent,com.baidu.mapapi.MapView) -> onTrackballEvent
+    boolean onKeyUp(int,android.view.KeyEvent,com.baidu.mapapi.MapView) -> onKeyUp
+    boolean onTouchEvent(android.view.MotionEvent,com.baidu.mapapi.MapView) -> onTouchEvent
+    boolean hitTest(com.baidu.mapapi.OverlayItem,android.graphics.drawable.Drawable,int,int) -> hitTest
+    void setOnFocusChangeListener(com.baidu.mapapi.ItemizedOverlay$OnFocusChangeListener) -> setOnFocusChangeListener
+    void setDrawFocusedItem(boolean) -> setDrawFocusedItem
+    boolean onTap(int) -> onTap
+    boolean onSnapToItem(int,int,android.graphics.Point,com.baidu.mapapi.MapView) -> onSnapToItem
+com.baidu.mapapi.ItemizedOverlay$OnFocusChangeListener -> com.baidu.mapapi.ItemizedOverlay$OnFocusChangeListener:
+    void onFocusChanged(com.baidu.mapapi.ItemizedOverlay,com.baidu.mapapi.OverlayItem) -> onFocusChanged
+com.baidu.mapapi.ItemizedOverlay$a -> com.baidu.mapapi.ItemizedOverlay$a:
+    java.util.ArrayList b -> b
+    java.util.ArrayList c -> c
+    com.baidu.mapapi.ItemizedOverlay d -> d
+    com.baidu.mapapi.ItemizedOverlay a -> a
+    int a() -> a
+    int a(com.baidu.mapapi.OverlayItem) -> a
+    com.baidu.mapapi.OverlayItem a(int) -> a
+    int b(int) -> b
+    int a(boolean) -> a
+    boolean a(com.baidu.mapapi.GeoPoint,com.baidu.mapapi.MapView) -> a
+    android.graphics.Point a(com.baidu.mapapi.OverlayItem,com.baidu.mapapi.Projection,android.graphics.Point) -> a
+    int a(java.lang.Integer,java.lang.Integer) -> a
+    int compare(java.lang.Object,java.lang.Object) -> compare
+com.baidu.mapapi.ItemizedOverlay$b -> com.baidu.mapapi.ItemizedOverlay$b:
+    com.baidu.mapapi.ItemizedOverlay$b a -> a
+    com.baidu.mapapi.ItemizedOverlay$b b -> b
+    com.baidu.mapapi.ItemizedOverlay$b c -> c
+    com.baidu.mapapi.ItemizedOverlay$b[] d -> d
+    com.baidu.mapapi.ItemizedOverlay$b[] values() -> values
+    com.baidu.mapapi.ItemizedOverlay$b valueOf(java.lang.String) -> valueOf
+com.baidu.mapapi.LocationListener -> com.baidu.mapapi.LocationListener:
+    void onLocationChanged(android.location.Location) -> onLocationChanged
+com.baidu.mapapi.MKAddrInfo -> com.baidu.mapapi.MKAddrInfo:
+    int MK_GEOCODE -> MK_GEOCODE
+    int MK_REVERSEGEOCODE -> MK_REVERSEGEOCODE
+    int type -> type
+    java.lang.String strBusiness -> strBusiness
+    java.lang.String strAddr -> strAddr
+    com.baidu.mapapi.MKGeocoderAddressComponent addressComponents -> addressComponents
+    com.baidu.mapapi.GeoPoint geoPt -> geoPt
+    java.util.ArrayList poiList -> poiList
+com.baidu.mapapi.MKBusLineResult -> com.baidu.mapapi.MKBusLineResult:
+    java.lang.String a -> a
+    java.lang.String b -> b
+    int c -> c
+    java.lang.String d -> d
+    java.lang.String e -> e
+    com.baidu.mapapi.MKRoute f -> f
+    com.baidu.mapapi.MKRoute getBusRoute() -> getBusRoute
+    java.lang.String getBusCompany() -> getBusCompany
+    java.lang.String getBusName() -> getBusName
+    java.lang.String getStartTime() -> getStartTime
+    java.lang.String getEndTime() -> getEndTime
+    int isMonTicket() -> isMonTicket
+    com.baidu.mapapi.MKStep getStation(int) -> getStation
+    void a(java.lang.String) -> a
+    void b(java.lang.String) -> b
+    void a(java.lang.String,java.lang.String,int) -> a
+com.baidu.mapapi.MKCityListInfo -> com.baidu.mapapi.MKCityListInfo:
+    java.lang.String city -> city
+    int num -> num
+com.baidu.mapapi.MKDrivingRouteResult -> com.baidu.mapapi.MKDrivingRouteResult:
+    com.baidu.mapapi.MKPlanNode a -> a
+    com.baidu.mapapi.MKPlanNode b -> b
+    java.util.ArrayList c -> c
+    com.baidu.mapapi.MKRouteAddrResult d -> d
+    void a(java.util.ArrayList) -> a
+    void a(com.baidu.mapapi.MKPlanNode) -> a
+    void a(com.baidu.mapapi.MKRouteAddrResult) -> a
+    com.baidu.mapapi.MKRouteAddrResult getAddrResult() -> getAddrResult
+    com.baidu.mapapi.MKPlanNode getStart() -> getStart
+    void b(com.baidu.mapapi.MKPlanNode) -> b
+    com.baidu.mapapi.MKPlanNode getEnd() -> getEnd
+    int getNumPlan() -> getNumPlan
+    com.baidu.mapapi.MKRoutePlan getPlan(int) -> getPlan
+com.baidu.mapapi.MKEvent -> com.baidu.mapapi.MKEvent:
+    int MKEVENT_MAP_MOVE_FINISH -> MKEVENT_MAP_MOVE_FINISH
+    int MKEVENT_BUS_DETAIL -> MKEVENT_BUS_DETAIL
+    int MKEVENT_SUGGESTION -> MKEVENT_SUGGESTION
+    int MKEVENT_POIRGCSHAREURL -> MKEVENT_POIRGCSHAREURL
+    int MKEVENT_POI_DETAIL -> MKEVENT_POI_DETAIL
+    int ERROR_NETWORK_CONNECT -> ERROR_NETWORK_CONNECT
+    int ERROR_NETWORK_DATA -> ERROR_NETWORK_DATA
+    int ERROR_ROUTE_ADDR -> ERROR_ROUTE_ADDR
+    int ERROR_RESULT_NOT_FOUND -> ERROR_RESULT_NOT_FOUND
+    int ERROR_LOCATION_FAILED -> ERROR_LOCATION_FAILED
+    int ERROR_PERMISSION_DENIED -> ERROR_PERMISSION_DENIED
+    int a -> a
+    int b -> b
+    int c -> c
+com.baidu.mapapi.MKGeneralListener -> com.baidu.mapapi.MKGeneralListener:
+    void onGetNetworkState(int) -> onGetNetworkState
+    void onGetPermissionState(int) -> onGetPermissionState
+com.baidu.mapapi.MKGeocoderAddressComponent -> com.baidu.mapapi.MKGeocoderAddressComponent:
+    java.lang.String streetNumber -> streetNumber
+    java.lang.String street -> street
+    java.lang.String district -> district
+    java.lang.String city -> city
+    java.lang.String province -> province
+com.baidu.mapapi.MKLine -> com.baidu.mapapi.MKLine:
+    int LINE_TYPE_BUS -> LINE_TYPE_BUS
+    int LINE_TYPE_SUBWAY -> LINE_TYPE_SUBWAY
+    int b -> b
+    int c -> c
+    int d -> d
+    java.lang.String e -> e
+    java.lang.String f -> f
+    java.lang.String g -> g
+    com.baidu.mapapi.MKPoiInfo h -> h
+    com.baidu.mapapi.MKPoiInfo i -> i
+    java.util.ArrayList j -> j
+    java.util.ArrayList a -> a
+    void a(int) -> a
+    int getNumViaStops() -> getNumViaStops
+    void a(com.baidu.mapapi.MKPoiInfo) -> a
+    com.baidu.mapapi.MKPoiInfo getGetOnStop() -> getGetOnStop
+    void b(com.baidu.mapapi.MKPoiInfo) -> b
+    com.baidu.mapapi.MKPoiInfo getGetOffStop() -> getGetOffStop
+    void b(int) -> b
+    void a(java.lang.String) -> a
+    java.lang.String a() -> a
+    int getDistance() -> getDistance
+    void b(java.lang.String) -> b
+    java.lang.String getTitle() -> getTitle
+    void c(java.lang.String) -> c
+    int getType() -> getType
+    void c(int) -> c
+    java.lang.String getUid() -> getUid
+    void a(java.util.ArrayList) -> a
+    java.util.ArrayList getPoints() -> getPoints
+com.baidu.mapapi.MKLocationManager -> com.baidu.mapapi.MKLocationManager:
+    android.location.Location a -> a
+    android.location.Location b -> b
+    long c -> c
+    long d -> d
+    int MK_GPS_PROVIDER -> MK_GPS_PROVIDER
+    int MK_NETWORK_PROVIDER -> MK_NETWORK_PROVIDER
+    int MK_COORDINATE_WGS84 -> MK_COORDINATE_WGS84
+    int MK_COORDINATE_GCJ -> MK_COORDINATE_GCJ
+    int MK_COORDINATE_BAIDU09 -> MK_COORDINATE_BAIDU09
+    java.util.List e -> e
+    java.util.List f -> f
+    android.hardware.SensorEventListener g -> g
+    boolean a(com.baidu.mapapi.BMapManager) -> a
+    void a() -> a
+    boolean enableProvider(int) -> enableProvider
+    boolean disableProvider(int) -> disableProvider
+    void b() -> b
+    boolean setNotifyInternal(int,int) -> setNotifyInternal
+    android.os.Bundle getNotifyInternal() -> getNotifyInternal
+    void setLocationCoordinateType(int) -> setLocationCoordinateType
+    android.location.Location getLocationInfo() -> getLocationInfo
+    void requestLocationUpdates(com.baidu.mapapi.LocationListener) -> requestLocationUpdates
+    void removeUpdates(com.baidu.mapapi.LocationListener) -> removeUpdates
+    void c() -> c
+    boolean a(android.hardware.SensorEventListener) -> a
+    void b(android.hardware.SensorEventListener) -> b
+    boolean d() -> d
+    void e() -> e
+    java.util.List a(com.baidu.mapapi.MKLocationManager) -> a
+com.baidu.mapapi.MKLocationManager$1 -> com.baidu.mapapi.MKLocationManager$1:
+    com.baidu.mapapi.MKLocationManager a -> a
+    void onSensorChanged(android.hardware.SensorEvent) -> onSensorChanged
+    void onAccuracyChanged(android.hardware.Sensor,int) -> onAccuracyChanged
+com.baidu.mapapi.MKMapViewListener -> com.baidu.mapapi.MKMapViewListener:
+    void onMapMoveFinish() -> onMapMoveFinish
+com.baidu.mapapi.MKOLSearchRecord -> com.baidu.mapapi.MKOLSearchRecord:
+    int cityID -> cityID
+    int size -> size
+    java.lang.String cityName -> cityName
+com.baidu.mapapi.MKOLUpdateElement -> com.baidu.mapapi.MKOLUpdateElement:
+    int UNDEFINED -> UNDEFINED
+    int DOWNLOADING -> DOWNLOADING
+    int WAITING -> WAITING
+    int SUSPENDED -> SUSPENDED
+    int FINISHED -> FINISHED
+    int cityID -> cityID
+    java.lang.String cityName -> cityName
+    int ratio -> ratio
+    int status -> status
+    com.baidu.mapapi.GeoPoint geoPt -> geoPt
+    int size -> size
+    int serversize -> serversize
+    boolean update -> update
+com.baidu.mapapi.MKOfflineMap -> com.baidu.mapapi.MKOfflineMap:
+    int TYPE_NEW_OFFLINE -> TYPE_NEW_OFFLINE
+    int TYPE_DOWNLOAD_UPDATE -> TYPE_DOWNLOAD_UPDATE
+    int TYPE_VER_UPDATE -> TYPE_VER_UPDATE
+    android.os.Bundle a -> a
+    boolean init(com.baidu.mapapi.BMapManager,com.baidu.mapapi.MKOfflineMapListener) -> init
+    boolean start(int) -> start
+    boolean pause(int) -> pause
+    boolean remove(int) -> remove
+    java.util.ArrayList getHotCityList() -> getHotCityList
+    java.util.ArrayList getOfflineCityList() -> getOfflineCityList
+    java.util.ArrayList searchCity(java.lang.String) -> searchCity
+    java.util.ArrayList getAllUpdateInfo() -> getAllUpdateInfo
+    com.baidu.mapapi.MKOLUpdateElement getUpdateInfo(int) -> getUpdateInfo
+    int scan() -> scan
+    boolean a() -> a
+com.baidu.mapapi.MKOfflineMapListener -> com.baidu.mapapi.MKOfflineMapListener:
+    void onGetOfflineMapState(int,int) -> onGetOfflineMapState
+com.baidu.mapapi.MKPlanNode -> com.baidu.mapapi.MKPlanNode:
+    java.lang.String name -> name
+    com.baidu.mapapi.GeoPoint pt -> pt
+com.baidu.mapapi.MKPoiInfo -> com.baidu.mapapi.MKPoiInfo:
+    java.lang.String name -> name
+    java.lang.String uid -> uid
+    java.lang.String address -> address
+    java.lang.String city -> city
+    java.lang.String phoneNum -> phoneNum
+    java.lang.String postCode -> postCode
+    int ePoiType -> ePoiType
+    com.baidu.mapapi.GeoPoint pt -> pt
+    boolean hasCaterDetails -> hasCaterDetails
+com.baidu.mapapi.MKPoiResult -> com.baidu.mapapi.MKPoiResult:
+    int a -> a
+    int b -> b
+    int c -> c
+    int d -> d
+    java.util.ArrayList e -> e
+    java.util.ArrayList f -> f
+    java.util.ArrayList g -> g
+    java.util.ArrayList getAllPoi() -> getAllPoi
+    java.util.ArrayList getMultiPoiResult() -> getMultiPoiResult
+    void a(java.util.ArrayList) -> a
+    void b(java.util.ArrayList) -> b
+    void c(java.util.ArrayList) -> c
+    com.baidu.mapapi.MKPoiInfo getPoi(int) -> getPoi
+    com.baidu.mapapi.MKCityListInfo getCityListInfo(int) -> getCityListInfo
+    void a(int) -> a
+    int getCurrentNumPois() -> getCurrentNumPois
+    void b(int) -> b
+    int getNumPois() -> getNumPois
+    void c(int) -> c
+    int getNumPages() -> getNumPages
+    void d(int) -> d
+    int getPageIndex() -> getPageIndex
+    int getCityListNum() -> getCityListNum
+com.baidu.mapapi.MKRoute -> com.baidu.mapapi.MKRoute:
+    int ROUTE_TYPE_UNKNOW -> ROUTE_TYPE_UNKNOW
+    int ROUTE_TYPE_DRIVING -> ROUTE_TYPE_DRIVING
+    int ROUTE_TYPE_WALKING -> ROUTE_TYPE_WALKING
+    int ROUTE_TYPE_BUS_LINE -> ROUTE_TYPE_BUS_LINE
+    int b -> b
+    int c -> c
+    int d -> d
+    com.baidu.mapapi.GeoPoint e -> e
+    com.baidu.mapapi.GeoPoint f -> f
+    java.util.ArrayList g -> g
+    java.util.ArrayList a -> a
+    java.util.ArrayList h -> h
+    java.lang.String i -> i
+    int getNumSteps() -> getNumSteps
+    com.baidu.mapapi.MKStep getStep(int) -> getStep
+    void a(java.util.ArrayList) -> a
+    void a(int) -> a
+    int getDistance() -> getDistance
+    int getIndex() -> getIndex
+    void a(java.lang.String) -> a
+    java.lang.String a() -> a
+    void b(java.util.ArrayList) -> b
+    java.util.ArrayList getArrayPoints() -> getArrayPoints
+    com.baidu.mapapi.GeoPoint getStart() -> getStart
+    void a(com.baidu.mapapi.GeoPoint) -> a
+    com.baidu.mapapi.GeoPoint getEnd() -> getEnd
+    void b(com.baidu.mapapi.GeoPoint) -> b
+    void b(int) -> b
+    int getRouteType() -> getRouteType
+com.baidu.mapapi.MKRouteAddrResult -> com.baidu.mapapi.MKRouteAddrResult:
+    java.util.ArrayList mStartPoiList -> mStartPoiList
+    java.util.ArrayList mEndPoiList -> mEndPoiList
+    java.util.ArrayList mStartCityList -> mStartCityList
+    java.util.ArrayList mEndCityList -> mEndCityList
+com.baidu.mapapi.MKRoutePlan -> com.baidu.mapapi.MKRoutePlan:
+    int a -> a
+    java.util.ArrayList b -> b
+    void a(java.util.ArrayList) -> a
+    int getNumRoutes() -> getNumRoutes
+    com.baidu.mapapi.MKRoute getRoute(int) -> getRoute
+    void a(int) -> a
+    int getDistance() -> getDistance
+com.baidu.mapapi.MKSearch -> com.baidu.mapapi.MKSearch:
+    int ECAR_TIME_FIRST -> ECAR_TIME_FIRST
+    int ECAR_DIS_FIRST -> ECAR_DIS_FIRST
+    int ECAR_FEE_FIRST -> ECAR_FEE_FIRST
+    int EBUS_TIME_FIRST -> EBUS_TIME_FIRST
+    int EBUS_TRANSFER_FIRST -> EBUS_TRANSFER_FIRST
+    int EBUS_WALK_FIRST -> EBUS_WALK_FIRST
+    int EBUS_NO_SUBWAY -> EBUS_NO_SUBWAY
+    int TYPE_CITY_LIST -> TYPE_CITY_LIST
+    int TYPE_POI_LIST -> TYPE_POI_LIST
+    int TYPE_AREA_POI_LIST -> TYPE_AREA_POI_LIST
+    int TYPE_AREA_MULTI_POI_LIST -> TYPE_AREA_MULTI_POI_LIST
+    int POI_DETAIL_SEARCH -> POI_DETAIL_SEARCH
+    android.os.Bundle a -> a
+    int b -> b
+    int c -> c
+    int d -> d
+    boolean init(com.baidu.mapapi.BMapManager,com.baidu.mapapi.MKSearchListener) -> init
+    int suggestionSearch(java.lang.String) -> suggestionSearch
+    int rGCShareUrlSearch(com.baidu.mapapi.GeoPoint,java.lang.String,java.lang.String) -> rGCShareUrlSearch
+    int poiDetailSearch(java.lang.String) -> poiDetailSearch
+    int poiSearchInCity(java.lang.String,java.lang.String) -> poiSearchInCity
+    int poiSearchInbounds(java.lang.String,com.baidu.mapapi.GeoPoint,com.baidu.mapapi.GeoPoint) -> poiSearchInbounds
+    int poiMultiSearchInbounds(java.lang.String[],com.baidu.mapapi.GeoPoint,com.baidu.mapapi.GeoPoint) -> poiMultiSearchInbounds
+    int poiSearchNearBy(java.lang.String,com.baidu.mapapi.GeoPoint,int) -> poiSearchNearBy
+    int poiMultiSearchNearBy(java.lang.String[],com.baidu.mapapi.GeoPoint,int) -> poiMultiSearchNearBy
+    int reverseGeocode(com.baidu.mapapi.GeoPoint) -> reverseGeocode
+    int geocode(java.lang.String,java.lang.String) -> geocode
+    int goToPoiPage(int) -> goToPoiPage
+    void setPoiPageCapacity(int) -> setPoiPageCapacity
+    int getPoiPageCapacity() -> getPoiPageCapacity
+    int setTransitPolicy(int) -> setTransitPolicy
+    int setDrivingPolicy(int) -> setDrivingPolicy
+    int busLineSearch(java.lang.String,java.lang.String) -> busLineSearch
+    int transitSearch(java.lang.String,com.baidu.mapapi.MKPlanNode,com.baidu.mapapi.MKPlanNode) -> transitSearch
+    int drivingSearch(java.lang.String,com.baidu.mapapi.MKPlanNode,java.lang.String,com.baidu.mapapi.MKPlanNode) -> drivingSearch
+    int walkingSearch(java.lang.String,com.baidu.mapapi.MKPlanNode,java.lang.String,com.baidu.mapapi.MKPlanNode) -> walkingSearch
+    int offlineSearch(int) -> offlineSearch
+com.baidu.mapapi.MKSearchListener -> com.baidu.mapapi.MKSearchListener:
+    void onGetPoiResult(com.baidu.mapapi.MKPoiResult,int,int) -> onGetPoiResult
+    void onGetTransitRouteResult(com.baidu.mapapi.MKTransitRouteResult,int) -> onGetTransitRouteResult
+    void onGetDrivingRouteResult(com.baidu.mapapi.MKDrivingRouteResult,int) -> onGetDrivingRouteResult
+    void onGetWalkingRouteResult(com.baidu.mapapi.MKWalkingRouteResult,int) -> onGetWalkingRouteResult
+    void onGetAddrResult(com.baidu.mapapi.MKAddrInfo,int) -> onGetAddrResult
+    void onGetBusDetailResult(com.baidu.mapapi.MKBusLineResult,int) -> onGetBusDetailResult
+    void onGetSuggestionResult(com.baidu.mapapi.MKSuggestionResult,int) -> onGetSuggestionResult
+    void onGetRGCShareUrlResult(java.lang.String,int) -> onGetRGCShareUrlResult
+    void onGetPoiDetailSearchResult(int,int) -> onGetPoiDetailSearchResult
+com.baidu.mapapi.MKStep -> com.baidu.mapapi.MKStep:
+    com.baidu.mapapi.GeoPoint a -> a
+    java.lang.String b -> b
+    int c -> c
+    com.baidu.mapapi.GeoPoint getPoint() -> getPoint
+    void a(com.baidu.mapapi.GeoPoint) -> a
+    int a() -> a
+    void a(int) -> a
+    java.lang.String getContent() -> getContent
+    void a(java.lang.String) -> a
+com.baidu.mapapi.MKSuggestionInfo -> com.baidu.mapapi.MKSuggestionInfo:
+    java.lang.String key -> key
+    java.lang.String city -> city
+com.baidu.mapapi.MKSuggestionResult -> com.baidu.mapapi.MKSuggestionResult:
+    int a -> a
+    java.util.ArrayList b -> b
+    java.util.ArrayList getAllSuggestions() -> getAllSuggestions
+    void a(java.util.ArrayList) -> a
+    int getSuggestionNum() -> getSuggestionNum
+    com.baidu.mapapi.MKSuggestionInfo getSuggestion(int) -> getSuggestion
+com.baidu.mapapi.MKTransitRoutePlan -> com.baidu.mapapi.MKTransitRoutePlan:
+    int a -> a
+    java.lang.String b -> b
+    java.util.ArrayList c -> c
+    java.util.ArrayList d -> d
+    com.baidu.mapapi.GeoPoint e -> e
+    com.baidu.mapapi.GeoPoint f -> f
+    void setLine(java.util.ArrayList) -> setLine
+    int getNumLines() -> getNumLines
+    com.baidu.mapapi.MKLine getLine(int) -> getLine
+    void a(java.util.ArrayList) -> a
+    int getNumRoute() -> getNumRoute
+    com.baidu.mapapi.MKRoute getRoute(int) -> getRoute
+    void a(int) -> a
+    int getDistance() -> getDistance
+    com.baidu.mapapi.GeoPoint getStart() -> getStart
+    void a(com.baidu.mapapi.GeoPoint) -> a
+    com.baidu.mapapi.GeoPoint getEnd() -> getEnd
+    void b(com.baidu.mapapi.GeoPoint) -> b
+    java.lang.String getContent() -> getContent
+com.baidu.mapapi.MKTransitRouteResult -> com.baidu.mapapi.MKTransitRouteResult:
+    com.baidu.mapapi.MKPlanNode a -> a
+    com.baidu.mapapi.MKPlanNode b -> b
+    java.util.ArrayList c -> c
+    com.baidu.mapapi.MKRouteAddrResult d -> d
+    void a(java.util.ArrayList) -> a
+    void a(com.baidu.mapapi.MKPlanNode) -> a
+    void a(com.baidu.mapapi.MKRouteAddrResult) -> a
+    com.baidu.mapapi.MKRouteAddrResult getAddrResult() -> getAddrResult
+    com.baidu.mapapi.MKPlanNode getStart() -> getStart
+    void b(com.baidu.mapapi.MKPlanNode) -> b
+    com.baidu.mapapi.MKPlanNode getEnd() -> getEnd
+    int getNumPlan() -> getNumPlan
+    com.baidu.mapapi.MKTransitRoutePlan getPlan(int) -> getPlan
+com.baidu.mapapi.MKWalkingRouteResult -> com.baidu.mapapi.MKWalkingRouteResult:
+    com.baidu.mapapi.MKPlanNode a -> a
+    com.baidu.mapapi.MKPlanNode b -> b
+    java.util.ArrayList c -> c
+    com.baidu.mapapi.MKRouteAddrResult d -> d
+    void a(java.util.ArrayList) -> a
+    void a(com.baidu.mapapi.MKPlanNode) -> a
+    void a(com.baidu.mapapi.MKRouteAddrResult) -> a
+    com.baidu.mapapi.MKRouteAddrResult getAddrResult() -> getAddrResult
+    com.baidu.mapapi.MKPlanNode getStart() -> getStart
+    void b(com.baidu.mapapi.MKPlanNode) -> b
+    com.baidu.mapapi.MKPlanNode getEnd() -> getEnd
+    int getNumPlan() -> getNumPlan
+    com.baidu.mapapi.MKRoutePlan getPlan(int) -> getPlan
+com.baidu.mapapi.MapActivity -> com.baidu.mapapi.MapActivity:
+    com.baidu.mapapi.MapView a -> a
+    boolean isLocationDisplayed() -> isLocationDisplayed
+    boolean isRouteDisplayed() -> isRouteDisplayed
+    void onNewIntent(android.content.Intent) -> onNewIntent
+    void onCreate(android.os.Bundle) -> onCreate
+    boolean a(com.baidu.mapapi.MapView) -> a
+    boolean initMapActivity(com.baidu.mapapi.BMapManager) -> initMapActivity
+    void onDestroy() -> onDestroy
+    void onPause() -> onPause
+    void onResume() -> onResume
+com.baidu.mapapi.MapController -> com.baidu.mapapi.MapController:
+    com.baidu.mapapi.MapView a -> a
+    void animateTo(com.baidu.mapapi.GeoPoint) -> animateTo
+    void animateTo(com.baidu.mapapi.GeoPoint,android.os.Message) -> animateTo
+    void animateTo(com.baidu.mapapi.GeoPoint,java.lang.Runnable) -> animateTo
+    boolean onKey(android.view.View,int,android.view.KeyEvent) -> onKey
+    void scrollBy(int,int) -> scrollBy
+    void setCenter(com.baidu.mapapi.GeoPoint) -> setCenter
+    int setZoom(int) -> setZoom
+    void setMaxZoomLevel(int) -> setMaxZoomLevel
+    void setMinZoomLevel(int) -> setMinZoomLevel
+    void stopAnimation(boolean) -> stopAnimation
+    void stopPanning() -> stopPanning
+    boolean zoomIn() -> zoomIn
+    boolean zoomInFixing(int,int) -> zoomInFixing
+    boolean zoomOut() -> zoomOut
+    boolean zoomOutFixing(int,int) -> zoomOutFixing
+    void zoomToSpan(int,int) -> zoomToSpan
+com.baidu.mapapi.MapView -> com.baidu.mapapi.MapView:
+    com.baidu.mapapi.GeoPoint c -> c
+    int d -> d
+    int e -> e
+    int f -> f
+    int g -> g
+    int h -> h
+    int i -> i
+    boolean j -> j
+    boolean k -> k
+    android.os.Message l -> l
+    java.lang.Runnable m -> m
+    com.baidu.mapapi.MapActivity n -> n
+    com.baidu.mapapi.MapController o -> o
+    com.baidu.mapapi.e a -> a
+    android.widget.ZoomControls p -> p
+    android.widget.ImageView q -> q
+    com.baidu.mapapi.a b -> b
+    int DRAG_MODE_NONE -> DRAG_MODE_NONE
+    int DRAG_MODE_SCALE -> DRAG_MODE_SCALE
+    boolean r -> r
+    boolean a(android.content.Context) -> a
+    boolean a() -> a
+    void b() -> b
+    void c() -> c
+    int d() -> d
+    boolean canCoverCenter() -> canCoverCenter
+    boolean checkLayoutParams(android.view.ViewGroup$LayoutParams) -> checkLayoutParams
+    void computeScroll() -> computeScroll
+    void displayZoomControls(boolean) -> displayZoomControls
+    android.view.ViewGroup$LayoutParams generateDefaultLayoutParams() -> generateDefaultLayoutParams
+    android.view.ViewGroup$LayoutParams generateLayoutParams(android.util.AttributeSet) -> generateLayoutParams
+    android.view.ViewGroup$LayoutParams generateLayoutParams(android.view.ViewGroup$LayoutParams) -> generateLayoutParams
+    com.baidu.mapapi.MapController getController() -> getController
+    int getLatitudeSpan() -> getLatitudeSpan
+    int getLongitudeSpan() -> getLongitudeSpan
+    com.baidu.mapapi.GeoPoint getMapCenter() -> getMapCenter
+    int getMaxZoomLevel() -> getMaxZoomLevel
+    int getMinZoomLevel() -> getMinZoomLevel
+    java.util.List getOverlays() -> getOverlays
+    com.baidu.mapapi.Projection getProjection() -> getProjection
+    boolean isDoubleClickZooming() -> isDoubleClickZooming
+    void setDoubleClickZooming(boolean) -> setDoubleClickZooming
+    android.view.View getZoomControls() -> getZoomControls
+    int getZoomLevel() -> getZoomLevel
+    boolean isStreetView() -> isStreetView
+    boolean isTraffic() -> isTraffic
+    boolean isSatellite() -> isSatellite
+    void onAttachedToWindow() -> onAttachedToWindow
+    void onDetachedFromWindow() -> onDetachedFromWindow
+    void onFocusChanged(boolean,int,android.graphics.Rect) -> onFocusChanged
+    boolean onKeyDown(int,android.view.KeyEvent) -> onKeyDown
+    boolean onKeyUp(int,android.view.KeyEvent) -> onKeyUp
+    boolean onTouchEvent(android.view.MotionEvent) -> onTouchEvent
+    boolean onTrackballEvent(android.view.MotionEvent) -> onTrackballEvent
+    void onLayout(boolean,int,int,int,int) -> onLayout
+    void e() -> e
+    void a(android.view.View,android.view.ViewGroup$LayoutParams) -> a
+    void onDraw(android.graphics.Canvas) -> onDraw
+    void onMeasure(int,int) -> onMeasure
+    void onRestoreInstanceState(android.os.Bundle) -> onRestoreInstanceState
+    void onSaveInstanceState(android.os.Bundle) -> onSaveInstanceState
+    void onSizeChanged(int,int,int,int) -> onSizeChanged
+    void onWindowFocusChanged(boolean) -> onWindowFocusChanged
+    void preLoad() -> preLoad
+    void setDrawOverlayWhenZooming(boolean) -> setDrawOverlayWhenZooming
+    void setDragMode(int) -> setDragMode
+    void setBuiltInZoomControls(boolean) -> setBuiltInZoomControls
+    void setReticleDrawMode(com.baidu.mapapi.MapView$a) -> setReticleDrawMode
+    void setSatellite(boolean) -> setSatellite
+    void setStreetView(boolean) -> setStreetView
+    void setTraffic(boolean) -> setTraffic
+    boolean f() -> f
+    boolean g() -> g
+    void a(int) -> a
+    void b(int) -> b
+    boolean c(int) -> c
+    void a(int,int) -> a
+    void a(com.baidu.mapapi.GeoPoint) -> a
+    void a(com.baidu.mapapi.GeoPoint,android.os.Message,java.lang.Runnable) -> a
+    void a(boolean) -> a
+    void b(int,int) -> b
+    boolean a(int,int,int) -> a
+    void d(int) -> d
+    double h() -> h
+    void regMapViewListener(com.baidu.mapapi.BMapManager,com.baidu.mapapi.MKMapViewListener) -> regMapViewListener
+com.baidu.mapapi.MapView$1 -> com.baidu.mapapi.MapView$1:
+    com.baidu.mapapi.MapView a -> a
+    void onClick(android.view.View) -> onClick
+com.baidu.mapapi.MapView$2 -> com.baidu.mapapi.MapView$2:
+    com.baidu.mapapi.MapView a -> a
+    void onClick(android.view.View) -> onClick
+com.baidu.mapapi.MapView$LayoutParams -> com.baidu.mapapi.MapView$LayoutParams:
+    int MODE_MAP -> MODE_MAP
+    int MODE_VIEW -> MODE_VIEW
+    int LEFT -> LEFT
+    int RIGHT -> RIGHT
+    int TOP -> TOP
+    int BOTTOM -> BOTTOM
+    int CENTER_HORIZONTAL -> CENTER_HORIZONTAL
+    int CENTER_VERTICAL -> CENTER_VERTICAL
+    int CENTER -> CENTER
+    int TOP_LEFT -> TOP_LEFT
+    int BOTTOM_CENTER -> BOTTOM_CENTER
+    int mode -> mode
+    com.baidu.mapapi.GeoPoint point -> point
+    int x -> x
+    int y -> y
+    int alignment -> alignment
+com.baidu.mapapi.MapView$a -> com.baidu.mapapi.MapView$a:
+    com.baidu.mapapi.MapView$a a -> a
+    com.baidu.mapapi.MapView$a b -> b
+    com.baidu.mapapi.MapView$a c -> c
+    com.baidu.mapapi.MapView$a[] d -> d
+    com.baidu.mapapi.MapView$a[] values() -> values
+    com.baidu.mapapi.MapView$a valueOf(java.lang.String) -> valueOf
+com.baidu.mapapi.Mj -> com.baidu.mapapi.Mj:
+    com.baidu.mapapi.f a -> a
+    com.baidu.mapapi.MKLocationManager b -> b
+    int c -> c
+    com.baidu.mapapi.MapView d -> d
+    android.os.Handler u -> u
+    android.content.Context e -> e
+    java.net.ServerSocket f -> f
+    int g -> g
+    int h -> h
+    int i -> i
+    float j -> j
+    java.lang.String k -> k
+    java.lang.String v -> v
+    java.lang.String w -> w
+    java.lang.String x -> x
+    java.lang.String y -> y
+    android.telephony.TelephonyManager z -> z
+    android.net.wifi.WifiManager A -> A
+    com.baidu.mapapi.j B -> B
+    com.baidu.mapapi.j C -> C
+    com.baidu.mapapi.j D -> D
+    com.baidu.mapapi.j E -> E
+    com.baidu.mapapi.cloud.c F -> F
+    int l -> l
+    int m -> m
+    int n -> n
+    int o -> o
+    int p -> p
+    java.lang.String G -> G
+    java.lang.String H -> H
+    java.lang.String I -> I
+    long J -> J
+    long K -> K
+    java.util.List L -> L
+    long M -> M
+    long N -> N
+    int O -> O
+    int P -> P
+    int Q -> Q
+    int R -> R
+    int S -> S
+    int T -> T
+    boolean q -> q
+    boolean r -> r
+    java.util.List U -> U
+    java.util.List V -> V
+    int s -> s
+    com.baidu.mapapi.b W -> W
+    java.lang.reflect.Method X -> X
+    java.lang.reflect.Method Y -> Y
+    java.lang.Class Z -> Z
+    android.os.Handler aa -> aa
+    java.util.ArrayList ab -> ab
+    android.net.Uri t -> t
+    boolean a(java.lang.String,com.baidu.mapapi.MKGeneralListener) -> a
+    boolean a() -> a
+    boolean b() -> b
+    void a(com.baidu.mapapi.MKSearchListener) -> a
+    void a(com.baidu.mapapi.MKOfflineMapListener) -> a
+    void a(com.baidu.mapapi.MKMapViewListener) -> a
+    void initGeoListener(com.baidu.mapapi.cloud.GeoSearchListener) -> initGeoListener
+    int InitMapApiEngine() -> InitMapApiEngine
+    int initClass(java.lang.Object,int) -> initClass
+    int UnInitMapApiEngine() -> UnInitMapApiEngine
+    int StartApiEngineCC(java.lang.String,java.lang.String,java.lang.String) -> StartApiEngineCC
+    int StopApiEngineCC() -> StopApiEngineCC
+    int SetCacheDirectoryCC(java.lang.String) -> SetCacheDirectoryCC
+    int InitLocationCC() -> InitLocationCC
+    int EnableProviderCC(int) -> EnableProviderCC
+    int DisableProviderCC(int) -> DisableProviderCC
+    int SetNotifyInternal(int,int) -> SetNotifyInternal
+    android.os.Bundle GetNotifyInternal() -> GetNotifyInternal
+    void SetLocationCoordinateType(int) -> SetLocationCoordinateType
+    void UpdataGPS(double,double,float,float,float,int) -> UpdataGPS
+    android.os.Bundle GetGPSStatus() -> GetGPSStatus
+    void SetCellInfo(int,int,int,int,java.lang.String) -> SetCellInfo
+    void SetCellData(int,int,int,int,java.lang.String,java.lang.String,java.lang.String) -> SetCellData
+    void SetUpdateWifi(java.lang.String) -> SetUpdateWifi
+    int initSearchCC() -> initSearchCC
+    int initOfflineCC() -> initOfflineCC
+    int MapProc(int,int,int) -> MapProc
+    int MsgMapProc(int,int,int,int) -> MsgMapProc
+    android.os.Bundle getNewBundle(int,int,int) -> getNewBundle
+    int sendBundle(android.os.Bundle) -> sendBundle
+    void nativeInit() -> nativeInit
+    void nativeResize(int,int) -> nativeResize
+    void nativeRender() -> nativeRender
+    void nativeDone() -> nativeDone
+    int InitMapControlCC(int,int) -> InitMapControlCC
+    android.os.Bundle GetMapStatus() -> GetMapStatus
+    void renderBaiduMap(android.graphics.Bitmap) -> renderBaiduMap
+    void renderUpdateScreen(short[],int,int) -> renderUpdateScreen
+    void renderFlsScreenPos(android.os.Bundle) -> renderFlsScreenPos
+    void renderCalDisScreenPos(android.os.Bundle) -> renderCalDisScreenPos
+    void sendPhoneInfo(android.os.Bundle) -> sendPhoneInfo
+    int SetProxyInfo(java.lang.String,int) -> SetProxyInfo
+    java.lang.String AppendRecord(java.lang.String,java.lang.String) -> AppendRecord
+    void JNI_callBackProc(int,int,int) -> JNI_callBackProc
+    void JNI_MapcallBackProc(int,int,int,int) -> JNI_MapcallBackProc
+    int d() -> d
+    void e() -> e
+    android.os.Bundle J_GetDevInfo(int) -> J_GetDevInfo
+    boolean c() -> c
+    void changeGprsConnect() -> changeGprsConnect
+    void f() -> f
+    java.lang.String g() -> g
+    java.lang.String h() -> h
+    void a(int,int) -> a
+    void a(int) -> a
+    android.os.Handler a(com.baidu.mapapi.Mj) -> a
+com.baidu.mapapi.Mj$1 -> com.baidu.mapapi.Mj$1:
+    com.baidu.mapapi.Mj a -> a
+    void handleMessage(android.os.Message) -> handleMessage
+com.baidu.mapapi.Mj$a -> com.baidu.mapapi.Mj$a:
+    int a -> a
+    int b -> b
+    int c -> c
+    int d -> d
+    com.baidu.mapapi.Mj e -> e
+com.baidu.mapapi.Mj$b -> com.baidu.mapapi.Mj$b:
+    int a -> a
+    int b -> b
+    com.baidu.mapapi.Mj c -> c
+    void run() -> run
+com.baidu.mapapi.MyLocationOverlay -> com.baidu.mapapi.MyLocationOverlay:
+    android.location.Location a -> a
+    com.baidu.mapapi.GeoPoint b -> b
+    com.baidu.mapapi.GeoPoint c -> c
+    java.lang.Runnable d -> d
+    com.baidu.mapapi.MapView e -> e
+    android.graphics.Bitmap f -> f
+    android.graphics.Bitmap g -> g
+    android.graphics.Bitmap h -> h
+    boolean i -> i
+    boolean j -> j
+    float k -> k
+    android.graphics.Paint l -> l
+    com.baidu.mapapi.GeoPoint GetBaidu09Point(com.baidu.mapapi.GeoPoint,int) -> GetBaidu09Point
+    void onLocationChanged(android.location.Location) -> onLocationChanged
+    boolean enableCompass() -> enableCompass
+    void disableCompass() -> disableCompass
+    boolean isCompassEnabled() -> isCompassEnabled
+    boolean enableMyLocation() -> enableMyLocation
+    void disableMyLocation() -> disableMyLocation
+    boolean isMyLocationEnabled() -> isMyLocationEnabled
+    boolean onSnapToItem(int,int,android.graphics.Point,com.baidu.mapapi.MapView) -> onSnapToItem
+    boolean onTap(com.baidu.mapapi.GeoPoint,com.baidu.mapapi.MapView) -> onTap
+    boolean dispatchTap() -> dispatchTap
+    boolean draw(android.graphics.Canvas,com.baidu.mapapi.MapView,boolean,long) -> draw
+    void drawMyLocation(android.graphics.Canvas,com.baidu.mapapi.MapView,android.location.Location,com.baidu.mapapi.GeoPoint,long) -> drawMyLocation
+    void drawCompass(android.graphics.Canvas,float) -> drawCompass
+    com.baidu.mapapi.GeoPoint getMyLocation() -> getMyLocation
+    android.location.Location getLastFix() -> getLastFix
+    float getOrientation() -> getOrientation
+    boolean runOnFirstFix(java.lang.Runnable) -> runOnFirstFix
+    void onAccuracyChanged(android.hardware.Sensor,int) -> onAccuracyChanged
+    void onProviderDisabled(java.lang.String) -> onProviderDisabled
+    void onProviderEnabled(java.lang.String) -> onProviderEnabled
+    void onSensorChanged(android.hardware.SensorEvent) -> onSensorChanged
+com.baidu.mapapi.Overlay -> com.baidu.mapapi.Overlay:
+    float SHADOW_X_SKEW -> SHADOW_X_SKEW
+    float SHADOW_Y_SCALE -> SHADOW_Y_SCALE
+    boolean draw(android.graphics.Canvas,com.baidu.mapapi.MapView,boolean,long) -> draw
+    void draw(android.graphics.Canvas,com.baidu.mapapi.MapView,boolean) -> draw
+    boolean onKeyDown(int,android.view.KeyEvent,com.baidu.mapapi.MapView) -> onKeyDown
+    boolean onKeyUp(int,android.view.KeyEvent,com.baidu.mapapi.MapView) -> onKeyUp
+    boolean onTap(com.baidu.mapapi.GeoPoint,com.baidu.mapapi.MapView) -> onTap
+    boolean onTouchEvent(android.view.MotionEvent,com.baidu.mapapi.MapView) -> onTouchEvent
+    boolean onTrackballEvent(android.view.MotionEvent,com.baidu.mapapi.MapView) -> onTrackballEvent
+    void drawAt(android.graphics.Canvas,android.graphics.drawable.Drawable,int,int,boolean) -> drawAt
+    void a(android.graphics.Canvas,android.graphics.drawable.Drawable,int,int) -> a
+    void a(int,int,int,int) -> a
+com.baidu.mapapi.Overlay$Snappable -> com.baidu.mapapi.Overlay$Snappable:
+    boolean onSnapToItem(int,int,android.graphics.Point,com.baidu.mapapi.MapView) -> onSnapToItem
+com.baidu.mapapi.OverlayItem -> com.baidu.mapapi.OverlayItem:
+    com.baidu.mapapi.GeoPoint mPoint -> mPoint
+    java.lang.String mTitle -> mTitle
+    java.lang.String mSnippet -> mSnippet
+    android.graphics.drawable.Drawable mMarker -> mMarker
+    int ITEM_STATE_NORMAL_MASK -> ITEM_STATE_NORMAL_MASK
+    int ITEM_STATE_PRESSED_MASK -> ITEM_STATE_PRESSED_MASK
+    int ITEM_STATE_SELECTED_MASK -> ITEM_STATE_SELECTED_MASK
+    int ITEM_STATE_FOCUSED_MASK -> ITEM_STATE_FOCUSED_MASK
+    void setState(android.graphics.drawable.Drawable,int) -> setState
+    android.graphics.drawable.Drawable getMarker(int) -> getMarker
+    com.baidu.mapapi.GeoPoint getPoint() -> getPoint
+    java.lang.String getSnippet() -> getSnippet
+    java.lang.String getTitle() -> getTitle
+    java.lang.String routableAddress() -> routableAddress
+    void setMarker(android.graphics.drawable.Drawable) -> setMarker
+    int[] a(int) -> a
+com.baidu.mapapi.PlaceCaterActivity -> com.baidu.mapapi.PlaceCaterActivity:
+    int q -> q
+    int r -> r
+    int s -> s
+    int t -> t
+    int u -> u
+    int v -> v
+    int w -> w
+    int x -> x
+    android.widget.TextView a -> a
+    android.widget.TextView b -> b
+    android.widget.ImageView c -> c
+    android.widget.LinearLayout d -> d
+    android.widget.TextView e -> e
+    android.widget.TextView f -> f
+    android.widget.TextView g -> g
+    android.widget.TextView h -> h
+    android.widget.TextView i -> i
+    android.widget.TextView j -> j
+    android.widget.TextView k -> k
+    android.widget.TextView l -> l
+    android.widget.LinearLayout m -> m
+    android.util.DisplayMetrics n -> n
+    java.util.Hashtable o -> o
+    android.os.Handler p -> p
+    void onCreate(android.os.Bundle) -> onCreate
+    void a(com.baidu.mapapi.l) -> a
+    void a(float) -> a
+    void a(android.util.DisplayMetrics) -> a
+    android.graphics.Bitmap a(java.lang.String) -> a
+    void a(android.widget.LinearLayout,java.util.List) -> a
+    void onError(int,int,java.lang.String,java.lang.Object) -> onError
+    void onOk(int,int,java.lang.String,java.lang.Object) -> onOk
+com.baidu.mapapi.PlaceCaterActivity$1 -> com.baidu.mapapi.PlaceCaterActivity$1:
+    com.baidu.mapapi.PlaceCaterActivity a -> a
+    void onClick(android.view.View) -> onClick
+com.baidu.mapapi.PlaceCaterActivity$2 -> com.baidu.mapapi.PlaceCaterActivity$2:
+    com.baidu.mapapi.PlaceCaterActivity a -> a
+    void onClick(android.view.View) -> onClick
+com.baidu.mapapi.PlaceCaterActivity$3 -> com.baidu.mapapi.PlaceCaterActivity$3:
+    com.baidu.mapapi.PlaceCaterActivity a -> a
+    void onClick(android.view.View) -> onClick
+com.baidu.mapapi.PoiOverlay -> com.baidu.mapapi.PoiOverlay:
+    java.util.ArrayList mList -> mList
+    com.baidu.mapapi.MapView a -> a
+    android.content.Context b -> b
+    int c -> c
+    boolean mUseToast -> mUseToast
+    com.baidu.mapapi.MKSearch d -> d
+    void setData(java.util.ArrayList) -> setData
+    void animateTo() -> animateTo
+    com.baidu.mapapi.OverlayItem createItem(int) -> createItem
+    int size() -> size
+    boolean onTap(int) -> onTap
+    com.baidu.mapapi.MKPoiInfo getPoi(int) -> getPoi
+com.baidu.mapapi.Projection -> com.baidu.mapapi.Projection:
+    com.baidu.mapapi.GeoPoint fromPixels(int,int) -> fromPixels
+    float metersToEquatorPixels(float) -> metersToEquatorPixels
+    android.graphics.Point toPixels(com.baidu.mapapi.GeoPoint,android.graphics.Point) -> toPixels
+com.baidu.mapapi.RouteOverlay -> com.baidu.mapapi.RouteOverlay:
+    com.baidu.mapapi.MKRoute mRoute -> mRoute
+    java.util.ArrayList a -> a
+    com.baidu.mapapi.MapView b -> b
+    android.content.Context c -> c
+    android.util.DisplayMetrics d -> d
+    int e -> e
+    java.util.HashMap f -> f
+    void setData(com.baidu.mapapi.MKRoute) -> setData
+    void animateTo() -> animateTo
+    boolean onTap(int) -> onTap
+    com.baidu.mapapi.OverlayItem createItem(int) -> createItem
+    int size() -> size
+    void a(int,int,int,int) -> a
+    boolean draw(android.graphics.Canvas,com.baidu.mapapi.MapView,boolean,long) -> draw
+com.baidu.mapapi.RouteOverlay$1 -> com.baidu.mapapi.RouteOverlay$1:
+com.baidu.mapapi.RouteOverlay$a -> com.baidu.mapapi.RouteOverlay$a:
+    com.baidu.mapapi.GeoPoint a -> a
+    java.util.ArrayList b -> b
+    com.baidu.mapapi.RouteOverlay c -> c
+com.baidu.mapapi.RouteOverlay$b -> com.baidu.mapapi.RouteOverlay$b:
+    java.lang.String a -> a
+    com.baidu.mapapi.GeoPoint b -> b
+    int c -> c
+    int d -> d
+    com.baidu.mapapi.RouteOverlay e -> e
+com.baidu.mapapi.TransitOverlay -> com.baidu.mapapi.TransitOverlay:
+    com.baidu.mapapi.MKTransitRoutePlan mPlan -> mPlan
+    java.util.ArrayList a -> a
+    com.baidu.mapapi.MapView b -> b
+    android.content.Context c -> c
+    int d -> d
+    android.util.DisplayMetrics e -> e
+    boolean mUseToast -> mUseToast
+    void animateTo() -> animateTo
+    void setData(com.baidu.mapapi.MKTransitRoutePlan) -> setData
+    com.baidu.mapapi.OverlayItem createItem(int) -> createItem
+    int size() -> size
+    boolean onTap(int) -> onTap
+    boolean draw(android.graphics.Canvas,com.baidu.mapapi.MapView,boolean,long) -> draw
+com.baidu.mapapi.TransitOverlay$1 -> com.baidu.mapapi.TransitOverlay$1:
+com.baidu.mapapi.TransitOverlay$a -> com.baidu.mapapi.TransitOverlay$a:
+    java.lang.String a -> a
+    com.baidu.mapapi.GeoPoint b -> b
+    int c -> c
+    com.baidu.mapapi.TransitOverlay d -> d
+com.baidu.mapapi.VersionInfo -> com.baidu.mapapi.VersionInfo:
+    java.lang.String getApiVersion() -> getApiVersion
+com.baidu.mapapi.a -> com.baidu.mapapi.a:
+    android.graphics.Bitmap h -> h
+    java.nio.ShortBuffer i -> i
+    short[] j -> j
+    int k -> k
+    int l -> l
+    int m -> m
+    boolean a -> a
+    int n -> n
+    int o -> o
+    int p -> p
+    int q -> q
+    com.baidu.mapapi.MapView r -> r
+    java.util.List s -> s
+    int b -> b
+    int c -> c
+    int d -> d
+    boolean t -> t
+    boolean u -> u
+    long v -> v
+    long w -> w
+    long x -> x
+    float y -> y
+    float z -> z
+    float A -> A
+    float B -> B
+    float C -> C
+    float D -> D
+    double e -> e
+    int E -> E
+    int f -> f
+    int g -> g
+    int F -> F
+    boolean G -> G
+    int H -> H
+    android.graphics.Paint I -> I
+    java.lang.reflect.Method J -> J
+    java.lang.reflect.Method K -> K
+    java.lang.reflect.Method L -> L
+    com.baidu.mapapi.MapView$a M -> M
+    void a(int,int,int,int) -> a
+    void a() -> a
+    void a(android.graphics.Canvas) -> a
+    void c(android.graphics.Canvas) -> c
+    void d(android.graphics.Canvas) -> d
+    void a(int,int,int) -> a
+    void b(int,int,int) -> b
+    void a(int) -> a
+    void onDraw(android.graphics.Canvas) -> onDraw
+    void b(android.graphics.Canvas) -> b
+    void onLayout(boolean,int,int,int,int) -> onLayout
+    boolean b() -> b
+    void a(boolean) -> a
+    boolean a(android.view.MotionEvent) -> a
+    void a(boolean,int,android.graphics.Rect) -> a
+    boolean a(int,android.view.KeyEvent) -> a
+    boolean b(android.view.MotionEvent) -> b
+    boolean b(int,android.view.KeyEvent) -> b
+    java.util.List c() -> c
+    void b(boolean) -> b
+    void b(int) -> b
+    boolean d() -> d
+com.baidu.mapapi.a$1 -> com.baidu.mapapi.a$1:
+    int[] a -> a
+com.baidu.mapapi.b -> com.baidu.mapapi.b:
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.baidu.mapapi.c -> com.baidu.mapapi.c:
+    char[] a -> a
+    byte[] b -> b
+    char[] a(char[]) -> a
+    char[] b(char[]) -> b
+com.baidu.mapapi.cloud.BoundsSearchInfo -> com.baidu.mapapi.cloud.BoundsSearchInfo:
+    java.lang.String queryWords -> queryWords
+    com.baidu.mapapi.Bounds bounds -> bounds
+    android.content.ContentValues filter -> filter
+    int scope -> scope
+    int pageIndex -> pageIndex
+    int pageSize -> pageSize
+    java.lang.String ak -> ak
+    java.lang.String sn -> sn
+    int timeStamp -> timeStamp
+    java.lang.String a() -> a
+com.baidu.mapapi.cloud.CustomPoiInfo -> com.baidu.mapapi.cloud.CustomPoiInfo:
+    int uid -> uid
+    int databoxId -> databoxId
+    java.lang.String name -> name
+    java.lang.String address -> address
+    java.lang.String telephone -> telephone
+    java.lang.String postCode -> postCode
+    int provinceId -> provinceId
+    int cityId -> cityId
+    int districtId -> districtId
+    java.lang.String provinceName -> provinceName
+    java.lang.String cityName -> cityName
+    java.lang.String districtName -> districtName
+    float latitude -> latitude
+    float longitude -> longitude
+    java.lang.String tag -> tag
+    int poiType -> poiType
+    java.util.Map poiExtend -> poiExtend
+com.baidu.mapapi.cloud.DetailResult -> com.baidu.mapapi.cloud.DetailResult:
+    int status -> status
+    java.lang.String message -> message
+    com.baidu.mapapi.cloud.CustomPoiInfo content -> content
+com.baidu.mapapi.cloud.DetailSearchInfo -> com.baidu.mapapi.cloud.DetailSearchInfo:
+    int id -> id
+    int scope -> scope
+    java.lang.String ak -> ak
+    java.lang.String sn -> sn
+    int timeStamp -> timeStamp
+    java.lang.String a() -> a
+com.baidu.mapapi.cloud.GeoSearchListener -> com.baidu.mapapi.cloud.GeoSearchListener:
+    void onGetGeoResult(com.baidu.mapapi.cloud.GeoSearchResult,int,int) -> onGetGeoResult
+    void onGetGeoDetailsResult(com.baidu.mapapi.cloud.DetailResult,int,int) -> onGetGeoDetailsResult
+com.baidu.mapapi.cloud.GeoSearchManager -> com.baidu.mapapi.cloud.GeoSearchManager:
+    int GEO_SEARCH -> GEO_SEARCH
+    int GEO_SEARCH_DETAILS -> GEO_SEARCH_DETAILS
+    android.os.Bundle a -> a
+    com.baidu.mapapi.cloud.GeoSearchManager b -> b
+    com.baidu.mapapi.cloud.GeoSearchManager getInstance() -> getInstance
+    boolean init(com.baidu.mapapi.BMapManager,com.baidu.mapapi.cloud.GeoSearchListener) -> init
+    boolean searchRegion(com.baidu.mapapi.cloud.RegionSearchInfo) -> searchRegion
+    boolean searchNearby(com.baidu.mapapi.cloud.NearbySearchInfo) -> searchNearby
+    boolean searchBounds(com.baidu.mapapi.cloud.BoundsSearchInfo) -> searchBounds
+    boolean searchDetail(com.baidu.mapapi.cloud.DetailSearchInfo) -> searchDetail
+com.baidu.mapapi.cloud.GeoSearchResult -> com.baidu.mapapi.cloud.GeoSearchResult:
+    int status -> status
+    java.lang.String message -> message
+    int size -> size
+    int total -> total
+    java.util.List poiList -> poiList
+com.baidu.mapapi.cloud.NearbySearchInfo -> com.baidu.mapapi.cloud.NearbySearchInfo:
+    java.lang.String queryWords -> queryWords
+    com.baidu.mapapi.GeoPoint location -> location
+    int radius -> radius
+    android.content.ContentValues filter -> filter
+    int scope -> scope
+    int pageIndex -> pageIndex
+    int pageSize -> pageSize
+    java.lang.String ak -> ak
+    java.lang.String sn -> sn
+    int timeStamp -> timeStamp
+    java.lang.String a() -> a
+com.baidu.mapapi.cloud.RegionSearchInfo -> com.baidu.mapapi.cloud.RegionSearchInfo:
+    java.lang.String queryWords -> queryWords
+    int cityID -> cityID
+    java.lang.String cityName -> cityName
+    android.content.ContentValues filter -> filter
+    int scope -> scope
+    int pageIndex -> pageIndex
+    int pageSize -> pageSize
+    java.lang.String ak -> ak
+    java.lang.String sn -> sn
+    int timeStamp -> timeStamp
+    java.lang.String a() -> a
+com.baidu.mapapi.cloud.a -> com.baidu.mapapi.cloud.a:
+    int a -> a
+    int b -> b
+    int c -> c
+com.baidu.mapapi.cloud.b -> com.baidu.mapapi.cloud.b:
+    com.baidu.mapapi.cloud.GeoSearchListener a -> a
+    void a(com.baidu.mapapi.cloud.a) -> a
+com.baidu.mapapi.cloud.c -> com.baidu.mapapi.cloud.c:
+    void a(com.baidu.mapapi.cloud.a) -> a
+com.baidu.mapapi.d -> com.baidu.mapapi.d:
+    android.content.Context a -> a
+    java.util.HashMap b -> b
+    boolean c -> c
+    int d -> d
+    boolean e -> e
+    byte f -> f
+    java.lang.String g -> g
+    int h -> h
+    void a(android.content.Context) -> a
+    void a(int,int,java.lang.String,com.baidu.mapapi.d$a) -> a
+    java.net.HttpURLConnection a(java.lang.String) -> a
+    void a() -> a
+    void a(android.net.NetworkInfo,boolean) -> a
+com.baidu.mapapi.d$1 -> com.baidu.mapapi.d$1:
+    java.lang.String a -> a
+    com.baidu.mapapi.d$a b -> b
+    int c -> c
+    int d -> d
+    void run() -> run
+com.baidu.mapapi.d$a -> com.baidu.mapapi.d$a:
+    void onOk(int,int,java.lang.String,java.lang.Object) -> onOk
+    void onError(int,int,java.lang.String,java.lang.Object) -> onError
+com.baidu.mapapi.e -> com.baidu.mapapi.e:
+    com.baidu.mapapi.MapView a -> a
+    com.baidu.mapapi.GeoPoint fromPixels(int,int) -> fromPixels
+    float metersToEquatorPixels(float) -> metersToEquatorPixels
+    android.graphics.Point toPixels(com.baidu.mapapi.GeoPoint,android.graphics.Point) -> toPixels
+    android.graphics.Point a(com.baidu.mapapi.GeoPoint,android.graphics.Point) -> a
+com.baidu.mapapi.f -> com.baidu.mapapi.f:
+    android.location.LocationManager b -> b
+    android.location.LocationListener c -> c
+    android.location.Location a -> a
+    android.content.Context d -> d
+    com.baidu.mapapi.f$a e -> e
+    int f -> f
+    android.location.GpsStatus g -> g
+    void a(int,int,long) -> a
+    void a() -> a
+    void b() -> b
+    java.lang.String a(int,int,int,int,java.util.List,java.lang.String) -> a
+    void a(java.util.List) -> a
+    java.lang.String a(java.util.List,java.lang.String) -> a
+    java.lang.String b(java.util.List,java.lang.String) -> b
+    boolean a(java.util.List,java.util.List) -> a
+    android.location.LocationManager a(com.baidu.mapapi.f) -> a
+    android.location.LocationManager a(com.baidu.mapapi.f,android.location.LocationManager) -> a
+    android.content.Context b(com.baidu.mapapi.f) -> b
+    android.location.GpsStatus c(com.baidu.mapapi.f) -> c
+    android.location.GpsStatus a(com.baidu.mapapi.f,android.location.GpsStatus) -> a
+    int d(com.baidu.mapapi.f) -> d
+    int a(com.baidu.mapapi.f,int) -> a
+com.baidu.mapapi.f$1 -> com.baidu.mapapi.f$1:
+    com.baidu.mapapi.f a -> a
+    void onLocationChanged(android.location.Location) -> onLocationChanged
+    void onProviderDisabled(java.lang.String) -> onProviderDisabled
+    void onProviderEnabled(java.lang.String) -> onProviderEnabled
+    void onStatusChanged(java.lang.String,int,android.os.Bundle) -> onStatusChanged
+com.baidu.mapapi.f$a -> com.baidu.mapapi.f$a:
+    com.baidu.mapapi.f a -> a
+    void onGpsStatusChanged(int) -> onGpsStatusChanged
+com.baidu.mapapi.g -> com.baidu.mapapi.g:
+    com.baidu.mapapi.MKGeneralListener a -> a
+    void a(com.baidu.mapapi.MKEvent) -> a
+com.baidu.mapapi.h -> com.baidu.mapapi.h:
+    java.lang.String a -> a
+    java.lang.String b -> b
+    java.lang.String c -> c
+    java.lang.String d -> d
+com.baidu.mapapi.i -> com.baidu.mapapi.i:
+    com.baidu.mapapi.MKMapViewListener a -> a
+    void a(com.baidu.mapapi.MKEvent) -> a
+com.baidu.mapapi.j -> com.baidu.mapapi.j:
+    void a(com.baidu.mapapi.MKEvent) -> a
+com.baidu.mapapi.k -> com.baidu.mapapi.k:
+    com.baidu.mapapi.MKOfflineMapListener a -> a
+    void a(com.baidu.mapapi.MKEvent) -> a
+com.baidu.mapapi.l -> com.baidu.mapapi.l:
+    java.lang.String a -> a
+    java.lang.String b -> b
+    java.lang.String c -> c
+    java.lang.String d -> d
+    java.lang.String e -> e
+    java.lang.String f -> f
+    java.lang.String g -> g
+    java.lang.String h -> h
+    java.lang.String i -> i
+    java.lang.String j -> j
+    java.lang.String k -> k
+    java.lang.String l -> l
+    java.lang.String m -> m
+    java.lang.String n -> n
+    java.util.List o -> o
+com.baidu.mapapi.m -> com.baidu.mapapi.m:
+    com.baidu.mapapi.MKSearchListener a -> a
+    void a(com.baidu.mapapi.MKEvent) -> a
+    void a(android.os.Bundle,com.baidu.mapapi.MKAddrInfo,int) -> a
+    void a(android.os.Bundle,com.baidu.mapapi.MKAddrInfo) -> a
+    void a(android.os.Bundle,com.baidu.mapapi.MKSuggestionResult,int) -> a
+    void a(android.os.Bundle,com.baidu.mapapi.MKPoiResult,int) -> a
+    void a(android.os.Bundle,com.baidu.mapapi.MKTransitRouteResult,int) -> a
+    void a(android.os.Bundle,com.baidu.mapapi.MKDrivingRouteResult,int) -> a
+    void a(android.os.Bundle,com.baidu.mapapi.MKWalkingRouteResult,int) -> a
+    int a(android.os.Bundle,com.baidu.mapapi.MKRouteAddrResult) -> a
+    void a(android.os.Bundle,java.util.ArrayList) -> a
+    void b(android.os.Bundle,java.util.ArrayList) -> b
+    boolean a(android.os.Bundle,com.baidu.mapapi.MKBusLineResult) -> a
+com.baidu.mapapi.n -> com.baidu.mapapi.n:
+    java.lang.reflect.Constructor a -> a
+    int b -> b
+    double a(int,com.baidu.mapapi.n$a) -> a
+    int a(java.util.ArrayList,int[],int,int,double) -> a
+    long a(com.baidu.mapapi.GeoPoint,com.baidu.mapapi.GeoPoint,com.baidu.mapapi.GeoPoint) -> a
+    boolean a(android.graphics.Point,android.graphics.Point,int,int) -> a
+    int a(java.util.ArrayList,java.util.ArrayList,int,java.util.ArrayList) -> a
+    int a(java.util.ArrayList,java.util.ArrayList,java.util.ArrayList,double) -> a
+    android.graphics.drawable.Drawable a(android.content.Context,java.lang.String) -> a
+    android.graphics.drawable.Drawable a(android.content.Context,java.lang.String,float) -> a
+com.baidu.mapapi.n$1 -> com.baidu.mapapi.n$1:
+    int[] a -> a
+com.baidu.mapapi.n$a -> com.baidu.mapapi.n$a:
+    com.baidu.mapapi.n$a a -> a
+    com.baidu.mapapi.n$a b -> b
+    com.baidu.mapapi.n$a c -> c
+    com.baidu.mapapi.n$a[] d -> d
+    com.baidu.mapapi.n$a[] values() -> values
+    com.baidu.mapapi.n$a valueOf(java.lang.String) -> valueOf
+com.baidu.mapapi.o -> com.baidu.mapapi.o:
+    android.graphics.Bitmap a -> a
+    android.graphics.Canvas b -> b
+    android.graphics.Bitmap$Config c -> c
+    void a(int,int) -> a
+    void a() -> a
+    void a(com.baidu.mapapi.p) -> a
+    android.graphics.Bitmap b() -> b
+com.baidu.mapapi.p -> com.baidu.mapapi.p:
+    void a(android.graphics.Canvas) -> a
+com.baidu.mapapi.q -> com.baidu.mapapi.q:
+    void handleMessage(android.os.Message) -> handleMessage
+com.baidu.mapapi.r -> com.baidu.mapapi.r:
+    com.baidu.mapapi.o a -> a
+    android.graphics.drawable.Drawable b -> b
+    android.graphics.drawable.Drawable a(android.graphics.drawable.Drawable) -> a
+    void a(android.graphics.Canvas) -> a
+    void a(android.graphics.drawable.Drawable,android.graphics.drawable.Drawable) -> a
+com.baidu.mapapi.s -> com.baidu.mapapi.s:
+    java.util.ArrayList a -> a
+    com.baidu.mapapi.s b -> b
+    boolean d -> d
+    boolean c -> c
+    java.lang.String e -> e
+    android.os.Handler f -> f
+    com.baidu.mapapi.s a() -> a
+    void a(android.content.Context) -> a
+    void a(java.io.File) -> a
+    void b() -> b
+    void c() -> c
+    void b(java.io.File) -> b
+    java.lang.String a(java.lang.String,java.lang.String) -> a
+    boolean a(com.baidu.mapapi.s,boolean) -> a
+    android.os.Handler a(com.baidu.mapapi.s) -> a
+    void b(com.baidu.mapapi.s) -> b
+    void c(com.baidu.mapapi.s) -> c
+com.baidu.mapapi.s$a -> com.baidu.mapapi.s$a:
+    java.io.File a -> a
+    com.baidu.mapapi.s b -> b
+    void run() -> run
+    void a() -> a
+com.baidu.mapapi.t -> com.baidu.mapapi.t:
+    com.baidu.mapapi.s a -> a
+    void handleMessage(android.os.Message) -> handleMessage
+com.baidu.mapapi.u -> com.baidu.mapapi.u:
+    android.graphics.Bitmap a -> a
+    android.graphics.Bitmap a() -> a
+com.mobilercn.base.YTBaseActivity -> com.mobilercn.base.YTBaseActivity:
+    android.app.ProgressDialog mProgressDialog -> b
+    boolean mShowProgressView -> c
+    android.widget.PopupWindow mPopupWindow -> d
+    long mCurTaskID -> e
+    boolean mShowWaitDlg -> f
+    int mWaitViewType -> g
+    com.mobilercn.widget.YTProcessDialog mProcessDlg -> h
+    android.os.Handler myHandler -> a
+    void onCreate(android.os.Bundle) -> onCreate
+    void hideWaitDialog() -> a
+    void showProcessDialog(java.lang.String) -> a
+    void dismissProcessDialog() -> b
+    void showWaitDialog$ba2c33f(java.lang.String) -> b
+    void onDestroy() -> onDestroy
+    com.mobilercn.base.YTBaseApplication getApp() -> c
+    void setCurTaskID(long) -> a
+    boolean onKeyDown(int,android.view.KeyEvent) -> onKeyDown
+    boolean isExit() -> d
+    void taskSuccess(java.lang.Object[]) -> a
+    void taskFailed(java.lang.Object[]) -> b
+com.mobilercn.base.YTBaseActivity$1 -> com.mobilercn.base.a:
+    com.mobilercn.base.YTBaseActivity this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+com.mobilercn.base.YTBaseActivity$3 -> com.mobilercn.base.b:
+    com.mobilercn.base.YTBaseActivity this$0 -> a
+    android.graphics.drawable.AnimationDrawable val$mAnimationDrawable -> b
+    void run() -> run
+com.mobilercn.base.YTBaseActivity$5 -> com.mobilercn.base.c:
+    com.mobilercn.base.YTBaseActivity this$0 -> a
+    boolean onKey(android.content.DialogInterface,int,android.view.KeyEvent) -> onKey
+com.mobilercn.base.YTBaseActivity$6 -> com.mobilercn.base.d:
+    com.mobilercn.base.YTBaseActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.mobilercn.base.YTBaseApplication -> com.mobilercn.base.YTBaseApplication:
+    com.mobilercn.base.YTBaseApplication mApp -> a
+    com.baidu.mapapi.BMapManager mBMapMan -> b
+    java.lang.String mStrKey -> c
+    boolean m_bKeyRight -> d
+    java.lang.String MOUSE_METHOD_OUT -> e
+    java.lang.String MOUSE_METHOD_IN -> f
+    java.lang.String MOUSE_METHOD_CAO -> g
+    boolean mIsTryConnect -> h
+    boolean mIsConnected -> i
+    android.content.Intent g_httpService -> m
+    android.content.Intent g_Service -> j
+    boolean g_Service_runState -> k
+    java.lang.String TAG -> l
+    java.util.ArrayList mLowMemoryListeners -> n
+    java.util.ArrayList mServices -> o
+    java.util.Stack g_ActivityStack -> p
+    void onCreate() -> onCreate
+    void startJJService() -> a
+    void stopJJService() -> b
+    void onLowMemory() -> onLowMemory
+    com.mobilercn.base.YTBaseActivity getActivityByName(java.lang.String) -> a
+    void push(com.mobilercn.base.YTBaseActivity) -> a
+    com.mobilercn.base.YTBaseActivity top() -> c
+    void dealloc() -> d
+    void remove(com.mobilercn.base.YTBaseActivity) -> b
+    void showMessage(java.lang.String) -> b
+    void onTerminate() -> onTerminate
+com.mobilercn.base.YTBaseApplication$MyGeneralListener -> com.mobilercn.base.e:
+    void onGetNetworkState(int) -> onGetNetworkState
+    void onGetPermissionState(int) -> onGetPermissionState
+com.mobilercn.base.YTBaseApplication$OnLowMemoryListener -> com.mobilercn.base.f:
+com.mobilercn.base.YTBaseService -> com.mobilercn.base.YTBaseService:
+    java.lang.Integer HTTP_SERVICE -> a
+    java.lang.Integer BT_SERVICE -> b
+    java.util.ArrayList g_cancelTaskList -> c
+    boolean mIsRunning -> d
+    boolean g_runState -> e
+    android.os.Handler mHandler -> f
+    android.os.IBinder onBind(android.content.Intent) -> onBind
+    void onCreate() -> onCreate
+    void onDestroy() -> onDestroy
+    boolean isCancelTask(long) -> a
+    long addMutilpartHttpTask(java.lang.String,java.lang.String[],java.lang.String,int) -> a
+com.mobilercn.base.YTBaseService$1 -> com.mobilercn.base.g:
+    void handleMessage(android.os.Message) -> handleMessage
+com.mobilercn.http.JJAndroidHttpAdapter -> com.mobilercn.a.a:
+    java.io.InputStream doRequest(com.mobilercn.task.JJTask) -> a
+com.mobilercn.http.JJAsyncHttpTask -> com.mobilercn.a.b:
+com.mobilercn.http.JJHttpTask -> com.mobilercn.a.c:
+    java.lang.String mUrl -> a
+    int mTimeout -> b
+    java.lang.String mPostBoundary -> c
+    boolean mIsMultipart -> d
+    byte[] mRequestBody -> e
+    byte[] getHttpTaskBody() -> a
+    void setMultipartHttpTaskBody(java.lang.String[]) -> a
+    java.lang.String getHttpTaskUrl() -> b
+    int getHttpTaskTimeout() -> c
+    void setPostBoundary(java.lang.String) -> a
+    java.lang.String getPostBoundary() -> d
+    boolean isMultipart() -> e
+    com.mobilercn.task.JJTaskAdapter getTaskAdapter() -> f
+com.mobilercn.sop.bt.SOPBTCallHelper -> com.mobilercn.sop.bt.a:
+    byte[] getInitOrder(java.lang.String) -> a
+com.mobilercn.sop.bt.SOPBluetoothService -> com.mobilercn.sop.bt.SOPBluetoothService:
+    java.lang.String g_Connect -> a
+    java.lang.String g_DisConnect -> b
+    java.lang.String g_bt_warning -> c
+    java.lang.String g_readerID -> d
+    java.lang.String g_btMacAddress -> e
+    com.mobilercn.sop.bt.SOPBluetoothService SELF -> f
+    java.util.HashMap g_Relations -> i
+    java.lang.String mSendCallMessage -> j
+    int mCurrentCall -> k
+    android.bluetooth.BluetoothAdapter mBluetoothAdapter -> l
+    com.mobilercn.sop.bt.SOPBluetoothService$ConnectThread mConnectThread -> m
+    com.mobilercn.sop.bt.SOPBluetoothService$ConnectedThread mConnectedThread -> n
+    int mState -> o
+    boolean mIsRun -> g
+    java.lang.StringBuffer mStringBuffer -> p
+    android.os.Handler mHandler -> h
+    com.mobilercn.sop.bt.SOPBluetoothService getService() -> a
+    void setState(int) -> a
+    void start() -> d
+    void connect(android.bluetooth.BluetoothDevice) -> a
+    void connected$73068652(android.bluetooth.BluetoothSocket) -> a
+    void onCreate() -> onCreate
+    void onDestroy() -> onDestroy
+    android.os.IBinder onBind(android.content.Intent) -> onBind
+    void doTask$3568b73f(java.lang.String,byte[]) -> a
+    java.util.HashMap access$0() -> b
+    int access$1() -> c
+    void access$2$50404593(com.mobilercn.sop.bt.SOPBluetoothService) -> a
+    void access$3$11698cf3(com.mobilercn.sop.bt.SOPBluetoothService) -> b
+    java.lang.StringBuffer access$4(com.mobilercn.sop.bt.SOPBluetoothService) -> c
+    void access$5(com.mobilercn.sop.bt.SOPBluetoothService) -> d
+com.mobilercn.sop.bt.SOPBluetoothService$1 -> com.mobilercn.sop.bt.b:
+    void handleMessage(android.os.Message) -> handleMessage
+com.mobilercn.sop.bt.SOPBluetoothService$ConnectThread -> com.mobilercn.sop.bt.c:
+    android.bluetooth.BluetoothSocket mmSocket -> b
+    android.bluetooth.BluetoothDevice mmDevice -> c
+    com.mobilercn.sop.bt.SOPBluetoothService this$0 -> a
+    void run() -> run
+    void cancel() -> a
+com.mobilercn.sop.bt.SOPBluetoothService$ConnectedThread -> com.mobilercn.sop.bt.d:
+    android.bluetooth.BluetoothSocket mmSocket -> b
+    java.io.InputStream mmInStream -> c
+    java.io.OutputStream mmOutStream -> d
+    com.mobilercn.sop.bt.SOPBluetoothService this$0 -> a
+    void run() -> run
+    void write(byte[]) -> a
+    void cancel() -> a
+com.mobilercn.sop.bt.YTTimeoutMonitor -> com.mobilercn.sop.bt.e:
+    java.lang.String TAG -> a
+    com.mobilercn.sop.bt.YTTimeoutMonitor mSelf -> b
+    android.os.Handler mHandler -> c
+    java.util.Timer mMonitorTimer -> d
+    com.mobilercn.sop.bt.YTTimeoutMonitor getInstance() -> a
+    void init(android.os.Handler) -> a
+    void startMonitor() -> b
+    void stopMonitor() -> c
+com.mobilercn.sop.bt.YTTimeoutMonitor$MonitorTask -> com.mobilercn.sop.bt.f:
+    com.mobilercn.sop.bt.YTTimeoutMonitor this$0 -> a
+    void run() -> run
+com.mobilercn.task.JJAsyncTaskManager -> com.mobilercn.b.a:
+    com.mobilercn.task.JJAsyncTaskManager SELF -> b
+    java.lang.Thread[] mWorkers -> c
+    boolean mValidTask -> d
+    com.mobilercn.task.JJTaskQueue mTaskQueue -> e
+    java.util.ArrayList g_cancelTaskList -> a
+    com.mobilercn.task.JJAsyncTaskManager getInstance() -> a
+    boolean isCancelTask(long) -> a
+    void doHttpTask(com.mobilercn.http.JJAsyncHttpTask) -> a
+    boolean isVaidHttpRequest() -> b
+com.mobilercn.task.JJAsyncTaskWorker -> com.mobilercn.b.b:
+    com.mobilercn.task.JJTaskQueue mTaskQueue -> a
+    void run() -> run
+com.mobilercn.task.JJTask -> com.mobilercn.b.c:
+    int mTaskId -> a
+    boolean mNeedsCached -> b
+    boolean mCanceled -> c
+    double mTaskStartTime -> d
+    android.os.Handler mCallback -> e
+    java.io.InputStream mInputStream -> f
+    java.lang.Exception mException -> g
+    java.lang.String mActivityName -> h
+    long mTimeID -> i
+    android.os.Handler getTaskCallback() -> g
+    void setTaskCallback(android.os.Handler) -> a
+    void setInputStream(java.io.InputStream) -> a
+    java.io.InputStream getInputStream() -> h
+    void setTimeID(long) -> a
+    long getTimeID() -> i
+    void setException(java.lang.Exception) -> a
+    void setActivityName(java.lang.String) -> b
+    java.lang.String getActivityName() -> j
+    com.mobilercn.task.JJTaskAdapter getTaskAdapter() -> f
+    int getTaskId() -> k
+    void setTaskId(int) -> a
+    boolean getCached() -> l
+    boolean isTaskCanceled() -> m
+    void setTaskStartTime(double) -> a
+com.mobilercn.task.JJTaskAdapter -> com.mobilercn.b.d:
+    java.io.InputStream doRequest(com.mobilercn.task.JJTask) -> a
+com.mobilercn.task.JJTaskException -> com.mobilercn.b.e:
+com.mobilercn.task.JJTaskQueue -> com.mobilercn.b.f:
+    java.util.Vector mQueue -> a
+    com.mobilercn.task.JJTaskQueue SELF -> b
+    com.mobilercn.task.JJTaskQueue getInstance() -> a
+    void addTask(com.mobilercn.task.JJTask) -> a
+    com.mobilercn.task.JJTask getTask() -> b
+com.mobilercn.util.JJHexHelper -> com.mobilercn.c.a:
+    byte[] ENCODE_TABLE -> a
+    byte[] DECODE_TABLE -> b
+    java.lang.String encode(byte[]) -> a
+    java.lang.String encode$55a39fc4(byte[],int) -> a
+    boolean ignore(char) -> a
+    byte[] decode(java.lang.String) -> a
+com.mobilercn.util.NumberUtils -> com.mobilercn.c.b:
+    com.mobilercn.util.NumberUtils numberUtils -> a
+    java.lang.String format$7a1ba7c4(java.lang.String) -> a
+    java.lang.String getPrecent$21cfcef2(float,float) -> a
+    java.lang.String getPrecentPoint$21cfcef2(float,float) -> b
+com.mobilercn.util.YTMathUtil -> com.mobilercn.c.c:
+    float dipToPixels(float,android.content.res.Resources) -> a
+com.mobilercn.util.YTNetUtil -> com.mobilercn.c.d:
+    byte[] readByByte(java.io.InputStream,long) -> a
+com.mobilercn.util.YTStringHelper -> com.mobilercn.c.e:
+    java.lang.String cn2FirstSpell(java.lang.String) -> a
+com.mobilercn.widget.D2EListAdapter -> com.mobilercn.widget.a:
+    android.content.Context mContext -> a
+    java.util.ArrayList mTags -> b
+    java.util.ArrayList mTagsTmp -> c
+    void addAreaItem(com.vsi.data.AreaItem) -> a
+    int getCount() -> getCount
+    java.lang.Object getItem(int) -> getItem
+    long getItemId(int) -> getItemId
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+    android.widget.Filter getFilter() -> getFilter
+    void access$0(com.mobilercn.widget.D2EListAdapter,java.util.ArrayList) -> a
+    java.util.ArrayList access$1(com.mobilercn.widget.D2EListAdapter) -> a
+com.mobilercn.widget.D2EListAdapter$1 -> com.mobilercn.widget.b:
+    com.mobilercn.widget.D2EListAdapter this$0 -> a
+    void publishResults(java.lang.CharSequence,android.widget.Filter$FilterResults) -> publishResults
+    android.widget.Filter$FilterResults performFiltering(java.lang.CharSequence) -> performFiltering
+com.mobilercn.widget.D2EListAdapter$ViewHolder -> com.mobilercn.widget.c:
+    android.widget.TextView textView -> a
+    com.mobilercn.widget.D2EListAdapter this$0 -> b
+com.mobilercn.widget.D2EListAdapterItam -> com.mobilercn.widget.d:
+    java.lang.String mTitle -> f
+    java.lang.String mId -> g
+    java.lang.String mPinYin -> h
+    java.lang.String mType -> a
+    java.lang.String mState -> b
+    java.lang.String mStateInt -> c
+    java.lang.String mMemo -> d
+    java.lang.String mAreaLongitude -> i
+    java.lang.String mAreaLatitude -> j
+    boolean mChecked -> e
+    java.lang.String getTitle() -> a
+    java.lang.String getId() -> b
+    java.lang.String getPinYin() -> c
+    java.lang.String getmAreaLongitude() -> d
+    void setmAreaLongitude(java.lang.String) -> a
+    java.lang.String getmAreaLatitude() -> e
+    void setmAreaLatitude(java.lang.String) -> b
+com.mobilercn.widget.JJLinkLayer -> com.mobilercn.widget.JJLinkLayer:
+    long FRAME_DURATION -> a
+    float ANIMI_DURATION -> b
+    int mDirection -> c
+    float mDuration -> d
+    float mCurrentPos -> e
+    float mCurrentFrame -> f
+    android.graphics.Bitmap mSrcBmp -> g
+    android.graphics.Bitmap mMaskBmp -> h
+    float mStartPos -> i
+    float mTotalFrames -> j
+    float mMoveStep -> k
+    java.util.Timer mTimer -> l
+    void init() -> d
+    void setDirection(int) -> a
+    void setDuration$133aeb() -> a
+    void setMaskBitmap(int) -> b
+    void setSourceBitmap(int) -> c
+    void stopAnimation() -> b
+    void startAnimation$1385ff() -> c
+    void onMeasure(int,int) -> onMeasure
+    void onDraw(android.graphics.Canvas) -> onDraw
+    float access$0(com.mobilercn.widget.JJLinkLayer) -> a
+    float access$1(com.mobilercn.widget.JJLinkLayer) -> b
+    float access$2(com.mobilercn.widget.JJLinkLayer) -> c
+    float access$3(com.mobilercn.widget.JJLinkLayer) -> d
+    void access$4(com.mobilercn.widget.JJLinkLayer,float) -> a
+    void access$5(com.mobilercn.widget.JJLinkLayer,float) -> b
+    float access$6(com.mobilercn.widget.JJLinkLayer) -> e
+com.mobilercn.widget.JJLinkLayer$JJMaskTimeTask -> com.mobilercn.widget.e:
+    boolean mRunOnce -> b
+    com.mobilercn.widget.JJLinkLayer this$0 -> a
+    void run() -> run
+com.mobilercn.widget.JJMenuLayer -> com.mobilercn.widget.JJMenuLayer:
+    com.mobilercn.widget.OnMenuSelection mMenuSelectionListener -> a
+    android.widget.ImageView[] indexs -> b
+    int from -> c
+    int mTop -> d
+    int mTopSelection -> e
+    int mLeft -> f
+    int mLeftSelection -> g
+    int mRight -> h
+    int mRightSelection -> i
+    int mCenter -> j
+    int mCenterSelection -> k
+    int mDown -> l
+    int mDownSelection -> m
+    android.widget.ImageView mTopMenu -> n
+    android.widget.ImageView mCenterMenu -> o
+    android.widget.ImageView mLeftMenu -> p
+    android.widget.ImageView mRightMenu -> q
+    android.widget.ImageView mDownMenu -> r
+    int mSlideStates -> s
+    int[] mCenterPosition -> t
+    int[] mTopPosition -> u
+    int[] mLeftPosition -> v
+    int[] mRightPosition -> w
+    int[] mDownPosition -> x
+    android.os.Handler mHandler -> y
+    java.util.Timer mMotionTimer -> z
+    void initPositions() -> a
+    void onLayout(boolean,int,int,int,int) -> onLayout
+    boolean onTouchEvent(android.view.MotionEvent) -> onTouchEvent
+    void changeIcon(int) -> a
+    void resetIcon() -> c
+    boolean inRect(float,float,int[]) -> a
+    void setSourceId$11627f15() -> b
+    void setMenuListener(com.mobilercn.widget.OnMenuSelection) -> a
+    android.widget.ImageView[] access$0(com.mobilercn.widget.JJMenuLayer) -> a
+    int access$1(com.mobilercn.widget.JJMenuLayer) -> b
+    void access$2$38124648(com.mobilercn.widget.JJMenuLayer) -> c
+    void access$3(com.mobilercn.widget.JJMenuLayer) -> d
+    void access$4(com.mobilercn.widget.JJMenuLayer) -> e
+    int[] access$5(com.mobilercn.widget.JJMenuLayer) -> f
+    android.os.Handler access$6(com.mobilercn.widget.JJMenuLayer) -> g
+com.mobilercn.widget.JJMenuLayer$1 -> com.mobilercn.widget.f:
+    com.mobilercn.widget.JJMenuLayer this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+com.mobilercn.widget.JJMenuLayer$MotionTask -> com.mobilercn.widget.g:
+    double mStep -> b
+    double mTotalStep -> c
+    double mTotalX -> d
+    double mTotalY -> e
+    android.widget.ImageView mView -> f
+    int mLeft -> g
+    int mTop -> h
+    int mStart -> i
+    com.mobilercn.widget.JJMenuLayer this$0 -> a
+    void run() -> run
+com.mobilercn.widget.OnMenuSelection -> com.mobilercn.widget.h:
+    void menuSelection(int) -> a
+com.mobilercn.widget.YTProcessDialog -> com.mobilercn.widget.i:
+    android.content.Context mContext -> a
+    com.mobilercn.widget.YTProcessDialog mSelf -> b
+    int mImageID -> c
+    int mMessageID -> d
+    com.mobilercn.widget.YTProcessDialog makeProcessDialog$461c741(android.content.Context) -> a
+    void onWindowFocusChanged(boolean) -> onWindowFocusChanged
+    void setMessage(java.lang.String) -> a
+com.mobilercn.widget.YTReportModel -> com.mobilercn.widget.j:
+    java.lang.String[] mHeader -> a
+    java.lang.String[] mLeft -> b
+    java.util.List mItems -> c
+    float[] mWidthOfColumn -> d
+    float[] mWidthOfRow -> e
+    float mTotalWidth -> f
+    int mColumns -> g
+    android.graphics.Paint mPaint -> h
+    android.content.Context mContext -> i
+    float mMaxHeaderWidth -> j
+    void clear() -> a
+    int getColumnOfRow(int) -> a
+    void calculateWidthOfColumn(java.lang.String[]) -> c
+    void setHeader(java.lang.String[]) -> a
+    java.lang.String[] getHeader() -> b
+    float getMaxHeaderWidth() -> c
+    void addItem(java.lang.String[]) -> b
+    float getTotalWidth() -> d
+    void setTotalWidth(float) -> a
+    int getColumns() -> e
+    int getRows() -> f
+    java.lang.Object getField(int,int) -> a
+    float getMaxWidthAtColumn(int) -> b
+    void setMaxWidthAtColumn(int,float) -> a
+    float getMaxHeight() -> g
+com.mobilercn.widget.YTReportView -> com.mobilercn.widget.YTReportView:
+    java.lang.String TAG -> a
+    float mPaddingTop -> b
+    float mPaddingLeft -> c
+    boolean mIsTouch -> d
+    float mLastX -> e
+    float mLastY -> f
+    float mScrollOffsetVertial -> g
+    float mScrollOffsetHornizal -> h
+    android.graphics.Paint mPaint -> i
+    int mBackgroundColor -> j
+    int mTextColor -> k
+    com.mobilercn.widget.YTReportModel mModel -> l
+    com.mobilercn.widget.YTReportView$YTReportRenderer mRenderer -> m
+    int mWidth -> n
+    int mHeight -> o
+    boolean isRecal -> p
+    int mIndex -> q
+    int scrollLeft(boolean) -> a
+    void init() -> b
+    android.graphics.Paint getPaint() -> a
+    void setModel(com.mobilercn.widget.YTReportModel) -> a
+    void onDraw(android.graphics.Canvas) -> onDraw
+    boolean onTouchEvent(android.view.MotionEvent) -> onTouchEvent
+    android.graphics.Paint access$0(com.mobilercn.widget.YTReportView) -> a
+    int access$1(com.mobilercn.widget.YTReportView) -> b
+    int access$2(com.mobilercn.widget.YTReportView) -> c
+    com.mobilercn.widget.YTReportModel access$3(com.mobilercn.widget.YTReportView) -> d
+    float access$4(com.mobilercn.widget.YTReportView) -> e
+    float access$5(com.mobilercn.widget.YTReportView) -> f
+    float access$6(com.mobilercn.widget.YTReportView) -> g
+    int access$7(com.mobilercn.widget.YTReportView) -> h
+    int access$8$50941dc7(com.mobilercn.widget.YTReportView) -> i
+    float access$9(com.mobilercn.widget.YTReportView) -> j
+com.mobilercn.widget.YTReportView$YTCellRenderer -> com.mobilercn.widget.k:
+    android.graphics.Canvas mCanvas -> a
+    com.mobilercn.widget.YTReportView this$0 -> b
+    void onDrawCell$1614ac01(android.graphics.RectF,java.lang.String,int) -> a
+com.mobilercn.widget.YTReportView$YTReportRenderer -> com.mobilercn.widget.l:
+    com.mobilercn.widget.YTReportView$YTCellRenderer mCellBackgroundRenderer -> b
+    com.mobilercn.widget.YTReportView this$0 -> a
+    void access$1(com.mobilercn.widget.YTReportView$YTReportRenderer,android.graphics.Canvas) -> a
+com.mobilercn.widget.YTReportView$YTReportRenderer$1 -> com.mobilercn.widget.m:
+    com.mobilercn.widget.YTReportView$YTReportRenderer this$1 -> c
+    void onDrawCell$1614ac01(android.graphics.RectF,java.lang.String,int) -> a
+com.vsi.config.PHCConfig -> com.vsi.a.a:
+    int g_infoType -> a
+    int SURVEY_TYPE -> b
+    com.mobilercn.widget.YTReportModel g_ReportModel -> c
+    com.mobilercn.widget.YTReportModel g_d2eReportModel -> d
+    com.vsi.data.MouseReportItem mouseReportItems -> e
+    java.util.List mouseReportList -> f
+    java.util.List mouseCaoReportList -> g
+    java.util.List cockRoachReportList -> h
+    java.util.List flyReportList -> i
+    java.util.List mosquitoReportList -> j
+    java.util.List areaItems -> k
+    boolean ContainsArea(com.vsi.data.AreaItem) -> a
+com.vsi.data.AreaItem -> com.vsi.b.a:
+    java.lang.String strOrgID -> a
+    java.lang.String strAreaName -> b
+    java.lang.String strAreaID -> c
+    java.lang.String mAreaLongitude -> d
+    java.lang.String mAreaLatitude -> e
+    java.lang.String mAreaDeleteTime -> f
+    java.lang.String mAreaCreateTime -> g
+    void setStrOrgID(java.lang.String) -> a
+    java.lang.String getStrAreaName() -> a
+    java.lang.String getStrAreaID() -> b
+    void setStrAreaID(java.lang.String) -> b
+    java.lang.String getmAreaLongitude() -> c
+    void setmAreaLongitude(java.lang.String) -> c
+    java.lang.String getmAreaLatitude() -> d
+    void setmAreaLatitude(java.lang.String) -> d
+    void setmAreaDeleteTime(java.lang.String) -> e
+    void setmAreaCreateTime(java.lang.String) -> f
+com.vsi.data.CaoItem -> com.vsi.b.b:
+    java.lang.String strTime -> a
+    java.lang.String strKeep -> b
+    int mType -> c
+    java.lang.String getStrTime() -> a
+    void setStrTime(java.lang.String) -> a
+    java.lang.String getStrKeep() -> b
+    void setStrKeep(java.lang.String) -> b
+com.vsi.data.MouseReportItem -> com.vsi.b.c:
+    int mCoverTimes -> b
+    boolean mCoverState -> c
+    java.lang.String strMonitorMethodType -> d
+    java.lang.String strReportType -> e
+    java.lang.String monitorMethod -> f
+    java.lang.String mTotalMemo -> g
+    java.lang.String mStreetName -> h
+    java.lang.String mPlaceName -> i
+    java.lang.String mPlaceType -> j
+    java.lang.String strAreaID -> k
+    java.lang.String strPerson -> l
+    java.lang.String strMouseMeter -> m
+    java.lang.String strRatHole -> n
+    java.lang.String strRatDrains -> o
+    java.lang.String strFecal -> p
+    java.lang.String strRatBiteMark -> q
+    java.lang.String strRatCorpse -> r
+    java.lang.String strMouseTrace -> s
+    java.lang.String strMouseDensity -> t
+    java.lang.String strOutMemo -> u
+    java.lang.String strMouseSunInit -> v
+    java.lang.String strMouseSun -> w
+    java.lang.String strMouseCatchNum -> x
+    java.lang.String strMouseDesitySun -> y
+    java.lang.String strInMemo -> z
+    java.lang.String strMosquPond -> A
+    java.lang.String strMosquPosPond -> B
+    java.lang.String strMosquDensPond -> C
+    java.lang.String strMosquCollSpoo -> D
+    java.lang.String strMosquPosSpoo -> E
+    java.lang.String strMosquDensSpoo -> F
+    java.lang.String strKrockroachStickyPaperNumber -> G
+    java.lang.String strKrockroachStickyPaperPosNumber -> H
+    java.lang.String strKrockroachStickyNumber -> I
+    java.lang.String strKrockroachDensity -> J
+    java.lang.String strFlyFieldNumber -> K
+    java.lang.String strFlyMatureNumber -> L
+    java.lang.String strFlyMatureFieldDensity -> M
+    java.lang.String strFlyStickBarNumber -> N
+    java.lang.String strFlyCatchNumber -> O
+    java.lang.String strFlyStickyCatchDesity -> P
+    java.lang.String strMouseGetNum -> Q
+    java.lang.String strTagNum -> R
+    boolean mLess -> S
+    java.util.List mCaoList -> T
+    int mCoverNum -> U
+    java.util.List mMouseComeList -> V
+    java.util.List monitorItems -> a
+    int getCoverTimes() -> a
+    void setCoverTimes(int) -> a
+    boolean getCoverState() -> b
+    void setCoverState(boolean) -> a
+    void setLess$1385ff() -> c
+    boolean getLess() -> d
+    java.lang.String getStrTagNum() -> e
+    void setStrTagNum(java.lang.String) -> a
+    java.lang.String getStrMouseGetNum() -> f
+    void setStrMouseGetNum(java.lang.String) -> b
+    java.lang.String getStrReportType() -> g
+    void setStrReportType(java.lang.String) -> c
+    java.lang.String getStrAreaID() -> h
+    void setStrAreaID(java.lang.String) -> d
+    java.lang.String getmTotalMemo() -> i
+    void setmTotalMemo(java.lang.String) -> e
+    void setMonitorMethod(java.lang.String) -> f
+    void setStrOutMemo(java.lang.String) -> g
+    void setStrInMemo(java.lang.String) -> h
+    java.lang.String getmPlaceType() -> j
+    java.lang.String getStrPerson() -> k
+    void setStrPerson(java.lang.String) -> i
+    java.lang.String getStrRatHole() -> l
+    void setStrRatHole(java.lang.String) -> j
+    java.lang.String getStrRatDrains() -> m
+    void setStrRatDrains(java.lang.String) -> k
+    java.lang.String getStrFecal() -> n
+    void setStrFecal(java.lang.String) -> l
+    java.lang.String getStrRatBiteMark() -> o
+    void setStrRatBiteMark(java.lang.String) -> m
+    java.lang.String getStrRatCorpse() -> p
+    void setStrRatCorpse(java.lang.String) -> n
+    void setmPlaceType(java.lang.String) -> o
+    java.lang.String getmStreetName() -> q
+    java.lang.String getmPlaceName() -> r
+    java.lang.String getStrMouseMeter() -> s
+    void setStrMouseMeter(java.lang.String) -> p
+    java.lang.String getStrMouseTrace() -> t
+    void setStrMouseTrace(java.lang.String) -> q
+    java.lang.String getStrMouseDensity() -> u
+    void setStrMouseDensity(java.lang.String) -> r
+    java.lang.String getStrMouseSunInit() -> v
+    void setStrMouseSunInit(java.lang.String) -> s
+    java.lang.String getStrMouseSun() -> w
+    void setStrMouseSun(java.lang.String) -> t
+    java.lang.String getStrMouseCatchNum() -> x
+    void setStrMouseCatchNum(java.lang.String) -> u
+    java.lang.String getStrMouseDesitySun() -> y
+    void setStrMouseDesitySun(java.lang.String) -> v
+    java.lang.String getStrMosquPond() -> z
+    void setStrMosquPond(java.lang.String) -> w
+    java.lang.String getStrMosquPosPond() -> A
+    void setStrMosquPosPond(java.lang.String) -> x
+    java.lang.String getStrMosquDensPond() -> B
+    void setStrMosquDensPond(java.lang.String) -> y
+    java.lang.String getStrMosquCollSpoo() -> C
+    void setStrMosquCollSpoo(java.lang.String) -> z
+    java.lang.String getStrMosquPosSpoo() -> D
+    void setStrMosquPosSpoo(java.lang.String) -> A
+    java.lang.String getStrMosquDensSpoo() -> E
+    void setStrMosquDensSpoo(java.lang.String) -> B
+    java.lang.String getStrKrockroachStickyPaperNumber() -> F
+    void setStrKrockroachStickyPaperNumber(java.lang.String) -> C
+    java.lang.String getStrKrockroachStickyPaperPosNumber() -> G
+    void setStrKrockroachStickyPaperPosNumber(java.lang.String) -> D
+    java.lang.String getStrKrockroachStickyNumber() -> H
+    void setStrKrockroachStickyNumber(java.lang.String) -> E
+    java.lang.String getStrKrockroachDensity() -> I
+    void setStrKrockroachDensity(java.lang.String) -> F
+    java.lang.String getStrFlyFieldNumber() -> J
+    void setStrFlyFieldNumber(java.lang.String) -> G
+    java.lang.String getStrFlyMatureNumber() -> K
+    void setStrFlyMatureNumber(java.lang.String) -> H
+    java.lang.String getStrFlyMatureFieldDensity() -> L
+    void setStrFlyMatureFieldDensity(java.lang.String) -> I
+    java.lang.String getStrFlyStickBarNumber() -> M
+    void setStrFlyStickBarNumber(java.lang.String) -> J
+    java.lang.String getStrFlyCatchNumber() -> N
+    void setStrFlyCatchNumber(java.lang.String) -> K
+    java.lang.String getStrFlyStickyCatchDesity() -> O
+    void setStrFlyStickyCatchDesity(java.lang.String) -> L
+    java.util.List getmCaoList() -> P
+    java.lang.String getStrMonitorMethodType() -> Q
+    void setStrMonitorMethodType(java.lang.String) -> M
+    int getmCoverNum() -> R
+    void setmCoverNum(int) -> b
+    java.util.List getmMouseComeList() -> S
+com.vsi.page.D2EDeviceListActivity -> com.vsi.page.D2EDeviceListActivity:
+    java.lang.String mOrgID -> f
+    java.lang.String mAreaID -> g
+    java.lang.String mType -> h
+    java.lang.String mPerson -> i
+    java.lang.String EXTRA_DEVICE_ADDRESS -> b
+    java.lang.String EXTRA_READER_ID -> c
+    java.lang.String PREFIX -> d
+    android.bluetooth.BluetoothAdapter mBtAdapter -> j
+    android.widget.ArrayAdapter mPairedDevicesArrayAdapter -> k
+    android.widget.ArrayAdapter mNewDevicesArrayAdapter -> l
+    java.lang.String mBtAddress -> m
+    android.widget.Button mQuertBtn -> e
+    android.widget.AdapterView$OnItemClickListener mDeviceClickListener -> n
+    android.content.BroadcastReceiver mReceiver -> o
+    void onCreate(android.os.Bundle) -> onCreate
+    void onDestroy() -> onDestroy
+    void taskSuccess(java.lang.Object[]) -> a
+    void taskFailed(java.lang.Object[]) -> b
+    void backAciton() -> e
+    boolean isExit() -> d
+    void access$0(com.vsi.page.D2EDeviceListActivity,java.lang.String) -> a
+    android.widget.ArrayAdapter access$1(com.vsi.page.D2EDeviceListActivity) -> a
+    void access$2(com.vsi.page.D2EDeviceListActivity) -> b
+    android.bluetooth.BluetoothAdapter access$3(com.vsi.page.D2EDeviceListActivity) -> c
+    java.lang.String access$4(com.vsi.page.D2EDeviceListActivity) -> d
+com.vsi.page.D2EDeviceListActivity$1 -> com.vsi.page.a:
+    com.vsi.page.D2EDeviceListActivity this$0 -> a
+    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+com.vsi.page.D2EDeviceListActivity$2 -> com.vsi.page.b:
+    com.vsi.page.D2EDeviceListActivity this$0 -> a
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.vsi.page.D2EDeviceListActivity$3 -> com.vsi.page.c:
+    com.vsi.page.D2EDeviceListActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.vsi.page.D2EDeviceListActivity$4 -> com.vsi.page.d:
+    com.vsi.page.D2EDeviceListActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.vsi.page.D2EDeviceListActivity$5 -> com.vsi.page.e:
+    com.vsi.page.D2EDeviceListActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.vsi.page.PCHFlyTablePage -> com.vsi.page.PCHFlyTablePage:
+    android.widget.ImageButton mButtonRight -> b
+    android.widget.ImageButton mButtonLeft -> c
+    com.mobilercn.widget.YTReportView report -> d
+    java.lang.String mOrgID -> e
+    java.lang.String mAreaID -> f
+    java.lang.String mType -> g
+    java.lang.String mPerson -> h
+    android.widget.Button btnsubmit -> i
+    void onCreate(android.os.Bundle) -> onCreate
+    void isShowReprotButton() -> e
+    void onResume() -> onResume
+    boolean isExit() -> d
+    void taskSuccess(java.lang.Object[]) -> a
+    void taskFailed(java.lang.Object[]) -> b
+    java.lang.String access$0(com.vsi.page.PCHFlyTablePage) -> a
+    java.lang.String access$1(com.vsi.page.PCHFlyTablePage) -> b
+    java.lang.String access$2(com.vsi.page.PCHFlyTablePage) -> c
+    java.lang.String access$3(com.vsi.page.PCHFlyTablePage) -> d
+    com.mobilercn.widget.YTReportView access$4(com.vsi.page.PCHFlyTablePage) -> e
+com.vsi.page.PCHFlyTablePage$1 -> com.vsi.page.f:
+    com.vsi.page.PCHFlyTablePage this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.vsi.page.PCHFlyTablePage$2 -> com.vsi.page.g:
+    com.vsi.page.PCHFlyTablePage this$0 -> a
+    void onClick(android.view.View) -> onClick
+    com.vsi.page.PCHFlyTablePage access$0(com.vsi.page.PCHFlyTablePage$2) -> a
+com.vsi.page.PCHFlyTablePage$2$1 -> com.vsi.page.h:
+    com.vsi.page.PCHFlyTablePage$2 this$1 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.vsi.page.PCHFlyTablePage$2$2 -> com.vsi.page.i:
+    com.vsi.page.PCHFlyTablePage$2 this$1 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.vsi.page.PCHFlyTablePage$3 -> com.vsi.page.j:
+    com.vsi.page.PCHFlyTablePage this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.vsi.page.PCHFlyTablePage$4 -> com.vsi.page.k:
+    com.vsi.page.PCHFlyTablePage this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.vsi.page.PCHFlyTablePage$5 -> com.vsi.page.l:
+    com.vsi.page.PCHFlyTablePage this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.vsi.page.PCHKockroachTablePage -> com.vsi.page.PCHKockroachTablePage:
+    android.widget.ImageButton mButtonRight -> b
+    android.widget.ImageButton mButtonLeft -> c
+    com.mobilercn.widget.YTReportView report -> d
+    java.lang.String mOrgID -> e
+    java.lang.String mAreaID -> f
+    java.lang.String mType -> g
+    java.lang.String mPerson -> h
+    android.widget.Button btnsubmit -> i
+    void onCreate(android.os.Bundle) -> onCreate
+    void isShowReprotButton() -> e
+    void onResume() -> onResume
+    boolean isExit() -> d
+    void taskSuccess(java.lang.Object[]) -> a
+    void taskFailed(java.lang.Object[]) -> b
+    java.lang.String access$0(com.vsi.page.PCHKockroachTablePage) -> a
+    java.lang.String access$1(com.vsi.page.PCHKockroachTablePage) -> b
+    java.lang.String access$2(com.vsi.page.PCHKockroachTablePage) -> c
+    java.lang.String access$3(com.vsi.page.PCHKockroachTablePage) -> d
+    com.mobilercn.widget.YTReportView access$4(com.vsi.page.PCHKockroachTablePage) -> e
+com.vsi.page.PCHKockroachTablePage$1 -> com.vsi.page.m:
+    com.vsi.page.PCHKockroachTablePage this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.vsi.page.PCHKockroachTablePage$2 -> com.vsi.page.n:
+    com.vsi.page.PCHKockroachTablePage this$0 -> a
+    void onClick(android.view.View) -> onClick
+    com.vsi.page.PCHKockroachTablePage access$0(com.vsi.page.PCHKockroachTablePage$2) -> a
+com.vsi.page.PCHKockroachTablePage$2$1 -> com.vsi.page.o:
+    com.vsi.page.PCHKockroachTablePage$2 this$1 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.vsi.page.PCHKockroachTablePage$2$2 -> com.vsi.page.p:
+    com.vsi.page.PCHKockroachTablePage$2 this$1 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.vsi.page.PCHKockroachTablePage$3 -> com.vsi.page.q:
+    com.vsi.page.PCHKockroachTablePage this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.vsi.page.PCHKockroachTablePage$4 -> com.vsi.page.r:
+    com.vsi.page.PCHKockroachTablePage this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.vsi.page.PCHKockroachTablePage$5 -> com.vsi.page.s:
+    com.vsi.page.PCHKockroachTablePage this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.vsi.page.PCHMosquitoTablePage -> com.vsi.page.PCHMosquitoTablePage:
+    android.widget.ImageButton mButtonRight -> b
+    android.widget.ImageButton mButtonLeft -> c
+    com.mobilercn.widget.YTReportView report -> d
+    java.lang.String mOrgID -> e
+    java.lang.String mAreaID -> f
+    java.lang.String mType -> g
+    java.lang.String mPerson -> h
+    android.widget.Button btnsubmit -> i
+    void onCreate(android.os.Bundle) -> onCreate
+    void isShowReprotButton() -> e
+    void onResume() -> onResume
+    boolean isExit() -> d
+    void taskSuccess(java.lang.Object[]) -> a
+    void taskFailed(java.lang.Object[]) -> b
+    java.lang.String access$0(com.vsi.page.PCHMosquitoTablePage) -> a
+    java.lang.String access$1(com.vsi.page.PCHMosquitoTablePage) -> b
+    java.lang.String access$2(com.vsi.page.PCHMosquitoTablePage) -> c
+    java.lang.String access$3(com.vsi.page.PCHMosquitoTablePage) -> d
+com.vsi.page.PCHMosquitoTablePage$1 -> com.vsi.page.t:
+    com.vsi.page.PCHMosquitoTablePage this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.vsi.page.PCHMosquitoTablePage$2 -> com.vsi.page.u:
+    com.vsi.page.PCHMosquitoTablePage this$0 -> a
+    void onClick(android.view.View) -> onClick
+    com.vsi.page.PCHMosquitoTablePage access$0(com.vsi.page.PCHMosquitoTablePage$2) -> a
+com.vsi.page.PCHMosquitoTablePage$2$1 -> com.vsi.page.v:
+    com.vsi.page.PCHMosquitoTablePage$2 this$1 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.vsi.page.PCHMosquitoTablePage$2$2 -> com.vsi.page.w:
+    com.vsi.page.PCHMosquitoTablePage$2 this$1 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.vsi.page.PCHMosquitoTablePage$3 -> com.vsi.page.x:
+    com.vsi.page.PCHMosquitoTablePage this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.vsi.page.PCHMosquitoTablePage$4 -> com.vsi.page.y:
+    com.vsi.page.PCHMosquitoTablePage this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.vsi.page.PCHMosquitoTablePage$5 -> com.vsi.page.z:
+    com.vsi.page.PCHMosquitoTablePage this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.vsi.page.PCHMouseTablePage -> com.vsi.page.PCHMouseTablePage:
+    android.widget.ImageButton mButtonRight -> b
+    android.widget.ImageButton mButtonLeft -> c
+    com.mobilercn.widget.YTReportView report -> d
+    int GET_REPORT -> h
+    java.lang.String mOrgID -> i
+    java.lang.String mAreaID -> j
+    java.lang.String mType -> k
+    java.lang.String mPerson -> l
+    java.lang.String strMouseNum -> m
+    java.lang.String tagId -> n
+    boolean isGetMouseNum -> o
+    java.lang.String mStreet -> p
+    java.lang.String mPlace -> q
+    android.widget.Button ib_d2e -> r
+    android.widget.Button ib_other -> s
+    android.widget.Button btn_back -> t
+    android.widget.Button newinput -> u
+    android.widget.Button btn_submit -> v
+    android.widget.LinearLayout panel_d2e -> w
+    com.mobilercn.widget.YTReportView report_d2e -> e
+    android.widget.ImageButton btn_pre_d2e -> f
+    android.widget.ImageButton btn_next_d2e -> g
+    android.widget.LinearLayout panel_common_report -> x
+    android.widget.LinearLayout panel_tabs -> y
+    boolean isD2E -> z
+    void onCreate(android.os.Bundle) -> onCreate
+    void isShowReprotButton() -> f
+    void isShowD2EReportButton() -> g
+    void onResume() -> onResume
+    boolean isExit() -> d
+    void taskSuccess(java.lang.Object[]) -> a
+    void taskFailed(java.lang.Object[]) -> b
+    java.lang.String access$0(com.vsi.page.PCHMouseTablePage) -> a
+    java.lang.String access$1(com.vsi.page.PCHMouseTablePage) -> b
+    java.lang.String access$2(com.vsi.page.PCHMouseTablePage) -> c
+    java.lang.String access$3(com.vsi.page.PCHMouseTablePage) -> d
+    int access$4() -> e
+    void access$5(com.vsi.page.PCHMouseTablePage,boolean) -> a
+    android.widget.Button access$6(com.vsi.page.PCHMouseTablePage) -> e
+    android.widget.Button access$7(com.vsi.page.PCHMouseTablePage) -> f
+    android.widget.LinearLayout access$8(com.vsi.page.PCHMouseTablePage) -> g
+    android.widget.LinearLayout access$9(com.vsi.page.PCHMouseTablePage) -> h
+com.vsi.page.PCHMouseTablePage$BtnBackListener -> com.vsi.page.aa:
+    com.vsi.page.PCHMouseTablePage this$0 -> a
+    void onClick(android.view.View) -> onClick
+    com.vsi.page.PCHMouseTablePage access$1(com.vsi.page.PCHMouseTablePage$BtnBackListener) -> a
+com.vsi.page.PCHMouseTablePage$BtnBackListener$1 -> com.vsi.page.ab:
+    com.vsi.page.PCHMouseTablePage$BtnBackListener this$1 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.vsi.page.PCHMouseTablePage$BtnBackListener$2 -> com.vsi.page.ac:
+    com.vsi.page.PCHMouseTablePage$BtnBackListener this$1 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.vsi.page.PCHMouseTablePage$BtnBackListener$3 -> com.vsi.page.ad:
+    com.vsi.page.PCHMouseTablePage$BtnBackListener this$1 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.vsi.page.PCHMouseTablePage$BtnBackListener$4 -> com.vsi.page.ae:
+    com.vsi.page.PCHMouseTablePage$BtnBackListener this$1 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.vsi.page.PCHMouseTablePage$BtnLeftListener -> com.vsi.page.af:
+    com.vsi.page.PCHMouseTablePage this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.vsi.page.PCHMouseTablePage$BtnNexD2EListener -> com.vsi.page.ag:
+    com.vsi.page.PCHMouseTablePage this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.vsi.page.PCHMouseTablePage$BtnPreD2EListener -> com.vsi.page.ah:
+    com.vsi.page.PCHMouseTablePage this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.vsi.page.PCHMouseTablePage$BtnRightListener -> com.vsi.page.ai:
+    com.vsi.page.PCHMouseTablePage this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.vsi.page.PCHMouseTablePage$BtnSubmitListener -> com.vsi.page.aj:
+    com.vsi.page.PCHMouseTablePage this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.vsi.page.PCHMouseTablePage$D2EReportListener -> com.vsi.page.ak:
+    com.vsi.page.PCHMouseTablePage this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.vsi.page.PCHMouseTablePage$NewReportListener -> com.vsi.page.al:
+    com.vsi.page.PCHMouseTablePage this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.vsi.page.PCHMouseTablePage$OtherReoprtListener -> com.vsi.page.am:
+    com.vsi.page.PCHMouseTablePage this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.vsi.page.PHCChaoShengBo -> com.vsi.page.PHCChaoShengBo:
+    int mMouseComeNum -> h
+    android.widget.EditText edit_d2e_remark -> b
+    com.vsi.data.MouseReportItem reportItem -> c
+    java.lang.String mSaveResponse -> i
+    java.lang.String EXTRA_DEVICE_ADDRESS -> d
+    java.lang.String EXTRA_READER_ID -> e
+    android.widget.EditText edit_street -> j
+    android.widget.AutoCompleteTextView et_place_type -> k
+    android.widget.EditText edit_mouse_palce_name -> l
+    android.widget.TextView tv_cao_sum -> m
+    android.widget.ImageView iv_cao_battery -> n
+    android.widget.ImageView iv_cao_cover -> o
+    android.widget.Button btn_cao_init -> p
+    android.widget.Button btn_cao_scann -> q
+    java.lang.String strStreet -> r
+    java.lang.String strPlaceType -> s
+    java.lang.String strPlaceName -> t
+    java.lang.String strMouseSum -> u
+    java.lang.String mOrgID -> v
+    java.lang.String mAreaID -> w
+    java.lang.String mType -> x
+    java.lang.String mPerson -> y
+    java.lang.String mPlaceType -> f
+    boolean isFirstElectric -> z
+    android.widget.ArrayAdapter adapterPlaceType -> g
+    android.widget.ImageButton ibtn_dropDown_place -> A
+    boolean mIsLessElec -> B
+    boolean isSave -> C
+    void onCreate(android.os.Bundle) -> onCreate
+    boolean onKeyDown(int,android.view.KeyEvent) -> onKeyDown
+    void onActivityResult(int,int,android.content.Intent) -> onActivityResult
+    boolean isExit() -> d
+    void getData(java.lang.String,long) -> a
+    void taskSuccess(java.lang.Object[]) -> a
+    void taskFailed(java.lang.Object[]) -> b
+    android.widget.AutoCompleteTextView access$0(com.vsi.page.PHCChaoShengBo) -> a
+    void access$1(com.vsi.page.PHCChaoShengBo,boolean) -> a
+    void access$2(com.vsi.page.PHCChaoShengBo) -> b
+    android.widget.EditText access$3(com.vsi.page.PHCChaoShengBo) -> c
+    void access$4(com.vsi.page.PHCChaoShengBo,java.lang.String) -> a
+    android.widget.EditText access$5(com.vsi.page.PHCChaoShengBo) -> d
+    void access$6(com.vsi.page.PHCChaoShengBo,java.lang.String) -> b
+    java.lang.String access$7(com.vsi.page.PHCChaoShengBo) -> e
+    java.lang.String access$8(com.vsi.page.PHCChaoShengBo) -> f
+    boolean access$9(com.vsi.page.PHCChaoShengBo) -> g
+    void access$10$2f66db0f(com.vsi.page.PHCChaoShengBo) -> h
+com.vsi.page.PHCChaoShengBo$1 -> com.vsi.page.an:
+    com.vsi.page.PHCChaoShengBo this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.vsi.page.PHCChaoShengBo$DropDownListener -> com.vsi.page.ao:
+    com.vsi.page.PHCChaoShengBo this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.vsi.page.PHCChaoShengBo$myInitListener -> com.vsi.page.ap:
+    com.vsi.page.PHCChaoShengBo this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.vsi.page.PHCChaoShengBo$myScannerListener -> com.vsi.page.aq:
+    com.vsi.page.PHCChaoShengBo this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.vsi.page.PHCFlyPage -> com.vsi.page.PHCFlyPage:
+    android.widget.LinearLayout panel_fly_out -> f
+    android.widget.LinearLayout panel_fly_in -> g
+    android.widget.RelativeLayout panel_fly_palce_name -> h
+    android.widget.EditText edit_fly_palce_name -> i
+    android.widget.AutoCompleteTextView et_fly_place_type -> j
+    android.widget.ImageButton ibtn_dropDown_fly_place -> k
+    boolean isShowFlyPlace -> l
+    android.widget.AutoCompleteTextView et_fly_method -> m
+    android.widget.ImageButton ibtn_dropDown_fly_method -> n
+    boolean isShowFlyPop -> o
+    android.widget.EditText mStreetEdit -> p
+    android.widget.EditText mFieldNumberEdit -> q
+    android.widget.EditText mMatureFlyNumberEdit -> r
+    android.widget.EditText mMatureflyFieldDensityEdit -> s
+    android.widget.EditText mStickyflyBarNumberEdit -> t
+    android.widget.EditText mCatchFlyNumberEdit -> u
+    android.widget.EditText mStickCatchFlyNumberDensityEdit -> v
+    android.widget.EditText edit_out_remark -> w
+    android.widget.EditText edit_in_remark -> x
+    java.lang.String mOrgID -> y
+    java.lang.String mAreaID -> z
+    java.lang.String mType -> A
+    java.lang.String mPerson -> B
+    int intMethodOut -> C
+    int intMethodIn -> D
+    int mCurrentFlyMethod -> E
+    android.widget.ArrayAdapter adapterPlaceOut -> b
+    android.widget.ArrayAdapter adapterPlaceIn -> c
+    android.os.Handler handler -> d
+    java.lang.Runnable calculateThread -> e
+    void onCreate(android.os.Bundle) -> onCreate
+    boolean isExit() -> d
+    void taskSuccess(java.lang.Object[]) -> a
+    void taskFailed(java.lang.Object[]) -> b
+    android.widget.EditText access$0(com.vsi.page.PHCFlyPage) -> a
+    android.widget.EditText access$1(com.vsi.page.PHCFlyPage) -> b
+    android.widget.EditText access$2(com.vsi.page.PHCFlyPage) -> c
+    android.widget.EditText access$3(com.vsi.page.PHCFlyPage) -> d
+    android.widget.EditText access$4(com.vsi.page.PHCFlyPage) -> e
+    android.widget.EditText access$5(com.vsi.page.PHCFlyPage) -> f
+    android.widget.AutoCompleteTextView access$9(com.vsi.page.PHCFlyPage) -> g
+    android.widget.RelativeLayout access$10(com.vsi.page.PHCFlyPage) -> h
+    android.widget.LinearLayout access$11(com.vsi.page.PHCFlyPage) -> i
+    android.widget.LinearLayout access$12(com.vsi.page.PHCFlyPage) -> j
+    android.widget.AutoCompleteTextView access$16(com.vsi.page.PHCFlyPage) -> k
+    void access$17(com.vsi.page.PHCFlyPage,int) -> a
+    int access$18(com.vsi.page.PHCFlyPage) -> l
+    int access$19(com.vsi.page.PHCFlyPage) -> m
+    int access$20(com.vsi.page.PHCFlyPage) -> n
+    android.widget.EditText access$21(com.vsi.page.PHCFlyPage) -> o
+    android.widget.EditText access$22(com.vsi.page.PHCFlyPage) -> p
+    android.widget.EditText access$23(com.vsi.page.PHCFlyPage) -> q
+    android.widget.EditText access$24(com.vsi.page.PHCFlyPage) -> r
+    java.lang.String access$25(com.vsi.page.PHCFlyPage) -> s
+    java.lang.String access$26(com.vsi.page.PHCFlyPage) -> t
+    java.lang.String access$27(com.vsi.page.PHCFlyPage) -> u
+com.vsi.page.PHCFlyPage$1 -> com.vsi.page.ar:
+    int intFieldNum -> a
+    int intMatureFlyNum -> b
+    int intStickyFlyBauNum -> c
+    int intCatchFlyNum -> d
+    com.vsi.page.PHCFlyPage this$0 -> e
+    void run() -> run
+com.vsi.page.PHCFlyPage$2 -> com.vsi.page.as:
+    com.vsi.page.PHCFlyPage this$0 -> a
+    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+com.vsi.page.PHCFlyPage$3 -> com.vsi.page.at:
+    com.vsi.page.PHCFlyPage this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.vsi.page.PHCFlyPage$4 -> com.vsi.page.au:
+    com.vsi.page.PHCFlyPage this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.vsi.page.PHCFlyPage$5 -> com.vsi.page.av:
+    com.vsi.page.PHCFlyPage this$0 -> a
+    void onClick(android.view.View) -> onClick
+    com.vsi.page.PHCFlyPage access$0(com.vsi.page.PHCFlyPage$5) -> a
+com.vsi.page.PHCFlyPage$5$1 -> com.vsi.page.aw:
+    com.vsi.page.PHCFlyPage$5 this$1 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.vsi.page.PHCFlyPage$6 -> com.vsi.page.ax:
+    com.vsi.page.PHCFlyPage this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.vsi.page.PHCFlyPage$7 -> com.vsi.page.ay:
+    com.vsi.page.PHCFlyPage this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.vsi.page.PHCInfoPage -> com.vsi.page.PHCInfoPage:
+    com.baidu.mapapi.LocationListener mLocationListener -> b
+    java.lang.String EXTRA_DEVICE_ADDRESS -> c
+    java.lang.String EXTRA_READER_ID -> d
+    java.lang.String mOrgID -> h
+    java.lang.String mAreaID -> i
+    java.lang.String mPerson -> j
+    android.widget.AutoCompleteTextView mAutoText -> e
+    android.widget.ImageButton ibtn_dropDown -> k
+    com.mobilercn.widget.D2EListAdapter mDropAdapter -> l
+    android.text.TextWatcher mWatcher -> f
+    boolean isShowList -> m
+    java.util.List mAreaItems -> n
+    android.widget.EditText mTimeEdit -> o
+    android.widget.EditText mDateEdit -> p
+    android.widget.EditText mWeathyEdit -> q
+    android.widget.EditText mTempEdit -> r
+    android.widget.EditText mCompEdit -> s
+    android.widget.EditText mPersonEdit -> t
+    java.lang.String mLogitude -> u
+    java.lang.String mLatitude -> v
+    android.os.Bundle bundle -> g
+    void onCreate(android.os.Bundle) -> onCreate
+    void onPause() -> onPause
+    void onResume() -> onResume
+    void onActivityResult(int,int,android.content.Intent) -> onActivityResult
+    void enterMainActivity() -> e
+    boolean isExit() -> d
+    void taskSuccess(java.lang.Object[]) -> a
+    void taskFailed(java.lang.Object[]) -> b
+    com.mobilercn.widget.D2EListAdapter access$0(com.vsi.page.PHCInfoPage) -> a
+    void access$5(com.vsi.page.PHCInfoPage,java.lang.String) -> a
+    void access$6(com.vsi.page.PHCInfoPage,java.lang.String) -> b
+    void access$7(com.vsi.page.PHCInfoPage,java.lang.String) -> c
+    android.widget.EditText access$8(com.vsi.page.PHCInfoPage) -> b
+    android.widget.EditText access$9(com.vsi.page.PHCInfoPage) -> c
+    java.lang.String access$10(com.vsi.page.PHCInfoPage) -> d
+    java.lang.String access$11(com.vsi.page.PHCInfoPage) -> e
+    void access$12(com.vsi.page.PHCInfoPage,java.lang.String) -> d
+    java.lang.String access$13(com.vsi.page.PHCInfoPage) -> f
+    java.lang.String access$14(com.vsi.page.PHCInfoPage) -> g
+    java.lang.String access$15(com.vsi.page.PHCInfoPage) -> h
+com.vsi.page.PHCInfoPage$1 -> com.vsi.page.az:
+    com.vsi.page.PHCInfoPage this$0 -> a
+    void afterTextChanged(android.text.Editable) -> afterTextChanged
+    void beforeTextChanged(java.lang.CharSequence,int,int,int) -> beforeTextChanged
+    void onTextChanged(java.lang.CharSequence,int,int,int) -> onTextChanged
+com.vsi.page.PHCInfoPage$2 -> com.vsi.page.ba:
+    com.vsi.page.PHCInfoPage this$0 -> a
+    void onLocationChanged(android.location.Location) -> onLocationChanged
+com.vsi.page.PHCInfoPage$3 -> com.vsi.page.bb:
+    com.vsi.page.PHCInfoPage this$0 -> a
+    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+com.vsi.page.PHCInfoPage$4 -> com.vsi.page.bc:
+    com.vsi.page.PHCInfoPage this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.vsi.page.PHCInfoPage$5 -> com.vsi.page.bd:
+    com.vsi.page.PHCInfoPage this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.vsi.page.PHCKrockroachPage -> com.vsi.page.PHCKrockroachPage:
+    java.lang.String mOrgID -> d
+    java.lang.String mAreaID -> e
+    java.lang.String mType -> f
+    java.lang.String mPerson -> g
+    android.widget.AutoCompleteTextView et_cockroach_place_type -> h
+    android.widget.EditText edit_sticky_cockroach_place_name -> i
+    boolean isShowCockroachPop -> j
+    android.widget.EditText edit_cockroach_remark -> k
+    android.widget.ImageButton ibtn_dropDown_cockroach_place -> l
+    android.widget.EditText mStreetEdit -> m
+    android.widget.EditText mStickyKrockroachPaperNumberEdit -> n
+    android.widget.EditText mPosStickyKrockroachPapeNumberEdit -> o
+    android.widget.EditText mStickyKrockroachNumber -> p
+    int mCurrentPlaceInt -> q
+    android.widget.EditText mKrockroachDensityEdit -> r
+    android.os.Handler handler -> b
+    java.lang.Runnable calculateThread -> c
+    void onCreate(android.os.Bundle) -> onCreate
+    void onPause() -> onPause
+    void onDestroy() -> onDestroy
+    boolean isExit() -> d
+    void taskSuccess(java.lang.Object[]) -> a
+    void taskFailed(java.lang.Object[]) -> b
+    android.widget.EditText access$0(com.vsi.page.PHCKrockroachPage) -> a
+    android.widget.EditText access$1(com.vsi.page.PHCKrockroachPage) -> b
+    android.widget.EditText access$2(com.vsi.page.PHCKrockroachPage) -> c
+    android.widget.EditText access$3(com.vsi.page.PHCKrockroachPage) -> d
+    android.widget.AutoCompleteTextView access$7(com.vsi.page.PHCKrockroachPage) -> e
+    void access$8(com.vsi.page.PHCKrockroachPage,int) -> a
+    android.widget.EditText access$9(com.vsi.page.PHCKrockroachPage) -> f
+    android.widget.EditText access$10(com.vsi.page.PHCKrockroachPage) -> g
+    android.widget.EditText access$11(com.vsi.page.PHCKrockroachPage) -> h
+    java.lang.String access$12(com.vsi.page.PHCKrockroachPage) -> i
+    java.lang.String access$13(com.vsi.page.PHCKrockroachPage) -> j
+    java.lang.String access$14(com.vsi.page.PHCKrockroachPage) -> k
+com.vsi.page.PHCKrockroachPage$1 -> com.vsi.page.be:
+    int intPaperNum -> a
+    int intPositivePaperNum -> b
+    int intRoachNum -> c
+    com.vsi.page.PHCKrockroachPage this$0 -> d
+    void run() -> run
+com.vsi.page.PHCKrockroachPage$2 -> com.vsi.page.bf:
+    com.vsi.page.PHCKrockroachPage this$0 -> a
+    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+com.vsi.page.PHCKrockroachPage$3 -> com.vsi.page.bg:
+    com.vsi.page.PHCKrockroachPage this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.vsi.page.PHCKrockroachPage$4 -> com.vsi.page.bh:
+    com.vsi.page.PHCKrockroachPage this$0 -> a
+    void onClick(android.view.View) -> onClick
+    com.vsi.page.PHCKrockroachPage access$0(com.vsi.page.PHCKrockroachPage$4) -> a
+com.vsi.page.PHCKrockroachPage$4$1 -> com.vsi.page.bi:
+    com.vsi.page.PHCKrockroachPage$4 this$1 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.vsi.page.PHCKrockroachPage$5 -> com.vsi.page.bj:
+    com.vsi.page.PHCKrockroachPage this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.vsi.page.PHCKrockroachPage$6 -> com.vsi.page.bk:
+    com.vsi.page.PHCKrockroachPage this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.vsi.page.PHCLoginPage -> com.vsi.page.PHCLoginPage:
+    android.widget.EditText login_edit_account -> b
+    android.widget.EditText login_edit_pwd -> c
+    android.widget.CheckBox login_cb_name -> d
+    android.widget.CheckBox login_cb_pwd -> e
+    java.lang.String username -> f
+    java.lang.String password -> g
+    void onCreate(android.os.Bundle) -> onCreate
+    boolean isExit() -> d
+    void taskSuccess(java.lang.Object[]) -> a
+    void taskFailed(java.lang.Object[]) -> b
+    android.widget.CheckBox access$0(com.vsi.page.PHCLoginPage) -> a
+    android.widget.CheckBox access$1(com.vsi.page.PHCLoginPage) -> b
+    android.widget.EditText access$2(com.vsi.page.PHCLoginPage) -> c
+    void access$3(com.vsi.page.PHCLoginPage,java.lang.String) -> a
+    android.widget.EditText access$4(com.vsi.page.PHCLoginPage) -> d
+    void access$5(com.vsi.page.PHCLoginPage,java.lang.String) -> b
+    java.lang.String access$6(com.vsi.page.PHCLoginPage) -> e
+    java.lang.String access$7(com.vsi.page.PHCLoginPage) -> f
+com.vsi.page.PHCLoginPage$1 -> com.vsi.page.bl:
+    com.vsi.page.PHCLoginPage this$0 -> a
+    void onCheckedChanged(android.widget.CompoundButton,boolean) -> onCheckedChanged
+com.vsi.page.PHCLoginPage$2 -> com.vsi.page.bm:
+    com.vsi.page.PHCLoginPage this$0 -> a
+    void onCheckedChanged(android.widget.CompoundButton,boolean) -> onCheckedChanged
+com.vsi.page.PHCLoginPage$3 -> com.vsi.page.bn:
+    com.vsi.page.PHCLoginPage this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.vsi.page.PHCMenuPage -> com.vsi.page.PHCMenuPage:
+    com.mobilercn.widget.JJLinkLayer mDownLink -> b
+    com.mobilercn.widget.JJLinkLayer mLeftLink -> c
+    com.mobilercn.widget.JJLinkLayer mRightLink -> d
+    com.mobilercn.widget.JJLinkLayer mUpLink -> e
+    java.lang.String mOrgID -> f
+    com.mobilercn.widget.JJMenuLayer mMenuLayer -> g
+    android.widget.ImageButton ib_state_standard -> h
+    void onCreate(android.os.Bundle) -> onCreate
+    void onPause() -> onPause
+    void onResume() -> onResume
+    void menuSelection(int) -> a
+    boolean isExit() -> d
+    void taskSuccess(java.lang.Object[]) -> a
+    void taskFailed(java.lang.Object[]) -> b
+com.vsi.page.PHCMenuPage$1 -> com.vsi.page.bo:
+    com.vsi.page.PHCMenuPage this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.vsi.page.PHCMosquitoPage -> com.vsi.page.PHCMosquitoPage:
+    java.lang.String mOrgID -> f
+    java.lang.String mAreaID -> g
+    java.lang.String mType -> h
+    java.lang.String mPerson -> i
+    android.widget.RelativeLayout panel_mosqito_palce_name -> j
+    android.widget.LinearLayout panel_mosquito_out -> k
+    android.widget.LinearLayout panel_mosquito_in -> l
+    android.widget.EditText edit_mosqito_palce_name -> m
+    android.widget.AutoCompleteTextView et_mosquito_place_type -> n
+    android.widget.ImageButton ibtn_dropDown_mosquito_place -> o
+    android.widget.AutoCompleteTextView et_mosquito_monitor_place -> p
+    android.widget.ImageButton ibtn_dropDown_mosquito_monitor_place -> q
+    boolean isShowMosquitoMonitorPlace -> r
+    android.widget.EditText mStreeEdit -> s
+    android.widget.EditText mPondEdit -> t
+    android.widget.EditText mPosPondEdit -> u
+    android.widget.EditText mDensPondEdit -> v
+    android.widget.EditText mCollSpooEdit -> w
+    android.widget.EditText mPosSpooEdit -> x
+    android.widget.EditText mDensiSpooEdit -> y
+    android.widget.EditText edit_out_remark -> z
+    android.widget.EditText edit_in_remark -> A
+    int intMethodOut -> B
+    int intMethodRiver -> C
+    int mCurrentMosqitoMonitorMethod -> D
+    android.widget.ArrayAdapter adapterPlaceOut -> b
+    android.widget.ArrayAdapter adapterPlaceRiver -> c
+    boolean isSave -> E
+    android.os.Handler handler -> d
+    java.lang.Runnable calculateThread -> e
+    void onCreate(android.os.Bundle) -> onCreate
+    void onPause() -> onPause
+    void onDestroy() -> onDestroy
+    boolean isExit() -> d
+    void taskSuccess(java.lang.Object[]) -> a
+    void taskFailed(java.lang.Object[]) -> b
+    android.widget.EditText access$0(com.vsi.page.PHCMosquitoPage) -> a
+    android.widget.EditText access$1(com.vsi.page.PHCMosquitoPage) -> b
+    android.widget.EditText access$2(com.vsi.page.PHCMosquitoPage) -> c
+    android.widget.EditText access$3(com.vsi.page.PHCMosquitoPage) -> d
+    android.widget.AutoCompleteTextView access$4(com.vsi.page.PHCMosquitoPage) -> e
+    android.widget.EditText access$5(com.vsi.page.PHCMosquitoPage) -> f
+    android.widget.EditText access$6(com.vsi.page.PHCMosquitoPage) -> g
+    android.widget.RelativeLayout access$10(com.vsi.page.PHCMosquitoPage) -> h
+    android.widget.LinearLayout access$11(com.vsi.page.PHCMosquitoPage) -> i
+    android.widget.LinearLayout access$12(com.vsi.page.PHCMosquitoPage) -> j
+    android.widget.AutoCompleteTextView access$16(com.vsi.page.PHCMosquitoPage) -> k
+    void access$17(com.vsi.page.PHCMosquitoPage,int) -> a
+    int access$18(com.vsi.page.PHCMosquitoPage) -> l
+    int access$19(com.vsi.page.PHCMosquitoPage) -> m
+    int access$20(com.vsi.page.PHCMosquitoPage) -> n
+    android.widget.EditText access$21(com.vsi.page.PHCMosquitoPage) -> o
+    android.widget.EditText access$22(com.vsi.page.PHCMosquitoPage) -> p
+    android.widget.EditText access$23(com.vsi.page.PHCMosquitoPage) -> q
+    android.widget.EditText access$24(com.vsi.page.PHCMosquitoPage) -> r
+    java.lang.String access$25(com.vsi.page.PHCMosquitoPage) -> s
+    java.lang.String access$26(com.vsi.page.PHCMosquitoPage) -> t
+    java.lang.String access$27(com.vsi.page.PHCMosquitoPage) -> u
+    void access$28$4715e30a(com.vsi.page.PHCMosquitoPage) -> v
+com.vsi.page.PHCMosquitoPage$1 -> com.vsi.page.bp:
+    int intPond -> a
+    int intPosPond -> b
+    int intCollSpoo -> c
+    int intPosSpoo -> d
+    com.vsi.page.PHCMosquitoPage this$0 -> e
+    void run() -> run
+com.vsi.page.PHCMosquitoPage$2 -> com.vsi.page.bq:
+    com.vsi.page.PHCMosquitoPage this$0 -> a
+    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+com.vsi.page.PHCMosquitoPage$3 -> com.vsi.page.br:
+    com.vsi.page.PHCMosquitoPage this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.vsi.page.PHCMosquitoPage$4 -> com.vsi.page.bs:
+    com.vsi.page.PHCMosquitoPage this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.vsi.page.PHCMosquitoPage$5 -> com.vsi.page.bt:
+    com.vsi.page.PHCMosquitoPage this$0 -> a
+    void onClick(android.view.View) -> onClick
+    com.vsi.page.PHCMosquitoPage access$0(com.vsi.page.PHCMosquitoPage$5) -> a
+com.vsi.page.PHCMosquitoPage$5$1 -> com.vsi.page.bu:
+    com.vsi.page.PHCMosquitoPage$5 this$1 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.vsi.page.PHCMosquitoPage$6 -> com.vsi.page.bv:
+    com.vsi.page.PHCMosquitoPage this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.vsi.page.PHCMosquitoPage$7 -> com.vsi.page.bw:
+    com.vsi.page.PHCMosquitoPage this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.vsi.page.PHCMousePage -> com.vsi.page.PHCMousePage:
+    com.vsi.data.MouseReportItem mouseReportItem -> b
+    int array -> c
+    int intCurrent -> m
+    int intOut -> n
+    int intIn -> o
+    int intCao -> p
+    int intCurrentPlace -> q
+    android.widget.EditText mStreetEdit -> r
+    android.widget.AutoCompleteTextView et_place_type -> s
+    android.widget.ImageButton ibtn_dropDown_place -> t
+    android.widget.RelativeLayout panel_palce_name -> u
+    android.widget.EditText edit_mouse_palce_name -> v
+    android.widget.EditText edit_rat_hole -> w
+    android.widget.EditText edit_rat_drains -> x
+    android.widget.EditText edit_rat_dung -> y
+    android.widget.EditText edit_rat_bite_mark -> z
+    android.widget.EditText edit_rat_corpse -> A
+    android.widget.EditText edit_out_remark -> B
+    android.widget.EditText edit_in_remark -> C
+    android.widget.LinearLayout panelOut -> D
+    android.widget.LinearLayout panelIn -> E
+    android.widget.AutoCompleteTextView et_monitor_method -> F
+    com.mobilercn.widget.D2EListAdapter mDropAdapter -> G
+    android.text.TextWatcher mWatcher -> d
+    android.widget.ArrayAdapter adapterPlaceOut -> e
+    android.widget.ArrayAdapter adapterPlaceIn -> f
+    android.widget.ArrayAdapter adapterPlaceCao -> g
+    android.widget.ImageButton ibtn_dropDown_method -> H
+    android.widget.EditText mMeterEdit -> I
+    android.widget.EditText mTracEdit -> J
+    android.widget.EditText mDensityEdit -> K
+    android.widget.EditText mSumInitEdit -> L
+    android.widget.EditText mSumEdit -> M
+    android.widget.EditText mCatchEdit -> N
+    android.widget.EditText mDensitySumEdit -> O
+    java.lang.String mouseTrace -> P
+    int RESPONSE_REPORT -> h
+    java.lang.String mOrgID -> Q
+    java.lang.String mAreaID -> R
+    java.lang.String mType -> S
+    java.lang.String mPerson -> T
+    android.widget.RelativeLayout menu_mounsenumber_layout -> U
+    java.lang.String EXTRA_DEVICE_ADDRESS -> i
+    java.lang.String EXTRA_READER_ID -> j
+    android.widget.LinearLayout panel_cao -> V
+    boolean isShwoDeviceList -> W
+    android.os.Handler handler -> k
+    java.lang.Runnable calculateThread -> l
+    void onCreate(android.os.Bundle) -> onCreate
+    void onResume() -> onResume
+    void initServices() -> e
+    void onPause() -> onPause
+    void onDestroy() -> onDestroy
+    boolean isExit() -> d
+    void onActivityResult(int,int,android.content.Intent) -> onActivityResult
+    void taskSuccess(java.lang.Object[]) -> a
+    void taskFailed(java.lang.Object[]) -> b
+    com.mobilercn.widget.D2EListAdapter access$0(com.vsi.page.PHCMousePage) -> a
+    android.widget.EditText access$1(com.vsi.page.PHCMousePage) -> b
+    android.widget.EditText access$2(com.vsi.page.PHCMousePage) -> c
+    android.widget.EditText access$3(com.vsi.page.PHCMousePage) -> d
+    android.widget.EditText access$4(com.vsi.page.PHCMousePage) -> e
+    android.widget.EditText access$5(com.vsi.page.PHCMousePage) -> f
+    android.widget.EditText access$6(com.vsi.page.PHCMousePage) -> g
+    android.widget.EditText access$7(com.vsi.page.PHCMousePage) -> h
+    android.widget.EditText access$8(com.vsi.page.PHCMousePage) -> i
+    android.widget.EditText access$9(com.vsi.page.PHCMousePage) -> j
+    android.widget.EditText access$10(com.vsi.page.PHCMousePage) -> k
+    void access$11(com.vsi.page.PHCMousePage,java.lang.String) -> a
+    android.widget.EditText access$12(com.vsi.page.PHCMousePage) -> l
+    void access$13(com.vsi.page.PHCMousePage,int) -> a
+    int access$14(com.vsi.page.PHCMousePage) -> m
+    int access$15(com.vsi.page.PHCMousePage) -> n
+    android.widget.LinearLayout access$16(com.vsi.page.PHCMousePage) -> o
+    android.widget.LinearLayout access$17(com.vsi.page.PHCMousePage) -> p
+    android.widget.RelativeLayout access$18(com.vsi.page.PHCMousePage) -> q
+    android.widget.AutoCompleteTextView access$19(com.vsi.page.PHCMousePage) -> r
+    android.widget.RelativeLayout access$20(com.vsi.page.PHCMousePage) -> s
+    int access$21(com.vsi.page.PHCMousePage) -> t
+    int access$22(com.vsi.page.PHCMousePage) -> u
+    void access$23(com.vsi.page.PHCMousePage) -> v
+    android.widget.AutoCompleteTextView access$24(com.vsi.page.PHCMousePage) -> w
+    void access$25(com.vsi.page.PHCMousePage,int) -> b
+    android.widget.EditText access$26(com.vsi.page.PHCMousePage) -> x
+    android.widget.EditText access$27(com.vsi.page.PHCMousePage) -> y
+    android.widget.EditText access$28(com.vsi.page.PHCMousePage) -> z
+    android.widget.EditText access$29(com.vsi.page.PHCMousePage) -> A
+    java.lang.String access$30(com.vsi.page.PHCMousePage) -> B
+    java.lang.String access$31(com.vsi.page.PHCMousePage) -> C
+    java.lang.String access$32(com.vsi.page.PHCMousePage) -> D
+    java.lang.String access$33(com.vsi.page.PHCMousePage) -> E
+com.vsi.page.PHCMousePage$1 -> com.vsi.page.bx:
+    com.vsi.page.PHCMousePage this$0 -> a
+    void afterTextChanged(android.text.Editable) -> afterTextChanged
+    void beforeTextChanged(java.lang.CharSequence,int,int,int) -> beforeTextChanged
+    void onTextChanged(java.lang.CharSequence,int,int,int) -> onTextChanged
+com.vsi.page.PHCMousePage$2 -> com.vsi.page.by:
+    java.lang.String sum -> a
+    int meter -> b
+    int ratHole -> c
+    int ratDrains -> d
+    int fecal -> e
+    int ratBiteMark -> f
+    int ratCorpse -> g
+    int mouseSunInit -> h
+    int mouseSun -> i
+    int mouseCatchNumber -> j
+    com.vsi.page.PHCMousePage this$0 -> k
+    void run() -> run
+com.vsi.page.PHCMousePage$3 -> com.vsi.page.bz:
+    com.vsi.page.PHCMousePage this$0 -> a
+    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+com.vsi.page.PHCMousePage$4 -> com.vsi.page.ca:
+    com.vsi.page.PHCMousePage this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.vsi.page.PHCMousePage$5 -> com.vsi.page.cb:
+    com.vsi.page.PHCMousePage this$0 -> a
+    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+com.vsi.page.PHCMousePage$6 -> com.vsi.page.cc:
+    com.vsi.page.PHCMousePage this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.vsi.page.PHCMousePage$7 -> com.vsi.page.cd:
+    com.vsi.page.PHCMousePage this$0 -> a
+    void onClick(android.view.View) -> onClick
+    com.vsi.page.PHCMousePage access$0(com.vsi.page.PHCMousePage$7) -> a
+com.vsi.page.PHCMousePage$7$1 -> com.vsi.page.ce:
+    com.vsi.page.PHCMousePage$7 this$1 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.vsi.page.PHCMousePage$8 -> com.vsi.page.cf:
+    com.vsi.page.PHCMousePage this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.vsi.page.PHCMousePage$9 -> com.vsi.page.cg:
+    com.vsi.page.PHCMousePage this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.vsi.page.PHCStateStandardActivity -> com.vsi.page.PHCStateStandardActivity:
+    android.widget.TextView mTextView -> a
+    void onCreate(android.os.Bundle) -> onCreate
+    void onResume() -> onResume
+com.vsi.phc.PHCActivity -> com.vsi.phc.PHCActivity:
+    void onCreate(android.os.Bundle) -> onCreate
+com.vsi.phc.PHCActivity$1 -> com.vsi.phc.a:
+    com.vsi.phc.PHCActivity this$0 -> a
+    void onAnimationStart(android.view.animation.Animation) -> onAnimationStart
+    void onAnimationRepeat(android.view.animation.Animation) -> onAnimationRepeat
+    void onAnimationEnd(android.view.animation.Animation) -> onAnimationEnd
+net.sourceforge.pinyin4j.ChineseToPinyinResource -> a.a.a.a:
+    java.util.Properties unicodeToHanyuPinyinTable -> a
+    java.lang.String[] getHanyuPinyinStringArray(char) -> a
+net.sourceforge.pinyin4j.ChineseToPinyinResource$ChineseToPinyinResourceHolder -> a.a.a.b:
+    net.sourceforge.pinyin4j.ChineseToPinyinResource theInstance -> a
+net.sourceforge.pinyin4j.PinyinHelper -> a.a.a.c:
+    java.lang.String[] toHanyuPinyinStringArray(char,net.sourceforge.pinyin4j.format.HanyuPinyinOutputFormat) -> a
+net.sourceforge.pinyin4j.ResourceHelper -> a.a.a.d:
+    java.lang.Class class$net$sourceforge$pinyin4j$ResourceHelper -> a
+    java.io.BufferedInputStream getResourceInputStream(java.lang.String) -> a
+    java.lang.Class class$(java.lang.String) -> b
+net.sourceforge.pinyin4j.format.HanyuPinyinCaseType -> a.a.a.a.a:
+    net.sourceforge.pinyin4j.format.HanyuPinyinCaseType UPPERCASE -> a
+    net.sourceforge.pinyin4j.format.HanyuPinyinCaseType LOWERCASE -> b
+    java.lang.String name -> c
+net.sourceforge.pinyin4j.format.HanyuPinyinOutputFormat -> a.a.a.a.b:
+    net.sourceforge.pinyin4j.format.HanyuPinyinVCharType vCharType -> a
+    net.sourceforge.pinyin4j.format.HanyuPinyinCaseType caseType -> b
+    net.sourceforge.pinyin4j.format.HanyuPinyinToneType toneType -> c
+    net.sourceforge.pinyin4j.format.HanyuPinyinCaseType getCaseType() -> a
+    void setCaseType(net.sourceforge.pinyin4j.format.HanyuPinyinCaseType) -> a
+    net.sourceforge.pinyin4j.format.HanyuPinyinToneType getToneType() -> b
+    void setToneType(net.sourceforge.pinyin4j.format.HanyuPinyinToneType) -> a
+    net.sourceforge.pinyin4j.format.HanyuPinyinVCharType getVCharType() -> c
+net.sourceforge.pinyin4j.format.HanyuPinyinToneType -> a.a.a.a.c:
+    net.sourceforge.pinyin4j.format.HanyuPinyinToneType WITH_TONE_NUMBER -> a
+    net.sourceforge.pinyin4j.format.HanyuPinyinToneType WITHOUT_TONE -> b
+    net.sourceforge.pinyin4j.format.HanyuPinyinToneType WITH_TONE_MARK -> c
+    java.lang.String name -> d
+net.sourceforge.pinyin4j.format.HanyuPinyinVCharType -> a.a.a.a.d:
+    net.sourceforge.pinyin4j.format.HanyuPinyinVCharType WITH_U_AND_COLON -> a
+    net.sourceforge.pinyin4j.format.HanyuPinyinVCharType WITH_V -> b
+    net.sourceforge.pinyin4j.format.HanyuPinyinVCharType WITH_U_UNICODE -> c
+    java.lang.String name -> d
+net.sourceforge.pinyin4j.format.exception.BadHanyuPinyinOutputFormatCombination -> a.a.a.a.a.a:

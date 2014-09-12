@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="32"
+   name=""
+   committed-date="2012-12-19T01:38:08.770712Z"
+   url="http://140.206.114.246:9090/svn/Ohpest/PHC10/libs/armeabi"
+   last-author="shawn"
+   kind="dir"
+   repos="http://140.206.114.246:9090/svn/Ohpest"
+   revision="41"/>
+<entry
+   committed-rev="32"
+   name="libBMapApiEngine_v1_3_5.so"
+   text-time="2012-12-19T01:33:54.000000Z"
+   committed-date="2012-12-19T01:38:08.770712Z"
+   checksum="21e3a1f75a7092c51b69e6dd5f7efbd3"
+   last-author="shawn"
+   kind="file"
+   prop-time="2012-12-19T01:38:06.000000Z"/>
+</wc-entries>

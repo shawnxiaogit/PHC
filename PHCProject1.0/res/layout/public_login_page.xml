@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:scrollbarThumbVertical="@drawable/trans" 
+        android:background="@drawable/logo_bg"
+        android:layout_width="match_parent" 
+        android:layout_height="match_parent">
+      <LinearLayout 
+          android:orientation="vertical" 
+          android:gravity="center_vertical"
+          android:layout_width="fill_parent" 
+          android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="35.0dip" android:layout_marginTop="28.0dip" android:layout_marginRight="35.0dip">
+                <ImageView android:id="@id/login_logo" 
+                    android:background="@drawable/my_login_logo" 
+                    android:layout_width="wrap_content" 
+                    android:layout_height="wrap_content" 
+                    android:layout_centerHorizontal="true" />
+                
+                <EditText 
+                    android:id="@id/login_edit_account" 
+                    android:background="@drawable/public_edit_bg" 
+                    android:paddingLeft="60.0dip" 
+                    android:saveEnabled="true" 
+                    android:layout_width="fill_parent" 
+                    android:layout_height="wrap_content" 
+                    android:layout_marginTop="8.0dip" 
+                    android:layout_marginBottom="12.0dip" 
+                    android:layout_below="@id/login_logo" 
+                    style="@style/EditText" 
+                    android:singleLine="true" 
+                    android:hint="@string/login_enter_name"/>
+                <TextView android:id="@id/loginTextView01" 
+                    android:gravity="center_vertical|left" 
+                    android:paddingLeft="7.0dip" 
+                    android:layout_width="wrap_content" 
+                    android:layout_height="wrap_content" 
+                    android:layout_marginRight="15.0dip" 
+                    android:layout_alignLeft="@id/login_edit_account" 
+                    android:layout_alignTop="@id/login_edit_account" 
+                    android:layout_alignBottom="@id/login_edit_account" 
+                    style="@style/EditText" 
+                    android:text="@string/login_name" />"
+                <ImageView android:background="@drawable/login_account_icon" 
+                    android:layout_width="wrap_content" 
+                    android:layout_height="wrap_content" 
+                    android:layout_marginRight="1.0dip" 
+                    android:layout_alignTop="@id/login_edit_account" 
+                    android:layout_alignRight="@id/login_edit_account" 
+                    android:layout_alignBottom="@id/login_edit_account" />
+                
+                <EditText android:id="@id/login_edit_pwd" 
+                    android:background="@drawable/public_edit_bg" 
+                    android:paddingLeft="60.0dip" 
+                    android:saveEnabled="true" 
+                    android:layout_width="wrap_content" 
+                    android:layout_height="wrap_content" 
+                    android:maxLength="16" 
+                    android:layout_below="@id/login_edit_account" 
+                    android:layout_alignLeft="@id/login_edit_account"
+                    android:layout_alignRight="@id/login_edit_account" 
+                    android:inputType="textPassword" style="@style/EditText" 
+                    android:singleLine="true" 
+                    android:hint="@string/login_enter_pwd" />
+                <TextView android:gravity="center_vertical|left" 
+                    android:paddingLeft="7.0dip" 
+                    android:layout_marginRight="15.0dip" 
+                    android:layout_width="wrap_content" 
+                    android:layout_height="wrap_content" 
+                    android:layout_alignTop="@id/login_edit_pwd" 
+                    android:layout_alignLeft="@id/login_edit_pwd" 
+                    android:layout_alignBottom="@id/login_edit_pwd" 
+                    style="@style/EditText" 
+                    android:text="@string/login_pwd"/>
+                
+                <ImageView android:background="@drawable/login_pwd_icon" 
+                    android:layout_width="wrap_content" 
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="1.0dip" 
+                    android:layout_alignTop="@id/login_edit_pwd" 
+                    android:layout_alignRight="@id/login_edit_pwd" 
+                    android:layout_alignBottom="@id/login_edit_pwd" />
+                
+            </RelativeLayout>
+            <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="47.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="47.0dip" android:layout_marginBottom="4.0dip" android:stretchColumns="1">
+                <TableRow>
+                    <CheckBox android:id="@id/login_cb_name" 
+                        android:paddingLeft="32.0dip" 
+                        android:layout_width="wrap_content" 
+                        android:layout_height="wrap_content" 
+                        android:text="@string/login_save_name" 
+                        style="@style/public_checkbox" />
+                    <TextView android:gravity="center_vertical" 
+                        android:id="@id/login_forget_pwd" 
+                        android:paddingLeft="32.0dip" 
+                        android:layout_width="wrap_content" 
+                        android:layout_height="wrap_content" 
+                        android:text="@string/login_forget_pwd" 
+                        android:width="118.0dip" />
+                </TableRow>
+                <TableRow >
+                	<CheckBox android:id="@id/login_cb_pwd" 
+                	    android:paddingLeft="32.0dip" 
+                	    android:layout_width="wrap_content" 
+                	    android:layout_height="wrap_content" 
+                	    android:text="@string/login_save_pwd" 
+                	    style="@style/public_checkbox" />                    
+                </TableRow>
+            </TableLayout>    
+            <LinearLayout android:gravity="center_horizontal|center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="47.0dip" android:layout_marginTop="0.0dip" android:layout_marginRight="47.0dip" android:layout_marginBottom="28.0dip">
+                <Button 
+                    android:background="@drawable/login_btn_bg" 
+                    android:id="@id/login_submit_btn" 
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_width="wrap_content" 
+                    android:layout_height="48.0dip" 
+                    android:layout_marginTop="18.0dip"/>
+            </LinearLayout>             
+      </LinearLayout>
+    </ScrollView>
+

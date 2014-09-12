@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 鼠监测方法 -->
+	<string-array name="mouse_monitor_method">
+	    <item>外环境(目测法)</item>
+	    <item>室内(粘鼠板法)</item>
+	    <item>D 2 E</item>
+	</string-array>  
+	<!-- 鼠监测外环境场所类型 -->
+	<string-array name="mouse_monitor_place_out">
+	    <item>建筑(拆建工地)</item>
+	    <item>公共绿地</item>
+	    <item>单位或居民区院内</item>
+	    <item>河湖两岸</item>
+	    <item>其他类型</item>
+	</string-array>
+	<!-- 鼠监测室内场所类型 -->
+	<string-array name="mouse_monitor_place_in">
+	    <item>餐        馆</item>
+	    <item>宾馆饭店</item>
+	    <item>单位食堂</item>
+	    <item>农贸市场</item>
+	    <item>食品制售或商场</item>
+	</string-array>
+	
+	<!-- 鼠监测超声波的场所类型 -->
+	<string-array name="mouse_cao_place">
+		<item>建筑(拆建工地)</item>
+	    <item>公共绿地</item>
+	    <item>单位或居民区院内</item>
+	    <item>河湖两岸</item>
+	    <item>餐        馆</item>
+	    <item>宾馆饭店</item>
+	    <item>单位食堂</item>
+	    <item>农贸市场</item>
+	    <item>食品制售或商场</item>  
+	    <item>其他类型</item>  
+	</string-array>
+	
+	
+	<!-- 蟑螂监测场所类型 -->
+	<string-array name="cockroach_monitor_place">
+	    <item>餐    馆</item>
+	    <item>宾馆饭店(或招待所)</item>
+	    <item>医    院</item>
+	    <item>单位食堂</item>
+	    <item>居  民  户</item>
+	</string-array>
+	
+	
+	<!-- 蚊监测方法类型 -->
+	<string-array name="mosquito_monitor_method">
+	    <item>外环境</item>
+	    <item>水体</item>
+	</string-array>
+	<!-- 蚊监测单位居民区外环境场所类型 -->
+	<string-array name="mosquito_place_out">
+	    <item>居民区</item>
+	    <item>单    位</item>
+	</string-array>
+	<!-- 蚊监测池塘或河流等大中型水体场所类型 -->
+	<string-array name="mosquito_place_river">
+	    <item>池    塘</item>
+	    <item>河    流</item>
+	    <item>其    他</item>
+	</string-array>
+	
+	
+	<!-- 蝇监测方法类型 -->
+	<string-array name="fly_monitor_method">
+	    <item>室外(目测法)</item>
+	    <item>室内(粘蝇条法)</item>
+	</string-array>
+	<!-- 蝇监测室外(目测法)场所类型 -->
+	<string-array name="fly_place_out">
+	    <item>公    厕</item>
+	    <item>垃圾中转站</item>
+	    <item>居民一楼楼道</item>
+	</string-array>
+	<!-- 蝇监测室内(粘蝇条法)场所类型 -->
+	<string-array name="fly_place_in">
+	    <item>餐    馆</item>
+	    <item>农贸市场</item>
+	    <item>单位食堂</item>
+	</string-array>
+	
+	
+</resources>

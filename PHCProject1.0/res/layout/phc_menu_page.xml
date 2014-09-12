@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/logo_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layout_main_lock"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_marginTop="50.0dip"
+            android:layout_weight="1.0"
+            android:gravity="center" >
+
+            <RelativeLayout
+                android:id="@+id/layout_link"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <View
+                    android:id="@+id/center_pos"
+                    android:layout_width="60.0dip"
+                    android:layout_height="60.0dip"
+                    android:layout_centerInParent="true" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/center_pos"
+                    android:layout_centerHorizontal="true" >
+
+                    <com.mobilercn.widget.JJLinkLayer
+                        android:id="@+id/link_up"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/center_pos" >
+
+                    <com.mobilercn.widget.JJLinkLayer
+                        android:id="@+id/link_left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/center_pos" >
+
+                    <com.mobilercn.widget.JJLinkLayer
+                        android:id="@+id/link_right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/center_pos"
+                    android:layout_centerHorizontal="true" >
+
+                    <com.mobilercn.widget.JJLinkLayer
+                        android:id="@+id/link_dowm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <com.mobilercn.widget.JJMenuLayer
+                android:id="@+id/layout_menus"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="5.0"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/ib_state_standard"
+            android:layout_width="150dip"
+            android:layout_height="50dip"
+            android:background="@drawable/ib_state_standar"
+            android:gravity="center"
+            android:paddingTop="10dp" />
+    </LinearLayout>
+
+</LinearLayout>

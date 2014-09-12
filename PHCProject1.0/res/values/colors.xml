@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Copyright (C) 2012 Wu.s.w
+
+-->
+
+<resources>
+    <color name="headerColor">#76becc</color>
+    <color name="frontColor1">#fffef9</color>
+    <color name="frontColor2">#f6f5ec</color>
+    
+    <color name="et_textColor">#ff3f3f3f</color>
+    <color name="et_editableColor">#ff0b70a4</color>
+    
+    <color name="my_et_color">#ff0b70a4</color>
+    
+    <color name="my_te_black_color">#ffffff</color>
+    
+</resources>

@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_bg"
+    android:scrollbarThumbVertical="@drawable/trans" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" 
+        android:paddingBottom="10.0dip"
+        android:paddingLeft="20.0dip"
+        android:paddingRight="20.0dip"
+        android:paddingTop="10.0dip" 
+        >
+
+        <!-- 街道名称 -->
+        
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:background="@drawable/public_line_top" >
+
+            <TextView
+                android:id="@id/LabelTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5.0dip"
+                android:text="@string/mouse_street_name"
+                style="@style/info_tv_style" />
+
+            <EditText
+                android:id="@id/edit_street"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_toRightOf="@id/LabelTextView"
+                android:background="#ffffffff"
+                android:ellipsize="end"
+                android:hint="@string/input_should"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                style="@style/et_text_style" />
+        </RelativeLayout>
+        <!-- 场所类型下拉框 -->
+
+        <RelativeLayout
+            android:id="@+id/layout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/public_line_mid" >
+
+            <!-- 场所类型输入框 -->
+
+            <AutoCompleteTextView
+                android:id="@id/et_place_type"
+                style="@style/et_text_style"
+                android:layout_width="match_parent"
+                android:layout_height="40.0dip"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10.0dip"
+                android:layout_toRightOf="@id/tv_place_type"
+                android:background="@null"
+                android:hint="@string/input_place_type"
+                android:maxLength="20"
+                android:paddingRight="20dip"
+                android:enabled="false"
+                />
+            <!-- 场所类型 文本展示 -->
+
+            <TextView
+                android:id="@id/tv_place_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/et_place_type"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="7.0dip"
+                android:text="@string/tv_place_type"
+                style="@style/info_tv_style" />
+            <!-- 下拉按钮 -->
+
+            <ImageButton
+                android:id="@id/ibtn_dropDown_place"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/layout1"
+                android:layout_alignRight="@id/et_place_type"
+                android:layout_alignTop="@+id/layout1"
+                android:layout_marginLeft="1.0dip"
+                android:background="@drawable/more_select" />
+        </RelativeLayout>
+        <!-- 场所名称 -->
+
+        <RelativeLayout
+            android:id="@id/panel_palce_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/public_line_mid" >
+
+            <TextView
+                android:id="@id/LabelTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5.0dip"
+                android:text="@string/mouse_place_name"
+                style="@style/info_tv_style" />
+
+            <EditText
+                android:id="@id/edit_mouse_palce_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_toRightOf="@id/LabelTextView"
+                android:background="#ffffffff"
+                android:ellipsize="end"
+                android:hint="@string/input_should"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                style="@style/et_text_style" />
+        </RelativeLayout>
+        <!-- 总数 -->
+
+        <RelativeLayout
+            android:id="@id/panel_palce_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/public_line_mid" >
+
+            <TextView
+                android:id="@id/LabelTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5.0dip"
+                android:text="@string/chao_sheng_bo_sum"
+                style="@style/info_tv_style" />
+
+            <TextView
+                android:id="@id/tv_cao_sum"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_toRightOf="@id/LabelTextView"
+                android:background="#ffffffff"
+                android:ellipsize="end"
+                android:singleLine="true"
+                style="@style/et_text_style" />
+        </RelativeLayout>
+        <!-- 电量 -->
+
+        <RelativeLayout
+            android:id="@id/panel_palce_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/public_line_mid" >
+
+            <TextView
+                android:id="@id/LabelTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5.0dip"
+                android:text="@string/chao_sheng_bo_electric"
+                style="@style/info_tv_style" />
+
+            <ImageView
+                android:id="@id/iv_cao_battery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_toRightOf="@id/LabelTextView"
+                android:background="#ffffffff"
+                android:ellipsize="end"
+                android:gravity="center"
+                />
+        </RelativeLayout>
+        
+        
+        <RelativeLayout
+            android:id="@id/panel_palce_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/public_line_mid" >
+
+            <TextView
+                android:id="@id/LabelTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5.0dip"
+                android:text="@string/chao_sheng_bo_cover_sum"
+                style="@style/info_tv_style" />
+
+            <TextView
+                android:id="@id/iv_cao_cover_sum"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_toRightOf="@id/LabelTextView"
+                android:background="#ffffffff"
+                android:ellipsize="end"
+                android:singleLine="true"
+                style="@style/et_text_style" />
+        </RelativeLayout>
+        
+        
+        <RelativeLayout
+            android:id="@id/panel_palce_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/public_line_mid" >
+
+            <TextView
+                android:id="@id/LabelTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5.0dip"
+                android:text="@string/chao_sheng_bo_cover_state"
+                style="@style/info_tv_style" />
+
+            <ImageView
+                android:id="@id/iv_cao_cover_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_toRightOf="@id/LabelTextView"
+                android:background="#ffffffff"
+                android:ellipsize="end"
+                android:gravity="center"
+                />
+
+        </RelativeLayout>
+        <!-- 备注 -->
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/public_line_bottom" >
+
+            <TextView
+                android:id="@id/LabelTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5.0dip"
+                android:text="@string/mouse_remark"
+                style="@style/info_tv_style" />
+
+            <EditText
+                android:id="@+id/edit_d2e_remark"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_toRightOf="@id/LabelTextView"
+                android:background="@null"
+                android:ellipsize="end"
+                android:hint="@string/mouse_please_write"
+                android:imeOptions="actionNext"
+                android:maxLines="15"
+                android:scrollbars="vertical"
+                android:singleLine="false"
+                style="@style/et_text_style" />
+        </RelativeLayout>
+        <!-- 报表 -->
+        <RelativeLayout
+            android:id="@+id/layout_03"
+            android:layout_marginTop="4.0dip"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+        <com.mobilercn.widget.YTReportView
+            android:id="@id/reportview_chao"
+            android:layout_width="fill_parent"
+            android:layout_height="140dip"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="4.0dip"
+            android:layout_marginRight="4.0dip"
+            android:layout_marginTop="10dip"
+            android:focusable="true" />
+        <!-- 功能按钮 -->
+
+
+    <ImageButton                 
+        android:id="@+id/btn_pre"       
+        android:layout_width="wrap_content" 
+        android:layout_height="32.0dip"   
+        android:src="@drawable/arrow_left"   
+        android:background="@null"
+        android:layout_alignBottom="@id/reportview_chao"
+        android:layout_toLeftOf="@+id/btn_next"
+        android:layout_marginRight="4.0dip"
+        android:layout_marginBottom="0.0dip"
+        />
+    
+    <ImageButton          
+        android:id="@+id/btn_next"       
+        android:layout_width="wrap_content" 
+        android:layout_height="32.0dip"   
+        android:src="@drawable/arrow_right"   
+        android:background="@null"
+        android:layout_alignBottom="@id/reportview_chao"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="0.0dip"
+        />
+</RelativeLayout>
+        <LinearLayout
+            android:id="@id/menu_mosquito_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4.0dip"
+            android:layout_marginLeft="4.0dip"
+            android:layout_marginRight="4.0dip"
+            android:layout_marginTop="10.0dp"
+            android:gravity="center" >
+			<!-- 初始化 -->
+            <Button
+                android:id="@id/btn_cao_init"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="4.0dip"
+                android:layout_weight="1"
+                android:background="@drawable/btn_add"
+                android:text="@string/chao_init"
+                style="@style/info_tv_style" />
+			<!-- 扫描 -->
+            <Button
+                android:id="@id/btn_cao_scann"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/btn_add"
+                android:text="@string/chao_scann"
+                style="@style/info_tv_style" />
+            <Button
+                android:id="@id/btn_cao_save"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4.0dip"
+                android:layout_weight="1"
+                android:background="@drawable/btn_add"
+                android:text="@string/chao_save"
+                style="@style/info_tv_style" />
+            
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,924 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_bg">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="10.0dip"
+        android:paddingLeft="20.0dip"
+        android:paddingRight="20.0dip"
+        android:paddingTop="10.0dip" >
+
+        <!-- 监测方法可编辑输入下拉框 -->
+
+        <RelativeLayout
+            android:id="@+id/layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/public_line" >
+
+            <!-- 监测方法输入框 -->
+
+            <AutoCompleteTextView
+                android:id="@id/et_monitor_method"
+                style="@style/et_text_style"
+                android:layout_width="match_parent"
+                android:layout_height="40.0dip"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_toRightOf="@id/tv_monitorName"
+                android:background="@null"
+                android:enabled="false"
+                android:hint="@string/input_monitor_method"
+                android:maxLength="20"
+                android:layout_marginLeft="10.0dip"
+                android:paddingRight="20dip"
+                android:textColor="#ff0b70a4" />
+            <!-- 监测方法 文本展示 -->
+
+            <TextView
+                android:id="@id/tv_monitorName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/et_monitor_method"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="7.0dip"
+                android:text="@string/tv_monitor_method"
+                style="@style/info_tv_style"
+                />
+            <!-- 下拉按钮 -->
+
+            <ImageButton
+                android:id="@id/ibtn_dropDown_method"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/layout"
+                android:layout_alignRight="@id/et_monitor_method"
+                android:layout_alignTop="@+id/layout"
+                android:layout_marginLeft="1.0dip"
+                android:background="@drawable/more_select" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <!-- 街道名称 -->
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:background="@drawable/public_line_top" >
+
+                    <TextView
+                        android:id="@id/LabelTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5.0dip"
+                        android:text="@string/mouse_street_name"
+                        style="@style/info_tv_style"
+                        />
+
+                    <EditText
+                        android:id="@id/edit_street"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10.0dip"
+                        android:layout_marginRight="10.0dip"
+                        android:layout_toRightOf="@id/LabelTextView"
+                        android:background="#ffffffff"
+                        android:ellipsize="end"
+                        android:hint="@string/input_should"
+                        android:imeOptions="actionNext"
+                        android:singleLine="true"
+                        style="@style/et_text_style"
+                        />
+                </RelativeLayout>
+                <!-- 场所类型下拉框 -->
+
+                <RelativeLayout
+                    android:id="@+id/layout1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/public_line_mid" >
+
+                    <!-- 场所类型输入框 -->
+
+                    <AutoCompleteTextView
+                        android:id="@id/et_place_type"
+                        style="@style/et_text_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="40.0dip"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:layout_toRightOf="@id/tv_place_type"
+                        android:background="@null"
+                        android:hint="@string/input_place_type"
+                        android:maxLength="20"
+                        android:enabled="false"
+                        android:layout_marginLeft="10.0dip"
+                        android:paddingRight="20dip"
+                        android:textColor="#ff0b70a4" />
+                    <!-- 场所类型 文本展示 -->
+
+                    <TextView
+                        android:id="@id/tv_place_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@id/et_place_type"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="7.0dip"
+                        android:text="@string/tv_place_type"
+                        style="@style/info_tv_style"
+                        />
+                    <!-- 下拉按钮 -->
+
+                    <ImageButton
+                        android:id="@id/ibtn_dropDown_place"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/layout1"
+                        android:layout_alignRight="@id/et_place_type"
+                        android:layout_alignTop="@+id/layout1"
+                        android:layout_marginLeft="1.0dip"
+                        android:background="@drawable/more_select" />
+                </RelativeLayout>
+                <!-- 场所名称 -->
+
+                <RelativeLayout
+                    android:id="@id/panel_palce_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/public_line_bottom" >
+
+                    <TextView
+                        android:id="@id/LabelTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5.0dip"
+                        android:text="@string/mouse_place_name"
+                        style="@style/info_tv_style" 
+                        />
+
+                    <EditText
+                        android:id="@id/edit_mouse_palce_name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10.0dip"
+                        android:layout_marginRight="10.0dip"
+                        android:layout_toRightOf="@id/LabelTextView"
+                        android:background="#ffffffff"
+                        android:ellipsize="end"
+                        android:hint="@string/input_should"
+                        android:imeOptions="actionNext"
+                        android:singleLine="true"
+                        style="@style/et_text_style" />
+                </RelativeLayout>
+                <!-- 框架布局 -->
+
+                <FrameLayout
+                    android:id="@id/panel_method"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <!-- 外环境(目测法) -->
+
+                    <LinearLayout
+                        android:id="@id/panel_out"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone"
+                        >
+
+                        <!-- 检查米数 -->
+
+                        <RelativeLayout
+                            android:id="@+id/panel_meters"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/public_line_mid" >
+
+                            <TextView
+                                android:id="@id/LabelTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5.0dip"
+                                android:text="@string/mouse_check_meters"
+                                android:textColor="#ff343434"
+                               	style="@style/info_tv_style" 
+                                />
+
+                            <EditText
+                                android:id="@id/edit_meter"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10.0dip"
+                                android:layout_marginRight="10.0dip"
+                                android:layout_toRightOf="@id/LabelTextView"
+                                android:background="#ffffffff"
+                                android:ellipsize="end"
+                                android:hint="@string/mouse_please_write"
+                                android:imeOptions="actionNext"
+                                android:numeric="integer"
+                                android:singleLine="true"
+                                style="@style/et_text_style" />
+                        </RelativeLayout>
+                        <!-- 鼠洞 -->
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/public_line_mid" >
+
+                            <TextView
+                                android:id="@id/LabelTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5.0dip"
+                                android:text="@string/mouse_hole_number"
+                                style="@style/info_tv_style"
+                                />
+
+                            <EditText
+                                android:id="@id/edit_rat_hole"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10.0dip"
+                                android:layout_marginRight="10.0dip"
+                                android:layout_toRightOf="@id/LabelTextView"
+                                android:background="#ffffffff"
+                                android:ellipsize="end"
+                                android:hint="@string/mouse_please_write"
+                                android:imeOptions="actionNext"
+                                android:numeric="integer"
+                                android:singleLine="true"
+                                style="@style/et_text_style" />
+                        </RelativeLayout>
+                        <!-- 鼠道 -->
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/public_line_mid" >
+
+                            <TextView
+                                android:id="@id/LabelTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5.0dip"
+                                android:text="@string/mouse_drains_number"
+                                style="@style/info_tv_style" 
+                                />
+
+                            <EditText
+                                android:id="@id/edit_rat_drains"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10.0dip"
+                                android:layout_marginRight="10.0dip"
+                                android:layout_toRightOf="@id/LabelTextView"
+                                android:background="#ffffffff"
+                                android:ellipsize="end"
+                                android:hint="@string/mouse_please_write"
+                                android:imeOptions="actionNext"
+                                android:numeric="integer"
+                                android:singleLine="true"
+                                style="@style/et_text_style" />
+                        </RelativeLayout>
+                        <!-- 鼠粪 -->
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/public_line_mid" >
+
+                            <TextView
+                                android:id="@id/LabelTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5.0dip"
+                                android:text="@string/mouse_dung_number"
+                                style="@style/info_tv_style" 
+                                />
+
+                            <EditText
+                                android:id="@id/edit_rat_dung"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10.0dip"
+                                android:layout_marginRight="10.0dip"
+                                android:layout_toRightOf="@id/LabelTextView"
+                                android:background="#ffffffff"
+                                android:ellipsize="end"
+                                android:hint="@string/mouse_please_write"
+                                android:imeOptions="actionNext"
+                                android:numeric="integer"
+                                android:singleLine="true"
+                                style="@style/et_text_style" />
+                        </RelativeLayout>
+                        <!-- 鼠尸 -->
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/public_line_mid" >
+
+                            <TextView
+                                android:id="@id/LabelTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5.0dip"
+                                android:text="@string/mouse_corpse_number"
+                                style="@style/info_tv_style" 
+                                />
+
+                            <EditText
+                                android:id="@id/edit_rat_corpse"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10.0dip"
+                                android:layout_marginRight="10.0dip"
+                                android:layout_toRightOf="@id/LabelTextView"
+                                android:background="#ffffffff"
+                                android:ellipsize="end"
+                                android:hint="@string/mouse_please_write"
+                                android:imeOptions="actionNext"
+                                android:numeric="integer"
+                                android:singleLine="true"
+                                style="@style/et_text_style" />
+                        </RelativeLayout>
+                        <!-- 鼠咬痕 -->
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/public_line_mid" >
+
+                            <TextView
+                                android:id="@id/LabelTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5.0dip"
+                                android:text="@string/mouse_bit_marks"
+                                style="@style/info_tv_style" 
+                                />
+
+                            <EditText
+                                android:id="@id/edit_rat_bite_mark"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10.0dip"
+                                android:layout_marginRight="10.0dip"
+                                android:layout_toRightOf="@id/LabelTextView"
+                                android:background="#ffffffff"
+                                android:ellipsize="end"
+                                android:hint="@string/mouse_please_write"
+                                android:imeOptions="actionNext"
+                                android:numeric="integer"
+                                android:singleLine="true"
+                                style="@style/et_text_style" />
+                        </RelativeLayout>
+                        <!-- 鼠密度(鼠迹数/100m) -->
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/public_line_mid" >
+
+                            <TextView
+                                android:id="@id/LabelTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5.0dip"
+                                android:text="@string/mouse_desity"
+                               style="@style/info_tv_style" />
+
+                            <EditText
+                                android:id="@id/edit_density"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10.0dip"
+                                android:layout_marginRight="10.0dip"
+                                android:layout_toRightOf="@id/LabelTextView"
+                                android:background="#ffffffff"
+                                android:ellipsize="end"
+                                android:hint="@string/mouse_density_explain"
+                                android:imeOptions="actionNext"
+                                android:singleLine="true"
+                                style="@style/et_text_style" />
+                        </RelativeLayout>
+                        <!-- 备注 -->
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/public_line_bottom" >
+
+                            <TextView
+                                android:id="@id/LabelTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5.0dip"
+                                android:text="@string/mouse_remark"
+                                style="@style/info_tv_style" 
+                                />
+
+                            <EditText
+                                android:id="@id/edit_out_remark"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10.0dip"
+                                android:layout_marginRight="10.0dip"
+                                android:layout_toRightOf="@id/LabelTextView"
+                                android:background="@null"
+                                android:ellipsize="end"
+                                android:hint="@string/mouse_please_write"
+                                android:imeOptions="actionNext"
+                                android:maxLines="15"
+                                android:scrollbars="vertical"
+                                android:singleLine="false"
+                                style="@style/et_text_style" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <!-- 室内(粘鼠板法) -->
+
+                    <LinearLayout
+                        android:id="@id/panel_in"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone"
+                        >
+
+                        <!-- 粘鼠板数(布放数) -->
+
+                        <RelativeLayout
+                            android:id="@+id/panel_sum_init"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/public_line_mid" >
+
+                            <TextView
+                                android:id="@id/LabelTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5.0dip"
+                                android:text="@string/mouse_sun_init"
+                                style="@style/info_tv_style"
+                                />
+
+                            <EditText
+                                android:id="@id/edit_sum_init"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10.0dip"
+                                android:layout_marginRight="10.0dip"
+                                android:layout_toRightOf="@id/LabelTextView"
+                                android:background="#ffffffff"
+                                android:ellipsize="end"
+                                android:hint="@string/mouse_bar_put_number"
+                                android:imeOptions="actionNext"
+                                android:numeric="integer"
+                                android:singleLine="true"
+                                style="@style/et_text_style" />
+                        </RelativeLayout>
+                        <!-- 粘鼠板(阳性数) -->
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/public_line_mid" >
+
+                            <TextView
+                                android:id="@id/LabelTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5.0dip"
+                                android:text="@string/mouse_sum_number"
+                                style="@style/info_tv_style" 
+                                />
+
+                            <EditText
+                                android:id="@id/edit_sum"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10.0dip"
+                                android:layout_marginRight="10.0dip"
+                                android:layout_toRightOf="@id/LabelTextView"
+                                android:background="#ffffffff"
+                                android:ellipsize="end"
+                                android:hint="@string/mouse_sum_explain"
+                                android:imeOptions="actionNext"
+                                android:numeric="integer"
+                                android:singleLine="true"
+                                style="@style/et_text_style" />
+                        </RelativeLayout>
+                        <!-- 捕鼠只数 -->
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/public_line_mid" >
+
+                            <TextView
+                                android:id="@id/LabelTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5.0dip"
+                                android:text="@string/mouse_catch_number"
+                                style="@style/info_tv_style" 
+                                />
+
+                            <EditText
+                                android:id="@id/edit_catch"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10.0dip"
+                                android:layout_marginRight="10.0dip"
+                                android:layout_toRightOf="@id/LabelTextView"
+                                android:background="#ffffffff"
+                                android:ellipsize="end"
+                                android:hint="@string/mouse_please_write"
+                                android:imeOptions="actionNext"
+                                android:numeric="integer"
+                                android:singleLine="true"
+                                style="@style/et_text_style"
+                                />
+                        </RelativeLayout>
+                        <!-- 鼠密度(粘捕只数/张) -->
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/public_line_mid" >
+
+                            <TextView
+                                android:id="@id/LabelTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5.0dip"
+                                android:text="@string/mouse_density_sun"
+                                style="@style/info_tv_style" 
+                                />
+
+                            <EditText
+                                android:id="@id/edit_density_sum"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10.0dip"
+                                android:layout_marginRight="10.0dip"
+                                android:layout_toRightOf="@id/LabelTextView"
+                                android:background="#ffffffff"
+                                android:ellipsize="end"
+                                android:hint="@string/mouse_density_sun_explain"
+                                android:imeOptions="actionNext"
+                                android:singleLine="true"
+                                style="@style/et_text_style" />
+                        </RelativeLayout>
+                        <!-- 备注 -->
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/public_line_bottom" >
+
+                            <TextView
+                                android:id="@id/LabelTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5.0dip"
+                                android:text="@string/mouse_remark"
+                                style="@style/info_tv_style" />
+
+                            <EditText
+                                android:id="@id/edit_in_remark"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10.0dip"
+                                android:layout_marginRight="10.0dip"
+                                android:layout_toRightOf="@id/LabelTextView"
+                                android:background="@null"
+                                android:ellipsize="end"
+                                android:hint="@string/mouse_please_write"
+                                android:imeOptions="actionNext"
+                                android:maxLines="15"
+                                android:scrollbars="vertical"
+                                android:singleLine="false"
+                                style="@style/et_text_style"
+                                />
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <!-- 超声波模块 -->
+
+                    <LinearLayout
+                        android:id="@id/panel_cao"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone" >
+
+                        <!-- 来访次数 -->
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/public_line_mid" >
+
+                            <TextView
+                                android:id="@id/LabelTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5.0dip"
+                                android:text="@string/mouse_density_sun"
+                                android:textColor="#ff343434"
+                                android:textSize="18.0dip"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@id/edit_visit_num"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10.0dip"
+                                android:layout_marginRight="10.0dip"
+                                android:layout_toRightOf="@id/LabelTextView"
+                                android:background="#ffffffff"
+                                android:ellipsize="end"
+                                android:gravity="center"
+                                android:hint="@string/mouse_density_sun_explain"
+                                android:imeOptions="actionNext"
+                                android:singleLine="true"
+                                android:textColor="#ff0b70a4"
+                                android:textSize="18.0dip"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+                        <!-- 缺电图标 -->
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/public_line_mid" >
+
+                            <TextView
+                                android:id="@id/LabelTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5.0dip"
+                                android:text="@string/mouse_density_sun"
+                                android:textColor="#ff343434"
+                                android:textSize="18.0dip"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@id/iv_lack_ele"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10.0dip"
+                                android:layout_marginRight="10.0dip"
+                                android:layout_toRightOf="@id/LabelTextView"
+                                android:background="#ffffffff"
+                                android:ellipsize="end"
+                                android:gravity="center"
+                                android:hint="@string/mouse_density_sun_explain"
+                                android:imeOptions="actionNext"
+                                android:singleLine="true"
+                                android:textColor="#ff0b70a4"
+                                android:textSize="18.0dip"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+                        <!-- 遮挡时间 -->
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/public_line_mid" >
+
+                            <TextView
+                                android:id="@id/LabelTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5.0dip"
+                                android:text="@string/mouse_density_sun"
+                                android:textColor="#ff343434"
+                                android:textSize="18.0dip"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@id/edit_keep_time"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10.0dip"
+                                android:layout_marginRight="10.0dip"
+                                android:layout_toRightOf="@id/LabelTextView"
+                                android:background="#ffffffff"
+                                android:ellipsize="end"
+                                android:gravity="center"
+                                android:hint="@string/mouse_density_sun_explain"
+                                android:imeOptions="actionNext"
+                                android:singleLine="true"
+                                android:textColor="#ff0b70a4"
+                                android:textSize="18.0dip"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+                        <!-- 时间段 -->
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/public_line_mid" >
+
+                            <TextView
+                                android:id="@id/LabelTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5.0dip"
+                                android:text="@string/mouse_density_sun"
+                                android:textColor="#ff343434"
+                                android:textSize="18.0dip"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@id/edit_keep_time_rang"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10.0dip"
+                                android:layout_marginRight="10.0dip"
+                                android:layout_toRightOf="@id/LabelTextView"
+                                android:background="#ffffffff"
+                                android:ellipsize="end"
+                                android:gravity="center"
+                                android:hint="@string/mouse_density_sun_explain"
+                                android:imeOptions="actionNext"
+                                android:singleLine="true"
+                                android:textColor="#ff0b70a4"
+                                android:textSize="18.0dip"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@id/menu_mounsenumber_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="50.0dip"
+                            android:background="@drawable/public_line"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:imeOptions="actionNext"
+                            android:paddingBottom="8.0dip"
+                            android:paddingLeft="15.0dip"
+                            android:paddingRight="12.0dip"
+                            android:paddingTop="8.0dip"
+                            android:visibility="gone" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="25.0dip"
+                                android:layout_toRightOf="@id/menu_mounsenumber_layout"
+                                android:text="扫描监测数据"
+                                android:textColor="#ff343434"
+                                android:textSize="24.0dip"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@id/tv_mouse_sao"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="8.0dip"
+                                android:layout_toLeftOf="@id/arrow_image"
+                                android:ellipsize="end"
+                                android:gravity="left"
+                                android:singleLine="true"
+                                android:textColor="#ff0b70a4"
+                                android:textSize="18.0dip"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@id/arrow_image"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/date_more_arrow" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </FrameLayout>
+
+                <LinearLayout
+                    android:id="@id/menu_mosquito_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4.0dip"
+                    android:layout_marginLeft="4.0dip"
+                    android:layout_marginRight="4.0dip"
+                    android:layout_marginTop="10.0dp"
+                    android:gravity="center" >
+
+                    <Button
+                        android:id="@id/btn_back"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="4.0dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_add"
+                        android:text="@string/mouse_btn_back"
+                        style="@style/info_tv_style"
+                        />
+
+                    <Button
+                        android:id="@id/btn_reset"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="4.0dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_add"
+                        android:text="@string/mouse_btn_reset"
+                        style="@style/info_tv_style"
+                        />
+
+                    <Button
+                        android:id="@id/btn_save"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_add"
+                        android:text="@string/mouse_btn_save"
+                        style="@style/info_tv_style"
+                        />
+                </LinearLayout>
+
+                <!--
+    <LinearLayout 
+        android:orientation="vertical" 
+        android:paddingLeft="20.0dip" 
+        android:paddingTop="10.0dip" 
+        android:paddingRight="20.0dip" 
+        android:paddingBottom="10.0dip" 
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent">
+        
+        <com.mobilercn.widget.YTReportView
+		    android:id="@+id/reportview"
+		    android:focusable="true"
+		    android:layout_width="fill_parent" 
+		    android:layout_height="400dp"/>s
+        
+    </LinearLayout>
+                -->
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</ScrollView>
